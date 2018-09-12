@@ -93,7 +93,7 @@ Prevent mass mailing worms from sending mail" is un-checked.
 <!-- Information about the ERDDAP administrator is used for the SOS and WMS 
 servers. -->
 <adminInstitution>USF IMaRS</adminInstitution>
-<adminInstitutionUrl>imars.marine.usf.edu</adminInstitutionUrl>
+<adminInstitutionUrl>http://imars.marine.usf.edu</adminInstitutionUrl>
 <adminIndividualName>Tylar Murray</adminIndividualName>
 <adminPosition>ERDDAP administrator</adminPosition>
 <adminPhone>+1 727-553-1186</adminPhone>
