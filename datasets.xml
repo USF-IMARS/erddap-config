@@ -102,6 +102,11 @@ IMaRS datasets
         <att name="title">Data from a local source.</att>
     </addAttributes>
     <axisVariable>
+        <!-- example filename : chlor_a_l3_pass_A2018251202000.hdf -->
+        <sourceName>***fileName,timeFormat=yyyyDDDHHmmss,chlor_a_l3_pass_A(\d{13})\.hdf,1</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
+    <axisVariable>
         <sourceName>y</sourceName>
         <destinationName>latitude</destinationName>
         <!-- sourceAttributes>
