@@ -767,4 +767,31 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
     <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyW</sourceUrl>
 </dataset>
 
+<!-- removed demo datasets -->
+<dataset type="EDDGridFromEtopo" datasetID="etopo180" active="false"/>
+<dataset type="EDDGridFromEtopo" datasetID="etopo360" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="ncdcOw6hr_LonPM180" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="ncdcOwDly_LonPM180" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="ncdcOwDlyStrs_LonPM180" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdMH1kd4901day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdMH1kd490mday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdMH1par01day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdMH1par0mday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018chla1day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018chlamday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018k4901day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018k490mday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018par1day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018parmday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018pic1day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018picmday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018poc1day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018pocmday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018r6711day" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="erdVH2018r671mday" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSS3MonthV5" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSS7DayV5" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSSDailyV5" active="false"/>
+<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSSMonthlyV5" active="false"/>
+
 </erddapDatasets>
