@@ -111,7 +111,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">MAIL.USF</att>
-        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, latitude, local, longitude, mail.usf, ocean, ocean color, oceans, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, latitude, local, longitude, mail.usf, ocean, ocean color, oceans, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">24.0111N to 31N -98W to -88.012W</att>
@@ -155,26 +155,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Latitude</att>
             <att name="standard_name">latitude</att>
             <att name="units">degrees_north</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
