@@ -109,7 +109,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">MAIL.USF</att>
         <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, latitude, local, longitude, mail.usf, ocean, ocean color, oceans, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
@@ -122,53 +122,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="Units">null</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <!-- example filename : chlor_a_l3_pass_A2018251202000.hdf 
+                                AQUA_2018267_2018273_7D_FGB_chlor_a.nc-->
+        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_FGB_chlor_a\.nc,2</sourceName>
+        <destinationName>time</destinationName>
     </axisVariable>
-    <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a_median</sourceName>
-        <destinationName>chlor_a_median</destinationName>
-        <dataType>double</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">10.0</att>
-            <att name="colorBarMinimum" type="double">-10.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlor A Anom</att>
-        </addAttributes>
-    </dataVariable>
     <dataVariable>
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
@@ -197,6 +155,54 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Latitude</att>
             <att name="standard_name">latitude</att>
             <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlor A Anom</att>
         </addAttributes>
     </dataVariable>
 </dataset>
