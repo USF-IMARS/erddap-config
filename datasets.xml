@@ -122,9 +122,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="Units">null</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : chlor_a_l3_pass_A2018251202000.hdf 
-                                AQUA_2018267_2018273_7D_FGB_chlor_a.nc-->
-        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_FGB_chlor_a\.nc,2</sourceName>
+        <!-- example filename : AQUA_2018267_2018273_7D_FGB_chlor_a.nc-->
+        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FGB_chlor_a\.nc,2</sourceName>
         <destinationName>time</destinationName>
     </axisVariable>
     <dataVariable>
@@ -188,7 +187,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 </dataset>
 
 <!-- chlor_a_l3_pass (from airflow) -->
-<dataset type="EDDGridFromNcFilesUnpacked" datasetID="chlor_a_l3_pass_db6d_37b4_723b" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="chlor_a_l3_pass_db6d_37b4_723b" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/chlor_a_l3_pass/</fileDir>
