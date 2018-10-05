@@ -126,7 +126,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FGB_chlor_a\.nc,2</sourceName>
         <destinationName>time</destinationName>
     </axisVariable>
-    <dataVariable>
+    <axisVariable>
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
         <dataType>double</dataType>
@@ -140,8 +140,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="standard_name">longitude</att>
             <att name="units">degrees_east</att>
         </addAttributes>
-    </dataVariable>
-    <dataVariable>
+    </axisVariable>
+    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
         <dataType>double</dataType>
@@ -155,7 +155,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="standard_name">latitude</att>
             <att name="units">degrees_north</att>
         </addAttributes>
-    </dataVariable>
+    </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
