@@ -129,7 +129,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <axisVariable>
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
-        <dataType>double</dataType>
         <!-- sourceAttributes>
         </sourceAttributes -->
         <addAttributes>
@@ -144,7 +143,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
-        <dataType>double</dataType>
         <!-- sourceAttributes>
         </sourceAttributes -->
         <addAttributes>
