@@ -107,7 +107,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">MAIL.USF</att>
-        <att name="keywords">anomaly, data, florida, img_x, img_y, latitude, local, longitude, mail.usf, mean, score, source, south, statistics, university, usf, z-score</att>
+        <att name="keywords">anomaly, data, florida, latitude, local, longitude, mail.usf, mean, score, source, south, statistics, university, usf, z-score</att>
         <att name="license">[standard]</att>
         <att name="Project">null</att>
         <att name="project">SDG14</att>
@@ -117,24 +117,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="Units">null</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_9km.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_9km\.nc,2</sourceName>
+        <destinationName>time</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>mean</sourceName>
