@@ -118,7 +118,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </addAttributes>
     <axisVariable>
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_9km.nc -->
-        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_9km\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_Test9km\.nc,2</sourceName>
         <destinationName>time</destinationName>
     </axisVariable>
     <axisVariable>
