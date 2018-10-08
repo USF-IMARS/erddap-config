@@ -124,30 +124,10 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <axisVariable>
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">180.0</att>
-            <att name="colorBarMinimum" type="double">-180.0</att>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Longitude</att>
-            <att name="standard_name">longitude</att>
-            <att name="units">degrees_east</att>
-        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">90.0</att>
-            <att name="colorBarMinimum" type="double">-90.0</att>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Latitude</att>
-            <att name="standard_name">latitude</att>
-            <att name="units">degrees_north</att>
-        </addAttributes>
     </axisVariable>
     <dataVariable>
         <sourceName>mean</sourceName>
@@ -245,30 +225,10 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <axisVariable>
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">180.0</att>
-            <att name="colorBarMinimum" type="double">-180.0</att>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Longitude</att>
-            <att name="standard_name">longitude</att>
-            <att name="units">degrees_east</att>
-        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">90.0</att>
-            <att name="colorBarMinimum" type="double">-90.0</att>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Latitude</att>
-            <att name="standard_name">latitude</att>
-            <att name="units">degrees_north</att>
-        </addAttributes>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
@@ -339,28 +299,10 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <axisVariable>
         <sourceName>lat</sourceName>
         <destinationName>latitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Latitude</att>
-            <att name="source_name">lat</att>
-            <att name="standard_name">latitude</att>
-            <att name="units">degrees_north</att>
-        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>lon</sourceName>
         <destinationName>longitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Longitude</att>
-            <att name="source_name">lon</att>
-            <att name="standard_name">longitude</att>
-            <att name="units">degrees_east</att>
-        </addAttributes>
     </axisVariable>
     <dataVariable>
         <sourceName>Rrs_412</sourceName>
