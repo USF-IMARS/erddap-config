@@ -76,7 +76,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/mbon_data_big/satellite/chlor_a/anom_9km/</fileDir>
-    <fileNameRegex>.*_chlor_a_MO_ANOM_GLOB_Test9km\.nc</fileNameRegex>
+    <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
@@ -118,7 +118,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </addAttributes>
     <axisVariable>
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_9km.nc -->
-        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_Test9km\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_9km\.nc,2</sourceName>
         <destinationName>time</destinationName>
     </axisVariable>
     <axisVariable>
