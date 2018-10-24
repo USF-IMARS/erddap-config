@@ -106,14 +106,14 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
-        <att name="institution">MAIL.USF</att>
+        <att name="institution">USF IMaRS</att>
         <att name="keywords">anomaly, data, florida, latitude, local, longitude, mail.usf, mean, score, source, south, statistics, university, usf, z-score</att>
         <att name="license">[standard]</att>
         <att name="Project">null</att>
         <att name="project">SDG14</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
-        <att name="summary">MAIL.University of South Florida (USF) data from a local source.</att>
-        <att name="title">MAIL.USF data from a local source.</att>
+        <att name="summary">Global 9km Chlorophyll a Anomalies.</att>
+        <att name="title">Global 9km Chlorophyll a Anomalies.</att>
         <att name="Units">null</att>
     </addAttributes>
     <axisVariable>
@@ -122,12 +122,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>mean</sourceName>
