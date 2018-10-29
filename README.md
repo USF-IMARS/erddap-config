@@ -12,7 +12,7 @@ Content dir for [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/) i
     * `sudo docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"`
 2. copy xml & add it to `datasets.xml` here
 3. update `datasets.xml` on the docker host via puppet: 
-    * `sudo puppet agent -t`
+    * `sudo /opt/puppetlabs/bin/puppet agent -t`
 4. run `DasDds` to find errors 
     * `sudo docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash DasDds.sh -verbose"`
 5. fix xml on github
