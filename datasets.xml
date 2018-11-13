@@ -674,7 +674,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4}).(\s{3,8}).sst.hdf,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4})*\.fullpass\.sst\.hdf,2</sourceName>
         <!-- n(\d+?).(\d{8}\.\d{4}).fullpass.sst.hdf,2 -->
         <destinationName>time</destinationName>
         <!-- sourceAttributes>
