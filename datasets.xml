@@ -619,8 +619,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="equator_radius_units">km</att>
         <att name="et_affine">null</att>
         <att name="history">Direct read of HDF4 file through CDM library</att>
-        <att name="infoUrl">???</att>
-        <att name="institution">???</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
+        <att name="institution">MAIL.USF</att>
         <att name="keywords">data, line, local, mcsst, sample, source, temperature</att>
         <att name="license">[standard]</att>
         <att name="line\\coord">null</att>
@@ -674,7 +674,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4}).fullpass.sst.hdf,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4}).(\s+?).sst.hdf,2</sourceName>
+        <!-- n(\d+?).(\d{8}\.\d{4}).fullpass.sst.hdf,2 -->
         <destinationName>time</destinationName>
         <!-- sourceAttributes>
             <att name="long_name">line</att>
