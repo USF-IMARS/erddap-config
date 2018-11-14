@@ -535,7 +535,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/gom/sst_avhrr_1km/</fileDir>
-    <fileNameRegex>.*\.hdf</fileNameRegex>
+    <fileNameRegex>.*\.fullpass\.sst\.hdf</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
