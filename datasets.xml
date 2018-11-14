@@ -535,7 +535,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/gom/sst_avhrr_1km/</fileDir>
-    <fileNameRegex>.*\.fullpass\.sst\.hdf</fileNameRegex>
+    <fileNameRegex>.*\.usf\.sst\.hdf</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
@@ -674,7 +674,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4})*\.fullpass\.sst\.hdf,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4})*\.usf\.sst\.hdf,2</sourceName>
         <!-- n(\d+?).(\d{8}\.\d{4}).fullpass.sst.hdf,2 -->
         <destinationName>time</destinationName>
         <!-- sourceAttributes>
