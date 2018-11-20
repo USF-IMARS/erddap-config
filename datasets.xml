@@ -723,11 +723,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     
     
 <!-- testing a different AVHRR xml -->
- <dataset type="EDDGridFromNcFilesUnpacked" datasetID="2016_03_bf46_ed3f_cc9e" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="2016_03_d4fe_61cc_8202" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/gom/sst_avhrr_1km/2016.03/</fileDir>
-    <fileNameRegex>.*\.usf\.sst\.hdf</fileNameRegex>
+    <fileNameRegex>.*\.hdf</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
@@ -866,8 +866,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>line</sourceName>
-        <destinationName>line</destinationName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4})*\.usf\.sst\.hdf,2</sourceName>
+        <destinationName>time</destinationName>
         <!-- sourceAttributes>
             <att name="long_name">line</att>
         </sourceAttributes -->
@@ -876,10 +876,10 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd.HHmm,n(\d+?).(\d{8}\.\d{4})*\.usf\.sst\.hdf,2</sourceName>
-        <destinationName>time</destinationName>
+        <sourceName>sample</sourceName>
+        <destinationName>sample</destinationName>
         <!-- sourceAttributes>
-            <att name="long_name">line</att>
+            <att name="long_name">sample</att>
         </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -890,22 +890,22 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>avhrr_ch1</destinationName>
         <dataType>double</dataType>
         <!-- sourceAttributes>
-            <att name="_FillValue" type="double">NaN</att>
+            <att name="_FillValue" type="short">-32768</att>
+            <att name="add_offset" type="double">0.0</att>
             <att name="add_offset_err" type="double">0.0</att>
             <att name="calibrated_nt" type="int">22</att>
             <att name="long_name">avhrr_ch1</att>
+            <att name="scale_factor" type="double">0.01</att>
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">albedo*100&#37;</att>
-            <att name="valid_range" type="doubleList">NaN 327.67</att>
+            <att name="valid_range" type="shortList">-32768 32767</att>
         </sourceAttributes -->
         <addAttributes>
-            <att name="add_offset_err">null</att>
             <att name="colorBarMaximum" type="double">100.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
             <att name="ioos_category">Optical Properties</att>
             <att name="long_name">Avhrr Ch1</att>
-            <att name="scale_factor_err">null</att>
-            <att name="units">albedo00percent</att>
+            <att name="units">albedopercent</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -913,22 +913,22 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>avhrr_ch2</destinationName>
         <dataType>double</dataType>
         <!-- sourceAttributes>
-            <att name="_FillValue" type="double">NaN</att>
+            <att name="_FillValue" type="short">-32768</att>
+            <att name="add_offset" type="double">0.0</att>
             <att name="add_offset_err" type="double">0.0</att>
             <att name="calibrated_nt" type="int">22</att>
             <att name="long_name">avhrr_ch2</att>
+            <att name="scale_factor" type="double">0.01</att>
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">albedo*100&#37;</att>
-            <att name="valid_range" type="doubleList">NaN 327.67</att>
+            <att name="valid_range" type="shortList">-32768 32767</att>
         </sourceAttributes -->
         <addAttributes>
-            <att name="add_offset_err">null</att>
             <att name="colorBarMaximum" type="double">100.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
             <att name="ioos_category">Optical Properties</att>
             <att name="long_name">Avhrr Ch2</att>
-            <att name="scale_factor_err">null</att>
-            <att name="units">albedo00percent</att>
+            <att name="units">albedopercent</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -936,19 +936,21 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>mcsst</destinationName>
         <dataType>double</dataType>
         <!-- sourceAttributes>
-            <att name="_FillValue" type="double">NaN</att>
+            <att name="_FillValue" type="byte">0</att>
+            <att name="_Unsigned">true</att>
+            <att name="add_offset" type="double">10.542168674698797</att>
             <att name="add_offset_err" type="double">0.0</att>
             <att name="calibrated_nt" type="int">21</att>
             <att name="long_name">mcsst</att>
+            <att name="scale_factor" type="double">0.1992</att>
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">temp_deg_c</att>
-            <att name="valid_range" type="doubleList">NaN 10.342968674698797</att>
+            <att name="valid_range" type="byteList">0 -1</att>
         </sourceAttributes -->
         <addAttributes>
-            <att name="add_offset_err">null</att>
-            <att name="colorBarMaximum" type="double">10.342968674698797</att>
+            <att name="colorBarMaximum" type="double">10.5</att>
+            <att name="colorBarMinimum" type="double">10.350000000000001</att>
             <att name="ioos_category">Temperature</att>
-            <att name="scale_factor_err">null</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -956,20 +958,20 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>rel_azimuth</destinationName>
         <dataType>double</dataType>
         <!-- sourceAttributes>
-            <att name="_FillValue" type="double">NaN</att>
+            <att name="_FillValue" type="short">-32768</att>
+            <att name="add_offset" type="double">0.0</att>
             <att name="add_offset_err" type="double">0.0</att>
             <att name="calibrated_nt" type="int">22</att>
             <att name="long_name">rel_azimuth</att>
+            <att name="scale_factor" type="double">0.01</att>
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">degrees</att>
-            <att name="valid_range" type="doubleList">NaN 327.67</att>
+            <att name="valid_range" type="shortList">-32768 32767</att>
         </sourceAttributes -->
         <addAttributes>
-            <att name="add_offset_err">null</att>
-            <att name="colorBarMaximum" type="double">327.67</att>
+            <att name="colorBarMinimum" type="double">-32768.0</att>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Rel Azimuth</att>
-            <att name="scale_factor_err">null</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -977,23 +979,24 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>sat_zenith</destinationName>
         <dataType>double</dataType>
         <!-- sourceAttributes>
-            <att name="_FillValue" type="double">NaN</att>
+            <att name="_FillValue" type="short">-32768</att>
+            <att name="add_offset" type="double">0.0</att>
             <att name="add_offset_err" type="double">0.0</att>
             <att name="calibrated_nt" type="int">22</att>
             <att name="long_name">sat_zenith</att>
+            <att name="scale_factor" type="double">0.01</att>
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">degrees</att>
-            <att name="valid_range" type="doubleList">NaN 327.67</att>
+            <att name="valid_range" type="shortList">-32768 32767</att>
         </sourceAttributes -->
         <addAttributes>
-            <att name="add_offset_err">null</att>
-            <att name="colorBarMaximum" type="double">327.67</att>
+            <att name="colorBarMinimum" type="double">-32768.0</att>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Sat Zenith</att>
-            <att name="scale_factor_err">null</att>
         </addAttributes>
     </dataVariable>
 </dataset>
+
 
 
     
