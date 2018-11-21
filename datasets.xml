@@ -1057,24 +1057,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>   
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+      <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>mean</sourceName>
@@ -1111,36 +1099,28 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Z-score</att>
         </addAttributes>
     </dataVariable>
+<!--
     <dataVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        # sourceAttributes>
+        </sourceAttributes #
         <addAttributes>
-            <att name="colorBarMaximum" type="double">180.0</att>
-            <att name="colorBarMinimum" type="double">-180.0</att>
             <att name="ioos_category">Location</att>
-            <att name="long_name">Longitude</att>
-            <att name="standard_name">longitude</att>
-            <att name="units">degrees_east</att>
+            <att name="long_name">Img Y</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        # sourceAttributes>
+        </sourceAttributes #
         <addAttributes>
-            <att name="colorBarMaximum" type="double">90.0</att>
-            <att name="colorBarMinimum" type="double">-90.0</att>
             <att name="ioos_category">Location</att>
-            <att name="long_name">Latitude</att>
-            <att name="standard_name">latitude</att>
-            <att name="units">degrees_north</att>
+            <att name="long_name">Img X</att>
         </addAttributes>
-    </dataVariable>
+    </dataVariable> 
+    -->
 </dataset>
 
 
