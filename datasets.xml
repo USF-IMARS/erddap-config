@@ -1048,7 +1048,13 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_27km.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_27km\.nc,2</sourceName>
         <destinationName>time</destinationName>
-    </axisVariable>
+        <!-- sourceAttributes>
+            <att name="long_name">line</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+</axisVariable>
     </addAttributes>
     <axisVariable>
         <sourceName>img_y</sourceName>
