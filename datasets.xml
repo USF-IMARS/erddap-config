@@ -1000,7 +1000,149 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 
 
     
-  
+<!-- testing chl-a 27km -->
+<dataset type="EDDGridFromNcFilesUnpacked" datasetID="anom_27km_2379_64ca_f270" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mbon_data_big/satellite/chlor_a/anom_27km/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">10/31/2017</att>
+        <att name="Composite_start_date">10/01/2017</att>
+        <att name="Contact">Dan Otis - dotis@mail.usf.edu</att>
+        <att name="CreationDate">12/04/2017 21:07:28</att>
+        <att name="Original_Image_Format">Level-3(NetCDF)</att>
+        <att name="Original_Image_Source">NASA OBPG</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Product">chlor_a</att>
+        <att name="Project">SDG14</att>
+        <att name="Region">Global (GLOB)</att>
+        <att name="Spatial_resolution">0.25 Degree</att>
+        <att name="Units">mg m^-3</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@mail.usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@mail.usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">MAIL.USF</att>
+        <att name="keywords">anomaly, data, florida, img_x, img_y, latitude, local, longitude, mail.usf, mean, score, source, south, statistics, university, usf, z-score</att>
+        <att name="license">[standard]</att>
+        <att name="Project">null</att>
+        <att name="project">SDG14</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+        <att name="summary">MAIL.University of South Florida (USF) data from a local source.</att>
+        <att name="title">MAIL.USF data from a local source.</att>
+        <att name="Units">null</att>
+    <axisVariable>
+        <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_27km.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_27km\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>mean</sourceName>
+        <destinationName>mean</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Mean</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>anomaly</sourceName>
+        <destinationName>anomaly</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Anomaly</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z-score</sourceName>
+        <destinationName>z_score</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Z-score</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
+    
+    
+    
+    
+    
 <!-- 
 =====================================================================
 === === === included demo datasets
