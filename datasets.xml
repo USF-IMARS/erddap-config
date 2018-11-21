@@ -1034,8 +1034,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
-        <att name="institution">MAIL.USF</att>
+        <att name="infoUrl">http://imars.marine.usf.edu/</att>
+        <att name="institution">USF IMaRS</att>
         <att name="keywords">anomaly, data, florida, img_x, img_y, latitude, local, longitude, mail.usf, mean, score, source, south, statistics, university, usf, z-score</att>
         <att name="license">[standard]</att>
         <att name="Project">null</att>
