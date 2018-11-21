@@ -1044,6 +1044,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="summary">MAIL.University of South Florida (USF) data from a local source.</att>
         <att name="title">MAIL.USF data from a local source.</att>
         <att name="Units">null</att>
+    </addAttributes>
     <axisVariable>
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_27km.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_27km\.nc,2</sourceName>
@@ -1054,8 +1055,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
-</axisVariable>
-    </addAttributes>
+    </axisVariable>
     <axisVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
