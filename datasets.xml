@@ -1062,8 +1062,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_y</sourceName>
           <destinationName>latitude</destinationName>
         <!-- <sourceAttributes>
-        </sourceAttributes>
-        <addAttributes> -->
+        </sourceAttributes> -->
+        <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
         </addAttributes>
@@ -1072,8 +1072,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_x</sourceName>
           <destinationName>longitude</destinationName>
         <!-- <sourceAttributes>
-        </sourceAttributes>
-        <addAttributes> -->
+        </sourceAttributes> -->
+        <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
         </addAttributes>
