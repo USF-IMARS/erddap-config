@@ -1041,20 +1041,14 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="Project">null</att>
         <att name="project">SDG14</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
-        <att name="summary">MAIL.University of South Florida (USF) data from a local source.</att>
-        <att name="title">MAIL.USF data from a local source.</att>
+        <att name="summary">Global 27km Chlorophyll a Anomalies.</att>
+        <att name="title">Global 27km Chlorophyll a Anomalies.</att>
         <att name="Units">null</att>
     </addAttributes>
     <axisVariable>
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_27km.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_27km\.nc,2</sourceName>
         <destinationName>time</destinationName>
-        <!-- sourceAttributes>
-            <att name="long_name">line</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>longitude</sourceName>
@@ -1064,6 +1058,26 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
       <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
     </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>latitude</destinationName>
+        <sourceAttributes>
+        </sourceAttributes
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>longitude</destinationName>
+        <sourceAttributes>
+        </sourceAttributes
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable> 
     <dataVariable>
         <sourceName>mean</sourceName>
         <destinationName>mean</destinationName>
@@ -1099,28 +1113,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Z-score</att>
         </addAttributes>
     </dataVariable>
-<!--
-    <dataVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        # sourceAttributes>
-        </sourceAttributes #
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        # sourceAttributes>
-        </sourceAttributes #
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </dataVariable> 
-    -->
+
 </dataset>
 
 
