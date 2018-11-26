@@ -1060,20 +1060,20 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </axisVariable>
     <axisVariable>
         <sourceName>img_y</sourceName>
-        <destinationName>latitude</destinationName>
-        <sourceAttributes>
-        </sourceAttributes
-        <addAttributes>
+          <destinationName>latitude</destinationName>
+        <!-- <sourceAttributes>
+        </sourceAttributes>
+        <addAttributes> -->
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
         </addAttributes>
-    </axisVariable>
+    </axisVariable> 
     <axisVariable>
         <sourceName>img_x</sourceName>
-        <destinationName>longitude</destinationName>
-        <sourceAttributes>
-        </sourceAttributes
-        <addAttributes>
+          <destinationName>longitude</destinationName>
+        <!-- <sourceAttributes>
+        </sourceAttributes>
+        <addAttributes> -->
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
         </addAttributes>
