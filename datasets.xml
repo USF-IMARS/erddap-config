@@ -876,10 +876,40 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
+        <sourceName>img_y</sourceName>
+          <destinationName>Img_Y</destinationName>
+        <!-- <sourceAttributes>
+        </sourceAttributes> -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable> 
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+          <destinationName>Img_X</destinationName>
+        <!-- <sourceAttributes>
+        </sourceAttributes> -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable> 
+    <axisVariable>
         <sourceName>sample</sourceName>
         <destinationName>sample</destinationName>
         <!-- sourceAttributes>
             <att name="long_name">sample</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>line</sourceName>
+        <destinationName>line</destinationName>
+        <!-- sourceAttributes>
+            <att name="long_name">line</att>
         </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -1051,16 +1081,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>   
-    </axisVariable>
-    <axisVariable>
-      <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>img_y</sourceName>
-          <destinationName>latitude</destinationName>
+          <destinationName>Img_Y</destinationName>
         <!-- <sourceAttributes>
         </sourceAttributes> -->
         <addAttributes>
@@ -1070,7 +1092,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </axisVariable> 
     <axisVariable>
         <sourceName>img_x</sourceName>
-          <destinationName>longitude</destinationName>
+          <destinationName>Img_X</destinationName>
         <!-- <sourceAttributes>
         </sourceAttributes> -->
         <addAttributes>
@@ -1113,7 +1135,14 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Z-score</att>
         </addAttributes>
     </dataVariable>
-
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>   
+    </dataVariable>
+    <dataVariable>
+      <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </dataVariable>
 </dataset>
 
 
