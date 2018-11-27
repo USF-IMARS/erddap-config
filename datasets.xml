@@ -722,6 +722,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="colorBarMaximum" type="double">10.342968674698797</att>
             <att name="ioos_category">Temperature</att>
             <att name="scale_factor_err">null</att>
+            <att name="missing_value" type="double">NaN</att>
         </addAttributes>
     </dataVariable>
 </dataset>    
