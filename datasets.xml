@@ -172,7 +172,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/fgbnms_modis_aqua_oc_7d/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
+    <fileNameRegex>.*\chlor_a\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
@@ -219,7 +219,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </addAttributes>
     <axisVariable>
         <!-- example filename : AQUA_2018267_2018273_7D_FGB_chlor_a.nc-->
-        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FGB_(chlor_a|Rrs_667|nflh)\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FGB_\chlor_a\.nc,2</sourceName>
         <destinationName>time</destinationName>
     </axisVariable>
     <axisVariable>
