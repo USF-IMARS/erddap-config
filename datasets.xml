@@ -669,7 +669,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="summary">AVHRR SST 1km near the Gulf of Mexico</att>
         <att name="time_adjust\\units">null</att>
         <att name="time_adjust_units">hhmmss</att>
-        <att name="title">Data from a local source.</att>
+        <att name="title">AVHRR SST 1km near the Gulf of Mexico</att>
         <att name="use_orbele\\units">null</att>
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
@@ -872,7 +872,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="summary">Test AVHRR SST 1km near GoM</att>
         <att name="time_adjust\\units">null</att>
         <att name="time_adjust_units">hhmmss</att>
-        <att name="title">Data from a local source.</att>
+        <att name="title">Test AVHRR SST 1km near GoM</att>
         <att name="use_orbele\\units">null</att>
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
