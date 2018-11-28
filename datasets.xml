@@ -1208,6 +1208,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="title">7 Day IOP (TEST)</att>
     </addAttributes>
     <axisVariable>
+        <!-- example filename : A2016001_2016007_7D_FGB_IOP.nc-->
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_(\d{7})_7D_FGB_IOP\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
+    <axisVariable>
         <sourceName>img_x</sourceName>
         <destinationName>img_x</destinationName>
         <!-- sourceAttributes>
