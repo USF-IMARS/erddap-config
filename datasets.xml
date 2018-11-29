@@ -1089,15 +1089,15 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
-        </addAttributes> -->
-    </axisVariable> 
+        </addAttributes> 
+    </axisVariable> -->
     <axisVariable>
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
  <!--   <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
+        <!-- <sourceAttributes>
+        </sourceAttributes> -->
+        <addAttributes> 
         <!--<att name="colorBarMaximum" type="double">180.0</att>
             <att name="colorBarMinimum" type="double">-180.0</att> -->
             <att name="ioos_category">Location</att>
