@@ -1360,6 +1360,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
+            <att name="scale_factor" type="int">-1</att>
         </addAttributes>
     </axisVariable> -->
     <axisVariable>
@@ -1371,8 +1372,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
  <!--       <att name="colorBarMaximum" type="double">180.0</att>
             <att name="colorBarMinimum" type="double">-180.0</att> -->
-            <att name="valid_min" type="double">-180.0</att>
-            <att name="valid_max" type="double">180.0</att>
             <att name="ioos_category">Location</att>
             <att name="long_name">Longitude</att>
             <att name="standard_name">longitude</att>
@@ -1388,8 +1387,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
  <!--       <att name="colorBarMaximum" type="double">90.0</att>
             <att name="colorBarMinimum" type="double">-90.0</att> -->
-            <att name="valid_min" type="double">-180.0</att>
-            <att name="valid_max" type="double">180.0</att>
             <att name="ioos_category">Location</att>
             <att name="long_name">Latitude</att>
             <att name="standard_name">latitude</att>
