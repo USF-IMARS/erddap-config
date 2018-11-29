@@ -1287,11 +1287,148 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </dataVariable>
 </dataset>
-   
+ 
+
+<!-- ANOM 7D vOC ============================================================================================================-->    
+<dataset type="EDDGridFromNcFiles" datasetID="ANOM_7D_vOC_3b8d_a9e8_a21d" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/modis_aqua_fgbnms/ANOM_7D_vOC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Region">NW GoM</att>
+        <att name="Product">IOP</att>
+        <att name="Time_interval">7-Day Mean</att>
+        <att name="Sensor">A</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Masks_based_on_L2_flags">LAND,CLDICE,HIGLIN</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Image_size">770 pixels(N-S) x 1100 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">24N to 31N -98W to -88W</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Contact">Dan Otis - dotis@mail.usf.edu</att>
+        <att name="CreationDate">05/22/2018 18:22:31</att>
+        <att name="Composite_start_date">12/24/2017</att>
+        <att name="Composite_end_date">12/31/2017</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@mail.usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@mail.usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">https://imars.marine.usf.edu</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_mean, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, latitude, local, longitude, mail.usf, ocean, ocean color, oceans, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">24N to 31N -98W to -88W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+        <att name="summary">Chlorophyll-a ANOM 7D vOC</att>
+        <att name="title">Chlorophyll-a ANOM 7D vOC</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : A2016001_2016007_7D_FGB_OC.nc-->
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_(\d{7})_7D_FGB_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>    
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>    
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_mean</sourceName>
+        <destinationName>chlor_a_mean</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlor A Anom</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+ 
+    
+
 <!-- sst anomaly -->
 <dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">	
     <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>	
 </dataset>	
+
     
 <!-- 
 =====================================================================
