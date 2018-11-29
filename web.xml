@@ -4,8 +4,11 @@
   https://hub.docker.com/r/axiom/docker-erddap/ (and presumably the upstream
   https://github.com/unidata/tomcat-docker) but with CORS headers added as
   described at
-  https://enable-cors.org/server_tomcat.html and
+  https://enable-cors.org/server_tomcat.html 
+  and
   http://tomcat.apache.org/tomcat-7.0-doc/config/filter.html#CORS_Filter
+  and especially
+  https://github.com/docker-library/tomcat/issues/58
 
   -------------------------------------------------------------------------
 
