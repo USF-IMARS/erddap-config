@@ -1105,7 +1105,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="standard_name">longitude</att>
             <att name="units">degrees_east</att>
         </addAttributes>
-    </dataVariable>
+    </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
@@ -1120,7 +1120,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="standard_name">latitude</att>
             <att name="units">degrees_north</att>
         </addAttributes>
-    </dataVariable>
+    </axisVariable>
     <dataVariable>
         <sourceName>mean</sourceName>
         <destinationName>mean</destinationName>
