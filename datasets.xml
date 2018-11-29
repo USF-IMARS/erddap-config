@@ -1375,7 +1375,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Longitude</att>
             <att name="standard_name">longitude</att>
             <att name="units">degrees_east</att>
-            <att name="scale_factor" type="float">-1</att>
+            <att name="scale_factor" type="double">-1</att>
         </addAttributes>
     </axisVariable>
     <axisVariable>
@@ -1391,7 +1391,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Latitude</att>
             <att name="standard_name">latitude</att>
             <att name="units">degrees_north</att>
-            <att name="scale_factor" type="float">-1</att>
+            <att name="scale_factor" type="double">-1</att>
         </addAttributes>
     </axisVariable>
     <dataVariable>
