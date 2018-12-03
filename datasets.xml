@@ -1351,6 +1351,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
+            <att name="valid_max" type="float">1099</att>
         </addAttributes>
     </axisVariable>    
     <axisVariable>
