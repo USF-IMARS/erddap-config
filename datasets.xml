@@ -1361,7 +1361,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
-            <att name="scale_factor" type="int">-1</att>
         </addAttributes>
     </axisVariable> -->
     <axisVariable>
@@ -1392,8 +1391,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Longitude</att>
             <att name="standard_name">longitude</att>
             <att name="units">degrees_east</att>
-            <att name="scale_factor" type="double">-1</att>
-            <att name="valid_min" type="double">-88.01200695334849</att>
         </addAttributes>
     </axisVariable>
     <dataVariable>
