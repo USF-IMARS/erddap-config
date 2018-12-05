@@ -1663,6 +1663,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="summary">FGBNMS 7 Day Sea Surface Temperature</att>
         <att name="title">Flower Garden Banks National Marine Sanctuary 7 Day Sea Surface Temperature</att>
     </addAttributes>
+    <axisVariable>
     <!-- exampple name AQUA_2002225_2002231_7D_FGB_SST4.nc-->
         <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FGB_SST4\.nc,2</sourceName>
         <destinationName>time</destinationName>
