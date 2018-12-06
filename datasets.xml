@@ -1704,7 +1704,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </addAttributes>
     <axisVariable>
     <!-- exampple name AQUA_2002225_2002231_7D_FGB_OC.nc-->
-        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FGB_OC\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,AQUA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
