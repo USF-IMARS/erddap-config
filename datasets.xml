@@ -822,7 +822,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="equator_radius_units">km</att>
         <att name="et_affine">null</att>
         <att name="history">Direct read of HDF4 file through CDM library</att>
-        <att name="infoUrl">https://imars.marine.usf.edu</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
         <att name="keywords">advanced, avhrr, avhrr_ch1, avhrr_ch2, azimuth, ch1, ch2, data, high, line, local, mcsst, optical, optical properties, properties, radiometer, rel, rel_azimuth, resolution, sample, sat, sat_zenith, source, temperature, very, zenith</att>
         <att name="license">[standard]</att>
@@ -1198,7 +1198,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">https://imars.marine.usf.edu</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
         <att name="keywords">adg443, adg443_anom, adg443_mean, anomaly, data, florida, img_x, img_y, latitude, local, longitude, mail.usf, mean, source, south, statistics, university, usf</att>
         <att name="Lat-Lon_Limits">null</att>
@@ -1305,7 +1305,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">https://imars.marine.usf.edu</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
         <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_mean, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, latitude, local, longitude, mail.usf, ocean, ocean color, oceans, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
@@ -1398,7 +1398,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">https://imars.marine.usf.edu</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
         <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, mail.usf, median, nflh, nflh_anom, nflh_median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
@@ -1588,7 +1588,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">https://imars.marine.usf.edu</att>
+        <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
         <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, mail.usf, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
@@ -1880,16 +1880,16 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@mail.usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
-        <att name="institution">MAIL.USF</att>
+        <att name="infoUrl">http://imars.marine.usf</att>
+        <att name="institution">USF IMaRS</att>
         <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, mail.usf, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.01N to 26N -85W to -79.0108W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
-        <att name="summary">MAIL.University of South Florida (USF) data from a local source.</att>
-        <att name="title">MAIL.USF data from a local source.</att>
+        <att name="summary">FK 7D Mean Sea Surface Temperature</att>
+        <att name="title">FK 7D Mean Sea Surface Temperature</att>
     </addAttributes>
     <axisVariable>
     <!-- exampple name AQUA_2018337_2018337_7D_FK_OC.nc-->
