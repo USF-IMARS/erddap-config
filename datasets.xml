@@ -1566,7 +1566,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_f0d3_1bc2_8172" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/modis_aqua_fk/MEAN_7D_AQUA/OC/</fileDir>
+    <fileDir>/srv/imars-objects/modis_aqua_fk/MEAN_7D_AQUA/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -1755,7 +1755,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_b24c_5823_8b7c" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/modis_aqua_fk/MEAN_7D_AQUA/SST4/</fileDir>
+    <fileDir>/srv/imars-objects/modis_aqua_fk/MEAN_7D_AQUA/SST4/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
