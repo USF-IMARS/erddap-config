@@ -75,7 +75,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="anom_9km_2b83_52f7_ef91" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/mbon/data_big/satellite/chlor_a/anom_9km/</fileDir>
+    <fileDir>/mbon_data_big/satellite/chlor_a/anom_9km/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
