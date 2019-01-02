@@ -75,7 +75,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="anom_9km_2b83_52f7_ef91" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mbon_data_big/satellite/chlor_a/anom_9km/</fileDir>
+    <fileDir>/srv/imars-objects/mbon/data_big/satellite/chlor_a/anom_9km/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -171,7 +171,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromNcFiles" datasetID="chlor_a_l3_pass_db6d_37b4_723b" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/chlor_a_l3_pass/</fileDir>
+    <fileDir>/srv/imars-objects/gom/chlor_a_l3_pass</fileDir>
     <fileNameRegex>.*\.hdf</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -932,7 +932,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="anom_27km_2379_64ca_f270" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mbon_data_big/satellite/chlor_a/anom_27km/</fileDir>
+    <fileDir>/srv/imars-objects/mbon/data_big/satellite/chlor_a/anom_27km/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
