@@ -1383,9 +1383,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : chlor_a_l3_pass_A2018251202000.hdf -->
         <sourceName>***fileName,timeFormat=yyyyDDDHHmmss,chlor_a_l3_pass_A(\d{13})\.hdf,1</sourceName>
         <destinationName>time</destinationName>
-        <sourceAttribute>
-            <att name="actual range" type="doubleList">1 365</att>
-        </sourceAttribute> 
+        <addAttributes>
+            <att name="actual_range" type="doubleList">2002185191000 2002365203000</att>
+        </addAttributes> 
     </axisVariable>
     <axisVariable>
         <sourceName>lat</sourceName>
