@@ -73,7 +73,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 -->
 <!-- ======================= MBON datasets ========================== -->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="anom_9km_2b83_52f7_ef91" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/mbon/data_big/satellite/chlor_a/anom_9km/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -747,7 +747,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
  
 <!-- FGBNMS Mean 7 Day OC ==================================================================================================-->    
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_e122_8547_dab0" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/modis_aqua_fgbnms/MEAN_7D_AQUA/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -969,7 +969,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     
  <!--FGBNMS 7 Day Sea Surface Temperature ================================================================================== -->   
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_9c29_08ac_eccb" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/modis_aqua_fgbnms/MEAN_7D_AQUA/SST4/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -1072,7 +1072,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     
 <!--FK 7 Day Mean Ocean Color ==============================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_f0d3_1bc2_8172" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/modis_aqua_fk/MEAN_7D_AQUA/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -1293,7 +1293,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     
 <!--FK 7D Mean Sea Surface Temperature =====================================================================================-->     
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_b24c_5823_8b7c" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/modis_aqua_fk/MEAN_7D_AQUA/SST4/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
