@@ -5,6 +5,7 @@ Content dir for [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/) i
 * [datasets.xml spec](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html)
 * [example content directory](https://github.com/BobSimons/erddapContent)
 * [updates to ERDDAP code](https://coastwatch.pfeg.noaa.gov/erddap/download/changes.html)
+* [IOOS "Gold Standard" Example configs](https://github.com/ioos/erddap-gold-standard)
 
 ## Adding a DataSet Checklist:
 0. connect to docker host: 
