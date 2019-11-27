@@ -383,7 +383,7 @@ think that reloading all of the datasets (cumulatively) should take
 This should always be much longer than loadDatasetsMinMinutes.
 The default is 60 minutes.  Some people will set this to longer.
 -->
-<loadDatasetsMaxMinutes>60</loadDatasetsMaxMinutes>
+<loadDatasetsMaxMinutes>600</loadDatasetsMaxMinutes>
 
 <!-- If the number of requests between two runs of LoadDatasets exceeds 
 unusualActivity, an email is sent to emailEverythingTo.
