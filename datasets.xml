@@ -1979,6 +1979,112 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </dataVariable>
 </dataset>
 
+<!-- modis aqua 7d sst4 ========================================================= -->
+<!-- NOTE! The source for SST4_aac4_99a3_6549 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="SST4_aac4_99a3_6549" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST4/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">04/07/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/09/2020 19:43:17</att>
+        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">MODIS-Aqua</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">USF data from a local source.</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sst4_median</sourceName>
+        <destinationName>sst4_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst4</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst4_anom</sourceName>
+        <destinationName>sst4_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst4_anomaly</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Surface Temperature Anomaly</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
     
 <!-- VIIRS Ocean Color ========================================================== -->
 !-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=6,
