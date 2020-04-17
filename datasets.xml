@@ -1748,6 +1748,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="title">USF data from a local source.</att>
     </addAttributes>
     <axisVariable>
+        <!-- example filename : MODA_2015316_2015322_7D_FK_OC.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
+    <axisVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
         <!-- sourceAttributes>
@@ -1922,6 +1927,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="title">USF data from a local source.</att>
     </addAttributes>
     <axisVariable>
+        <!-- example filename : MODA_2011155_2011161_7D_FK_SST.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_SST\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
+    <axisVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
         <!-- sourceAttributes>
@@ -2048,6 +2058,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Img X</att>
         </addAttributes>
     </axisVariable>
+    <axisVariable>
+        <!-- example filename : MODA_2020099_2020099_7D_FK_SST4.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_SST4\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
     <dataVariable>
         <sourceName>sst4_median</sourceName>
         <destinationName>sst4_median</destinationName>
@@ -2154,6 +2169,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
         </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <!-- example filename : VSNPP_2016050_2016056_7D_FK_OC.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
@@ -2275,6 +2295,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="summary">University of South Florida (USF) data from a local source.</att>
         <att name="title">USF data from a local source.</att>
     </addAttributes>
+    <axisVariable>
+        <!-- example filename : VSNPP_2018092_2018098_7D_FK_SST.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_SST\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+    </axisVariable>
     <axisVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
@@ -2401,6 +2426,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
         </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <!-- example filename : VSNPP_2018092_2018098_7D_FK_SSTN.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_SSTN\.nc,2</sourceName>
+        <destinationName>time</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sstn_median</sourceName>
