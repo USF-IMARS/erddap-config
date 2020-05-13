@@ -2,32 +2,32 @@
 <erddapDatasets>
 <!-- GENERAL INFORMATION
 The information in this file specifies which datasets your ERDDAP will serve.
-You can change this document (e.g., add datasets, change metadata) while ERDDAP is running. 
+You can change this document (e.g., add datasets, change metadata) while ERDDAP is running.
 The changes will be detected the next time this document is read
 (as often as setup.xml loadDatasetsMinMinutes).
 Each dataset has a reloadEveryNMinutes value (default = 10080 (one week)).
-When this document is reread, datasets that haven't been been reloaded in 
+When this document is reread, datasets that haven't been been reloaded in
 their reloadEveryNMinutes will be reloaded.
 If this document has an xml error, processing will stop and an email
 will be sent to emailEverythingTo as specified in setup.xml.
-If you want to remove a dataset while ERDDAP is running, add 
+If you want to remove a dataset while ERDDAP is running, add
     active="false"
 to the dataset tag.  For example,
     <dataset type="EDDGridFromDap" datasetID="erdMHchla8day" active="false">
-For more information, see 
+For more information, see
 https://coastwatch.pfel.noaa.gov/erddap/download/setupDatasetsXml.html
 -->
 <!-- If you want to refuse requests from certain clients
-  (e.g., to fend off a Denial of Service attack or an overly zealous web robot), 
-  add their numeric IP address (e.g., 123.45.67.89) to this comma-separated list. 
+  (e.g., to fend off a Denial of Service attack or an overly zealous web robot),
+  add their numeric IP address (e.g., 123.45.67.89) to this comma-separated list.
   You can also replace the last number in an IP address with * to block 0-255 (e.g., 123.45.67.*).
   See your ERDDAP daily report for a list/tally of the most active requesters. -->
 <requestBlacklist></requestBlacklist>
 
 <!-- Blacklisted IP addresses often have troublesome scripts that make
 rapid-fire, repeated, bad requests.
-With this setting, you can slow down the response to blacklisted IP addresses 
-or other failed requests by some number of milliseconds. 
+With this setting, you can slow down the response to blacklisted IP addresses
+or other failed requests by some number of milliseconds.
 Recommendations:
 * If the trouble is a Distributed Denial Of Service (DDOS) attack from 100+
   attackers, set this to a smaller number (0? 10? 100?).
@@ -39,33 +39,33 @@ Recommendations:
 <slowDownTroubleMillis>1000</slowDownTroubleMillis>
 
 <!-- If you want to prevent specific people from using the email/URL subscription
-     system, add their email addresses to this comma-separated list. 
+     system, add their email addresses to this comma-separated list.
      You can use the name "*" to blacklist an entire domain, e.g., *@example.com .
 -->
-<subscriptionEmailBlacklist>your.email@yourinstitution.edu, some.name@company.com, 
+<subscriptionEmailBlacklist>your.email@yourinstitution.edu, some.name@company.com,
 another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 
 <!-- For security reasons and reasons related to the subscription system, DON'T USE THIS!
 Instead, always use the public domain name in the <sourceUrl> tag
-and use the /etc/hosts table on your server to convert local domain names 
-to IP numbers without using a DNS server. 
+and use the /etc/hosts table on your server to convert local domain names
+to IP numbers without using a DNS server.
 (see http://man7.org/linux/man-pages/man5/hosts.5.html )
 You can test if a domain name is properly converted into an IP # by using:
   ping some.domain.name
 But if you insist:
-You can use <convertToPublicSourceUrl> tags to convert the local sourceUrl 
-(used in dataset tags) into the public sourceUrl (which appears in a 
+You can use <convertToPublicSourceUrl> tags to convert the local sourceUrl
+(used in dataset tags) into the public sourceUrl (which appears in a
 dataset's globalAttributes).
 This is only needed if some datasets use non-public sourceUrl's
-(usually because their computer is in your DMZ or a local LAN). 
+(usually because their computer is in your DMZ or a local LAN).
 'from' and 'to' are the start of the URLs and are case sensitive.
-'from' must be '[something]//[something]/' . 
+'from' must be '[something]//[something]/' .
 For example,
 <convertToPublicSourceUrl from="http://192.168.31.18/" to="http://oceanwatch.pfeg.noaa.gov/" />
 will cause a matching local sourceUrl (such as http://192.168.31.18/thredds/dodsC/satellite/BA/ssta/5day)
-into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/BA/ssta/5day). 
+into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/BA/ssta/5day).
 -->
-   
+
 <!--
 =====================================================================
 === === === IMaRS datasets
@@ -165,7 +165,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </dataVariable>
 </dataset>
-    
+
 <!-- ================== other IMaRS Data ============================ -->
 <!-- chlor_a_l3_pass (from airflow) =========================================================================================-->
 <dataset type="EDDGridFromNcFiles" datasetID="chlor_a_l3_pass_db6d_37b4_723b" active="true">
@@ -437,7 +437,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </dataVariable>
 </dataset>
 
-<!-- sst_avhrr_1km USF Regex======================================================================================================-->      
+<!-- sst_avhrr_1km USF Regex======================================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="sst_avhrr_1km_fe92_3143_5288" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -632,10 +632,14 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="missing_value" type="double">NaN</att>
         </addAttributes>
     </dataVariable>
-</dataset>    
+</dataset>
 
- <!-- sst_avhrr_1km Fullpass Regex==================================================================================================-->    
-    <dataset type="EDDGridFromNcFilesUnpacked" datasetID="sst_avhrr_1km_53f3_eede_5d2f" active="true">
+ <!-- sst_avhrr_1km Fullpass Regex==================================================================================================-->
+    <dataset
+        type="EDDGridFromNcFilesUnpacked"
+        datasetID="sst_avhrr_1km_53f3_eede_5d2f"
+        active="true"
+    >
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/gom/sst_avhrr_1km/</fileDir>
@@ -724,7 +728,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="et_affine">null</att>
         <att name="history">Direct read of HDF4 file through CDM library</att>
         <att name="infoUrl">???</att>
-        <att name="institution">???</att>
+        <att name="institution">USF IMaRS</att>
         <att name="keywords">advanced, avhrr, avhrr_ch1, avhrr_ch2, azimuth, ch1, ch2, data, high, line, local, mcsst, optical, optical properties, properties, radiometer, rel, rel_azimuth, resolution, sample, sat, sat_zenith, source, temperature, very, zenith</att>
         <att name="license">[standard]</att>
         <att name="line\\coord">null</att>
@@ -770,7 +774,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="start_time">null</att>
         <att name="start_time\\units">null</att>
         <att name="start_time_units">hhmmss</att>
-        <att name="summary">Data from a local source.</att>
+        <att name="summary">AVHRR MC SST 1km.</att>
         <att name="time_adjust\\units">null</att>
         <att name="time_adjust_units">hhmmss</att>
         <att name="title">Data from a local source.</att>
@@ -820,7 +824,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">albedo*100&#37;</att>
             <att name="valid_range" type="doubleList">NaN 327.67</att>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="add_offset_err">null</att>
             <att name="colorBarMaximum" type="double">100.0</att>
@@ -843,7 +847,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">albedo*100&#37;</att>
             <att name="valid_range" type="doubleList">NaN 327.67</att>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="add_offset_err">null</att>
             <att name="colorBarMaximum" type="double">100.0</att>
@@ -886,7 +890,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">degrees</att>
             <att name="valid_range" type="doubleList">NaN 327.67</att>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="add_offset_err">null</att>
             <att name="colorBarMaximum" type="double">327.67</att>
@@ -907,7 +911,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="scale_factor_err" type="double">0.0</att>
             <att name="units">degrees</att>
             <att name="valid_range" type="doubleList">NaN 327.67</att>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="add_offset_err">null</att>
             <att name="colorBarMaximum" type="double">327.67</att>
@@ -918,7 +922,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </dataVariable -->
 </dataset>
 
- <!-- =================== ANOM 7D IOP =======================================================================================-->   
+ <!-- =================== ANOM 7D IOP =======================================================================================-->
  <dataset type="EDDGridFromNcFiles" datasetID="ANOM_7D_vIOP_b290_684a_9ff0" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -979,7 +983,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
         </addAttributes>
-    </axisVariable>  
+    </axisVariable>
     <axisVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
@@ -989,10 +993,10 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
         </addAttributes>
-    </axisVariable> 
+    </axisVariable>
     <axisVariable>
         <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName> 
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1023,11 +1027,11 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </dataVariable>
 </dataset>
- 
 
 
- 
-<!-- FGBNMS Mean 7 Day OC ==================================================================================================-->    
+
+
+<!-- FGBNMS Mean 7 Day OC ==================================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_e122_8547_dab0" active="true">
     <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -1051,7 +1055,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="Lat-Lon_Limits">24.0111N to 31N -98W to -88.012W</att>
         <att name="Processing_and_binning">USF IMaRS</att>
         <att name="Contact">Dan Otis - dotis@mail.usf.edu</att>
-        <att name="CreationDate">12/05/2018 00:40:09</att>       
+        <att name="CreationDate">12/05/2018 00:40:09</att>
         <att name="Composite_start_date">12/03/2018</att>
         <att name="Composite_end_date">12/03/2018</att>
     </sourceAttributes -->
@@ -1094,7 +1098,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
         <!-- sourceAttributes>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
@@ -1104,7 +1108,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_x</sourceName>
         <destinationName>img_x</destinationName>
         <!-- sourceAttributes>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
@@ -1246,10 +1250,10 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </dataVariable>
 </dataset>
 
-    
 
-    
- <!--FGBNMS 7 Day Sea Surface Temperature ================================================================================== -->   
+
+
+ <!--FGBNMS 7 Day Sea Surface Temperature ================================================================================== -->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_9c29_08ac_eccb" active="true">
     <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -1350,8 +1354,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     </dataVariable>
 </dataset>
 
-    
-    
+
+
 <!--FK 7 Day Mean Ocean Color ==============================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_f0d3_1bc2_8172" active="true">
     <reloadEveryNMinutes>1440</reloadEveryNMinutes>
@@ -1419,7 +1423,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
         <!-- sourceAttributes>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
@@ -1429,7 +1433,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_x</sourceName>
         <destinationName>img_x</destinationName>
         <!-- sourceAttributes>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
@@ -1572,8 +1576,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 </dataset>
 
 
-    
-<!--FK 7D Mean Sea Surface Temperature =====================================================================================-->     
+
+<!--FK 7D Mean Sea Surface Temperature =====================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_b24c_5823_8b7c" active="true">
     <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -1640,7 +1644,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
         <!-- sourceAttributes>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
@@ -1650,7 +1654,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>img_x</sourceName>
         <destinationName>img_x</destinationName>
         <!-- sourceAttributes>
-        </sourceAttributes -- >
+        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
@@ -1693,15 +1697,808 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </dataVariable>
 </dataset>
-   
- 
-<!-- sst anomaly -->
-<dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">	
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>	
-</dataset>	
 
-    
-<!-- 
+
+<!-- sst anomaly -->
+<dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
+    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
+</dataset>
+
+<!-- Modis Ocean Color ================================================================ -->
+<dataset
+    type="EDDGridFromNcFiles"
+    datasetID="OC_c7fe_e1ee_913c"
+    active="true"
+>
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/OC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">04/05/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/06/2020 21:31:05</att>
+        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">MODIS-Aqua</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">Modis Ocean Color.</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : MODA_2015316_2015322_7D_FK_OC.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a_anomaly</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlor A Anom</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_median</sourceName>
+        <destinationName>ABI_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">ABI</att>
+            <att name="Units">W m^-2 um^-1 sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ABI Median</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_anom</sourceName>
+        <destinationName>ABI_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">ABI_anomaly</att>
+            <att name="Units">W m^-2 um^-1 sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ABI Anom</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_median</sourceName>
+        <destinationName>Rrs_667_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_667</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">-25000.035</att>
+            <att name="colorBarMinimum" type="double">-25000.055</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 667 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_anom</sourceName>
+        <destinationName>Rrs_667_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_667_anomaly</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 667 Anom</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
+<!-- Modis Aqua Sea Surface Temperature ======================================== -->
+<!-- NOTE! The source for SST_2963_b743_ee2e has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="SST_2963_b743_ee2e" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">03/31/2020</att>
+        <att name="Composite_start_date">03/25/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/03/2020 01:07:21</att>
+        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">MODIS-Aqua</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">MODIS Aqua Sea Surface Temperature</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : MODA_2011155_2011161_7D_FK_SST.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_SST\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sst_median</sourceName>
+        <destinationName>sst_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst_anom</sourceName>
+        <destinationName>sst_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst_anomaly</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Surface Temperature Anomaly</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<!-- modis aqua 7d sst4 ========================================================= -->
+<!-- NOTE! The source for SST4_aac4_99a3_6549 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="SST4_aac4_99a3_6549" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST4/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">04/07/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/09/2020 19:43:17</att>
+        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">MODIS-Aqua</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">MODIS Aqua 7d SST4.</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : MODA_2020099_2020099_7D_FK_SST4.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_SST4\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sst4_median</sourceName>
+        <destinationName>sst4_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst4</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst4_anom</sourceName>
+        <destinationName>sst4_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst4_anomaly</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Surface Temperature Anomaly</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<!-- VIIRS Ocean Color ========================================================== -->
+!-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=6,
+  but this dataset will only serve 4 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">04/01/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/02/2020 21:39:20</att>
+        <att name="Image_size">653 pixels(N-S) x 890 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">VIIRS-SNPP</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">USF data from a local source.</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : VSNPP_2016050_2016056_7D_FK_OC.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a_anomaly</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlor A Anom</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_median</sourceName>
+        <destinationName>Rrs_671_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_671</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 671 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_anom</sourceName>
+        <destinationName>Rrs_671_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_671_anomaly</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 671 Anom</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
+<!-- VIIRS Sea Surface Temperature -->
+<!-- NOTE! The source for SST_66bb_c258_cd59 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="SST_66bb_c258_cd59" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">04/01/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/02/2020 21:39:56</att>
+        <att name="Image_size">653 pixels(N-S) x 890 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">VIIRS-SNPP</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">VIIRS SST</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : VSNPP_2018092_2018098_7D_FK_SST.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_SST\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sst_median</sourceName>
+        <destinationName>sst_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst_anom</sourceName>
+        <destinationName>sst_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sst_anomaly</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Surface Temperature Anomaly</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<!-- VIIRS Sea Surface Temperature N -->
+<!-- NOTE! The source for SSTN_2f10_d542_b535 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">04/01/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/02/2020 21:40:29</att>
+        <att name="Image_size">653 pixels(N-S) x 890 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">VIIRS-SNPP</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sstn_anom, sstn_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">VIIRS SSTN.</att>
+    </addAttributes>
+    <axisVariable>
+        <!-- example filename : VSNPP_2018092_2018098_7D_FK_SSTN.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_SSTN\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sstn_median</sourceName>
+        <destinationName>sstn_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sstn</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sstn_anom</sourceName>
+        <destinationName>sstn_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">sstn_anomaly</att>
+            <att name="Units">DegC</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Surface Temperature Anomaly</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
+
+<!--
 =====================================================================
 === === === included demo datasets
 =====================================================================
@@ -1712,7 +2509,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromDap"    datasetID="erdTAsshl1day" active="false">
     <sourceUrl>https://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/TA/sshl/1day</sourceUrl>
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <addAttributes> 
+    <addAttributes>
         <att name="cols">null</att>
         <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
         <att name="creator_email">erd.data@noaa.gov</att>
@@ -1766,13 +2563,13 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
     <dataVariable>
         <sourceName>TAsshl</sourceName>
         <destinationName>ssh</destinationName>
-        <addAttributes> 
+        <addAttributes>
             <att name="ioos_category">Sea Level</att>
             <att name="long_name">Sea Surface Height</att>
             <att name="colorBarMinimum" type="double">-10</att>
             <att name="colorBarMaximum" type="double">10</att>
-            <att name="actual_range" /> 
-            <att name="numberOfObservations" /> 
+            <att name="actual_range" />
+            <att name="numberOfObservations" />
             <att name="percentCoverage" />
         </addAttributes>
     </dataVariable>
@@ -1780,7 +2577,7 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
 <dataset type="EDDGridFromDap" datasetID="erdTAsshd1day">
     <sourceUrl>https://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/TA/sshd/1day</sourceUrl>
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <addAttributes> 
+    <addAttributes>
         <att name="Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
         <att name="Metadata_Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
         <att name="infoUrl">https://coastwatch.pfeg.noaa.gov/infog/TA_sshd_las.html</att>
@@ -1788,7 +2585,7 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
         <att name="standard_name_vocabulary">CF-12</att>
         <att name="title">Sea Surface Height Deviation, Aviso, Global, Science Quality (1 Day Composite)</att>
         <att name="cwhdf_version" />
-        <att name="cols" />  
+        <att name="cols" />
         <att name="et_affine" />
         <att name="gctp_datum" />
         <att name="gctp_parm" />
@@ -1800,7 +2597,7 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
         <att name="polygon_longitude" />
         <att name="rows" />
         <att name="start_time" />
-        <att name="time_coverage_end" />  
+        <att name="time_coverage_end" />
         <att name="time_coverage_start" />
     </addAttributes>
     <axisVariable>
@@ -1820,13 +2617,13 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
     <dataVariable>
         <sourceName>TAsshd</sourceName>
         <destinationName>sshd</destinationName>
-        <addAttributes> 
+        <addAttributes>
             <att name="ioos_category">Sea Level</att>
             <att name="long_name">Sea Surface Height Deviation</att>
             <att name="colorBarMinimum" type="double">-0.5</att>
             <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="actual_range" /> 
-            <att name="numberOfObservations" /> 
+            <att name="actual_range" />
+            <att name="numberOfObservations" />
             <att name="percentCoverage" />
         </addAttributes>
     </dataVariable>
@@ -1946,10 +2743,10 @@ ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
 </dataset>
 
 <!-- Aquarius -->
-<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSS7DayV5" active="false">	
-    <!-- Aquarius Sea Surface Salinity, Version 5, Global, 7-Day -->	
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplAquariusSSS7DayV5</sourceUrl>	
-</dataset>	
+<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSS7DayV5" active="false">
+    <!-- Aquarius Sea Surface Salinity, Version 5, Global, 7-Day -->
+    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplAquariusSSS7DayV5</sourceUrl>
+</dataset>
 
 <!-- Here are some excellent tabular datasets that you can include in your ERDDAP
      via EDDTableFromErddap links. All requests for actual data from these
