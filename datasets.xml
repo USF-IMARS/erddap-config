@@ -812,7 +812,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="ioos_category">Unknown</att>
         </addAttributes>
     </axisVariable>
-    <!-- dataVariable>
+    <dataVariable>
         <sourceName>avhrr_ch1</sourceName>
         <destinationName>avhrr_ch1</destinationName>
         <dataType>double</dataType>
