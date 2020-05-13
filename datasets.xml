@@ -961,7 +961,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">adg443, adg443_anom, adg443_mean, anomaly, data, florida, img_x, img_y, latitude, local, longitude, mail.usf, mean, source, south, statistics, university, usf</att>
+        <att name="keywords">adg443, adg443_anom, adg443_mean, anomaly, data, florida, latitude, local, longitude, mail.usf, mean, source, south, statistics, university, usf</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">24N to 31N -98W to -88W</att>
         <att name="license">[standard]</att>
@@ -973,26 +973,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : A2016001_2016007_7D_FGB_IOP.nc-->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_(\d{7})_7D_FGB_IOP\.nc,2</sourceName>
         <destinationName>time</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>longitude</sourceName>
@@ -1069,7 +1049,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, mail.usf, median, nflh, nflh_anom, nflh_median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, local, mail.usf, median, nflh, nflh_anom, nflh_median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">24.0111N to 31N -98W to -88.012W</att>
@@ -1094,26 +1074,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
     </axisVariable>
-    <!-- <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </axisVariable> -->
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
@@ -1291,7 +1251,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, mail.usf, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, land, local, mail.usf, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">24.0111N to 31N -98W to -88.012W</att>
@@ -1394,7 +1354,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">http://imars.marine.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, mail.usf, median, nflh, nflh_anom, nflh_median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, local, mail.usf, median, nflh, nflh_anom, nflh_median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.01N to 26N -85W to -79.0108W</att>
@@ -1419,26 +1379,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
     </axisVariable>
-   <!-- <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </axisVariable> -->
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
@@ -1615,7 +1555,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">http://imars.marine.usf</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, mail.usf, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, land, local, mail.usf, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.01N to 26N -85W to -79.0108W</att>
@@ -1640,26 +1580,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
     </axisVariable>
-    <!-- <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </axisVariable> -->
     <dataVariable>
         <sourceName>sst4_median</sourceName>
         <destinationName>sst4_median</destinationName>
@@ -1746,7 +1666,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
@@ -1764,24 +1684,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
@@ -1928,7 +1836,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
@@ -1946,24 +1854,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sst_median</sourceName>
@@ -2043,7 +1939,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
@@ -2061,24 +1957,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sst4_median</sourceName>
@@ -2158,7 +2042,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">USF</att>
-        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
@@ -2176,24 +2060,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
@@ -2306,7 +2178,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
@@ -2324,24 +2196,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sst_median</sourceName>
@@ -2421,7 +2281,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sstn_anom, sstn_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sstn_anom, sstn_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
@@ -2439,24 +2299,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sstn_median</sourceName>
