@@ -857,7 +857,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="scale_factor_err">null</att>
             <att name="units">albedo00percent</att>
         </addAttributes>
-    </dataVariable
+    </dataVariable>
     <dataVariable>
         <sourceName>mcsst</sourceName>
         <destinationName>mcsst</destinationName>
