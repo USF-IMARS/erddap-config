@@ -878,7 +878,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="scale_factor_err">null</att>
         </addAttributes>
     </dataVariable>
-    <!--<dataVariable>
+    <dataVariable>
         <sourceName>rel_azimuth</sourceName>
         <destinationName>rel_azimuth</destinationName>
         <dataType>double</dataType>
