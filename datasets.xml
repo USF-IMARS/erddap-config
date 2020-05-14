@@ -839,7 +839,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>avhrr_ch2</sourceName>
         <destinationName>avhrr_ch2</destinationName>
         <dataType>double</dataType>
-        <! -- sourceAttributes>
+        <!-- sourceAttributes>
             <att name="_FillValue" type="double">NaN</att>
             <att name="add_offset_err" type="double">0.0</att>
             <att name="calibrated_nt" type="int">22</att>
