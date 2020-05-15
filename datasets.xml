@@ -919,7 +919,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
             <att name="long_name">Sat Zenith</att>
             <att name="scale_factor_err">null</att>
         </addAttributes>
-    </dataVariable -->
+    </dataVariable>
 </dataset>
 
  <!-- =================== ANOM 7D IOP =======================================================================================-->
