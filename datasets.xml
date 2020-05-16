@@ -1684,12 +1684,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
@@ -1854,12 +1854,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sst_median</sourceName>
@@ -1957,12 +1957,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sst4_median</sourceName>
@@ -2060,12 +2060,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
@@ -2196,12 +2196,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sst_median</sourceName>
@@ -2299,12 +2299,12 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <axisVariable>
         <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>sstn_median</sourceName>
