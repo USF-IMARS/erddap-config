@@ -777,7 +777,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="summary">AVHRR MC SST 1km.</att>
         <att name="time_adjust\\units">null</att>
         <att name="time_adjust_units">hhmmss</att>
-        <att name="title">Data from a local source.</att>
+        <att name="title">AVHRR 1km SST fullpass.</att>
         <att name="use_orbele\\units">null</att>
         <att name="use_orbele_units">boolean</att>
     </addAttributes>
@@ -2049,7 +2049,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
         <att name="summary">University of South Florida (USF) data from a local source.</att>
-        <att name="title">USF data from a local source.</att>
+        <att name="title">VIIRS Ocean Color.</att>
     </addAttributes>
     <axisVariable>
         <!-- example filename : VSNPP_2016050_2016056_7D_FK_OC.nc -->
