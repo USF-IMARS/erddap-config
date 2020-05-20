@@ -2018,7 +2018,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 !-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=6,
   but this dataset will only serve 4 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2155,7 +2155,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SST_66bb_c258_cd59 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SST_66bb_c258_cd59" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2259,7 +2259,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SSTN_2f10_d542_b535 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
