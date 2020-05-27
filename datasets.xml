@@ -120,6 +120,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_9km.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_9km\.nc,2</sourceName>
         <destinationName>time</destinationName>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -202,6 +203,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : chlor_a_l3_pass_A2018251202000.hdf -->
         <sourceName>***fileName,timeFormat=yyyyDDDHHmmss,chlor_a_l3_pass_A(\d{13})\.hdf,1</sourceName>
         <destinationName>time</destinationName>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>lat</sourceName>
@@ -590,6 +592,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>sample</sourceName>
@@ -791,6 +794,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>line</sourceName>
@@ -973,6 +977,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : A2016001_2016007_7D_FGB_IOP.nc-->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_(\d{7})_7D_FGB_IOP\.nc,2</sourceName>
         <destinationName>time</destinationName>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>longitude</sourceName>
@@ -1065,6 +1070,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1267,6 +1273,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1370,6 +1377,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1571,6 +1579,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1682,6 +1691,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1852,6 +1862,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1955,6 +1966,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2006,7 +2018,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 !-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=6,
   but this dataset will only serve 4 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2058,6 +2070,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2142,7 +2155,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SST_66bb_c258_cd59 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SST_66bb_c258_cd59" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2194,6 +2207,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2245,7 +2259,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SSTN_2f10_d542_b535 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2297,6 +2311,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <addAttributes>
             <att name="ioos_category">Unknown</att>
         </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2343,411 +2358,340 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </dataVariable>
 </dataset>
-
-
-
-<!--
-=====================================================================
-=== === === included demo datasets
-=====================================================================
--->
-
-<!-- For EDDGridSideBySide, the datasetID's for the parent and the children must be different. -->
-<dataset type="EDDGridSideBySide" datasetID="erdTAssh1day" active="false">
-<dataset type="EDDGridFromDap"    datasetID="erdTAsshl1day" active="false">
-    <sourceUrl>https://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/TA/sshl/1day</sourceUrl>
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+<!-- MODIS ABI for FWC coral dashboard project -->
+<!-- NOTE! The source for OC_c7fe_e1ee_913c has nGridVariables=8,
+  but this dataset will only serve 6 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="OC_c7fe_e1ee_913c" active="true">
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/OC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">05/26/2020</att>
+        <att name="Composite_start_date">05/20/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">05/27/2020 05:00:55</att>
+        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">MODIS-Aqua</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
     <addAttributes>
-        <att name="cols">null</att>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
         <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">erd.data@noaa.gov</att>
-        <att name="creator_name">NOAA NMFS SWFSC ERD</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="creator_url">https://www.pfeg.noaa.gov</att>
-        <att name="cwhdf_version">null</att>
-        <att name="et_affine">null</att>
-        <att name="gctp_datum">null</att>
-        <att name="gctp_parm">null</att>
-        <att name="gctp_sys">null</att>
-        <att name="gctp_zone">null</att>
-        <att name="id">null</att>
-        <att name="infoUrl">https://coastwatch.pfeg.noaa.gov/infog/TA_sshl_las.html</att>
-        <att name="institution">NOAA NMFS SWFSC ERD</att>
-        <att name="keywords">above, absolute, altitude, archiving, aviso, coast, coastwatch, data, degrees, earth, geodetics, geoid, global, gravity, height, interpretation, level, long, ltm, mean, noaa, node, ocean, oceanography, oceans,
-Earth Science &gt; Oceans &gt; Sea Surface Topography &gt; Sea Surface Height,
-properties, quality, satellite, science, science quality, sea, sea level, sea_surface_height_above_geoid, solid,
-Earth Science &gt; Solid Earth &gt; Geodetics/Gravity &gt; Geoid Properties,
-ssh, surface, TAsshl, term, time, topography, validation, wcn, west</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
         <att name="license">[standard]</att>
-        <att name="naming_authority">gov.noaa.pfeg.coastwatch</att>
-        <att name="pass_date">null</att>
-        <att name="polygon_latitude">null</att>
-        <att name="polygon_longitude">null</att>
-        <att name="project">CoastWatch (https://coastwatch.noaa.gov/)</att>
-        <att name="publisher_email">erd.data@noaa.gov</att>
-        <att name="publisher_name">NOAA NMFS SWFSC ERD</att>
-        <att name="publisher_type">institution</att>
-        <att name="publisher_url">https://www.pfeg.noaa.gov</att>
-        <att name="references">Aviso: https://www.aviso.altimetry.fr/en/my-aviso.html .</att>
-        <att name="rows">null</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
-        <att name="start_time">null</att>
-        <att name="title">Sea Surface Height, Absolute, Aviso, 0.25 degrees, Global, 1992-2012, Science Quality (1 Day Composite)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">MODIS ABI.</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>time</sourceName>
+        <!-- example filename : MODA_2020141_2020147_7D_FK_OC.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
-        <sourceName>altitude</sourceName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>lat</sourceName>
+        <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>lon</sourceName>
+        <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
-        <sourceName>TAsshl</sourceName>
-        <destinationName>ssh</destinationName>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
         <addAttributes>
-            <att name="ioos_category">Sea Level</att>
-            <att name="long_name">Sea Surface Height</att>
-            <att name="colorBarMinimum" type="double">-10</att>
-            <att name="colorBarMaximum" type="double">10</att>
-            <att name="actual_range" />
-            <att name="numberOfObservations" />
-            <att name="percentCoverage" />
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a_anomaly</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlor A Anom</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_median</sourceName>
+        <destinationName>ABI_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">ABI</att>
+            <att name="Units">W m^-2 um^-1 sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ABI Median</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_anom</sourceName>
+        <destinationName>ABI_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">ABI_anomaly</att>
+            <att name="Units">W m^-2 um^-1 sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ABI Anom</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_median</sourceName>
+        <destinationName>Rrs_667_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_667</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">-25000.035</att>
+            <att name="colorBarMinimum" type="double">-25000.055</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 667 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_anom</sourceName>
+        <destinationName>Rrs_667_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_667_anomaly</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 667 Anom</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
         </addAttributes>
     </dataVariable>
 </dataset>
-<dataset type="EDDGridFromDap" datasetID="erdTAsshd1day">
-    <sourceUrl>https://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/TA/sshd/1day</sourceUrl>
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+<!-- VIIRS kd490 for FWC coral disease dashboard -->
+<!-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=8,
+  but this dataset will only serve 6 because the others use different dimensions. -->
+<dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
+    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="Composite_end_date">05/26/2020</att>
+        <att name="Composite_start_date">05/20/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">05/27/2020 05:01:53</att>
+        <att name="Image_size">653 pixels(N-S) x 890 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">VIIRS-SNPP</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes -->
     <addAttributes>
-        <att name="Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
-        <att name="Metadata_Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
-        <att name="infoUrl">https://coastwatch.pfeg.noaa.gov/infog/TA_sshd_las.html</att>
-        <att name="institution">NOAA CoastWatch, West Coast Node</att>
-        <att name="standard_name_vocabulary">CF-12</att>
-        <att name="title">Sea Surface Height Deviation, Aviso, Global, Science Quality (1 Day Composite)</att>
-        <att name="cwhdf_version" />
-        <att name="cols" />
-        <att name="et_affine" />
-        <att name="gctp_datum" />
-        <att name="gctp_parm" />
-        <att name="gctp_sys" />
-        <att name="gctp_zone" />
-        <att name="id" />
-        <att name="pass_date" />
-        <att name="polygon_latitude" />
-        <att name="polygon_longitude" />
-        <att name="rows" />
-        <att name="start_time" />
-        <att name="time_coverage_end" />
-        <att name="time_coverage_start" />
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, Kd_490_anom, Kd_490_median, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">23.0072N to 27.4N -85W to -79.0105W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="title">VIIRS kd490.</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>time</sourceName>
+        <!-- example filename : VSNPP_2020141_2020147_7D_FK_OC.nc -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
-        <sourceName>altitude</sourceName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>lat</sourceName>
+        <sourceName>latitude</sourceName>
         <destinationName>latitude</destinationName>
     </axisVariable>
     <axisVariable>
-        <sourceName>lon</sourceName>
+        <sourceName>longitude</sourceName>
         <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
-        <sourceName>TAsshd</sourceName>
-        <destinationName>sshd</destinationName>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
         <addAttributes>
-            <att name="ioos_category">Sea Level</att>
-            <att name="long_name">Sea Surface Height Deviation</att>
-            <att name="colorBarMinimum" type="double">-0.5</att>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="actual_range" />
-            <att name="numberOfObservations" />
-            <att name="percentCoverage" />
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">chlor_a_anomaly</att>
+            <att name="Units">mg m^-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlor A Anom</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_median</sourceName>
+        <destinationName>Rrs_671_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_671</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 671 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_anom</sourceName>
+        <destinationName>Rrs_671_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Rrs_671_anomaly</att>
+            <att name="Units">sr^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs 671 Anom</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_median</sourceName>
+        <destinationName>Kd_490_median</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Kd_490</att>
+            <att name="Units">m^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd 490 Median</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="Product">Kd_490_anomaly</att>
+            <att name="Units">m^-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd 490 Anom</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
         </addAttributes>
     </dataVariable>
 </dataset>
-</dataset>
-
-<!-- Here are some excellent gridded datasets that you can include in your ERDDAP
-     via EDDGridFromErddap links. All requests for actual data from these
-     datasets get rerouted to the source server. -->
-
-<!-- JPL High Resolution SST -->
-<dataset type="EDDGridFromErddap" datasetID="jplG1SST" active="false">
-    <!-- GHRSST Global 1-km Sea Surface Temperature (G1SST), Global, 0.01 Degree, Daily -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplG1SST</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="jplMURSST41" active="false">
-    <!-- Multi-scale Ultra-high Resolution (MUR) SST analysis fv04.1, Global, 0.011 Degree, Daily -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41</sourceUrl>
-</dataset>
-
-<!-- NAVGEM -->
-<dataset type="EDDGridFromErddap" datasetID="erdNavgem05D10mWind_LonPM180" active="false">
-    <!-- Navy Global Environmental Model (NAVGEM), 0.5 degree, 10 m Wind -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D10mWind_LonPM180</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdNavgem05D20mWind_LonPM180" active="false">
-    <!-- Navy Global Environmental Model (NAVGEM), 0.5 degree, 20 m Wind -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D20mWind_LonPM180</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdNavgem05D500mb_LonPM180" active="false">
-    <!-- Navy Global Environmental Model (NAVGEM), 0.5 degree, 500 hPa Height -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D500mb_LonPM180</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdNavgem05DPres_LonPM180" active="false">
-    <!-- Navy Global Environmental Model (NAVGEM), 0.5 degree, Pressure MSL -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05DPres_LonPM180</sourceUrl>
-</dataset>
-
-<!-- NCDC Ocean Winds -->
-<dataset type="EDDGridFromErddap" datasetID="ncdcOwClm9505_LonPM180" active="false">
-    <!-- NOAA/NCDC Blended 0.25-degree Sea Winds, Climatological Monthly Means -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOwClm9505_LonPM180</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="ncdcOwMon_LonPM180" active="false">
-    <!-- NOAA/NCDC Blended Monthly 0.25-degree Sea Surface Winds -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOwMon_LonPM180</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="ncdcOwMonStrs_LonPM180" active="false">
-    <!-- NOAA/NCDC Blended Monthly 0.25-degree Sea Surface Wind Stress -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOwMonStrs_LonPM180</sourceUrl>
-</dataset>
-
-<!-- Miami Currents -->
-<dataset type="EDDGridFromErddap" datasetID="miamicurrents" active="false">
-  <defaultGraphQuery>&amp;.draw=vectors</defaultGraphQuery>
-  <sourceUrl>http://cwcgom.aoml.noaa.gov/erddap/griddap/miamicurrents</sourceUrl>
-</dataset>
-
-<!-- Aqua MODIS -->
-<dataset type="EDDGridFromErddap" datasetID="erdMH1cflh1day" active="false">
-    <!-- Fluorescense Line Height, Aqua MODIS, NPP, L3SMI, Global, Science Quality (1 Day Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1cflh1day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1cflh8day" active="false">
-    <!-- Fluorescense Line Height, Aqua MODIS, NPP, L3SMI, Global, Science Quality (8 Day Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1cflh8day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1cflhmday" active="false">
-    <!-- Fluorescense Line Height, Aqua MODIS, NPP, L3SMI, Global, Science Quality (Monthly Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1cflhmday</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1chla1day" active="false">
-    <!-- Chlorophyll-a, Aqua MODIS, NPP, L3SMI, Global, Science Quality (1 Day Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1chla1day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1chla8day" active="false">
-    <!-- Chlorophyll-a, Aqua MODIS, NPP, L3SMI, Global, Science Quality (8 Day Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1chla8day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1chlamday" active="false">
-    <!-- Chlorophyll-a, Aqua MODIS, NPP, L3SMI, Global, Science Quality (Monthly Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1chlamday</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1kd4908day" active="false">
-    <!-- Diffuse Attenuation K490, Aqua MODIS, NPP, L3SMI, Global, Science Quality (8 Day Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1kd4908day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1par08day" active="false">
-    <!-- Photosynthetically Available Radiation, Aqua MODIS, NPP, L3SMI, Global, Science Quality (8 Day Composite) -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1par08day</sourceUrl>
-</dataset>
-
-<!-- VIIRS -->
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018chla8day" active="false">
-    <!-- VIIRSN, Suomi-NPP, Level-3 SMI, Global, 4km, Chlorophyll a, Evaluation Data, 8-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018chla8day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018k4908day" active="false">
-    <!-- VIIRSN, Suomi-NPP, Level-3 SMI, Global, 4km, K490, Evaluation Data, 8-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018k4908day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018par8day" active="false">
-    <!-- VIIRSN, Suomi-NPP, Level-3 SMI, Global, 4km, PAR, Evaluation Data, 8-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018par8day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018pic8day" active="false">
-    <!-- VIIRSN, Suomi-NPP, Level-3 SMI, Global, 4km, PIC, Evaluation Data, 8-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018pic8day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018poc8day" active="false">
-    <!-- VIIRSN, Suomi-NPP, Level-3 SMI, Global, 4km, POC, Evaluation Data, 8-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018poc8day</sourceUrl>
-</dataset>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018r6718day" active="false">
-    <!-- VIIRSN, Suomi-NPP, Level-3 SMI, Global, 4km, Reflectance at 671 nm, Evaluation Data, 8-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018r6718day</sourceUrl>
-</dataset>
-
-<!-- Aquarius -->
-<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSS7DayV5" active="false">
-    <!-- Aquarius Sea Surface Salinity, Version 5, Global, 7-Day -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplAquariusSSS7DayV5</sourceUrl>
-</dataset>
-
-<!-- Here are some excellent tabular datasets that you can include in your ERDDAP
-     via EDDTableFromErddap links. All requests for actual data from these
-     datasets get rerouted to the source server. -->
-<dataset type="EDDTableFromErddap" datasetID="cwwcNDBCMet" active="false">
-    <!-- NDBC Standard Meteorological Buoy Data -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/cwwcNDBCMet</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="erdGtsppBest" active="false">
-    <!-- Global Temperature and Salinity Profile Programme (GTSPP) Data -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/erdGtsppBest</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyAdcp" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, ADCP -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyAdcp</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyAirt" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Air Temperature -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyAirt</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyBf" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Buoyancy Flux -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyBf</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyBp" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Barometric (Air) Pressure -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyBp</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyCur" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Currents -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyCur</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyD" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Potential Density Anomaly -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyD</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyDyn" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Dynamic Height -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyDyn</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyEmp" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Evaporation Minus Precipitation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyEmp</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyEvap" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Evaporation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyEvap</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyHeat" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Heat Content -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyHeat</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyIso" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, 20C Isotherm Depth -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyIso</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyLw" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Longwave Radiation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyLw</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyLwnet" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Net Longwave Radiation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyLwnet</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyPos" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Position -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyPos</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyQlat" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Latent Heat Flux -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyQlat</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyQnet" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Total Heat Flux -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyQnet</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyQsen" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Sensible Heat Flux -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyQsen</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyRad" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Downgoing Shortwave Radiation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyRad</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyRain" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Precipitation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyRain</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyRf" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Heat Flux Due To Rain -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyRf</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyRh" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Relative Humidity -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyRh</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyS" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Salinity -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyS</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDySsd" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Sigma-Theta -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDySsd</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDySss" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Sea Surface Salinity -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDySss</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDySst" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Sea Surface Temperature -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDySst</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDySwnet" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Net Shortwave Radiation -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDySwnet</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyT" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Temperature -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyT</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyTau" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Wind Stress -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyTau</sourceUrl>
-</dataset>
-<dataset type="EDDTableFromErddap" datasetID="pmelTaoDyW" active="false">
-    <!-- TAO/TRITON, RAMA, and PIRATA Buoys, Daily, Wind -->
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/tabledap/pmelTaoDyW</sourceUrl>
-</dataset>
-
-<!-- removed demo datasets -->
-<dataset type="EDDGridFromEtopo" datasetID="etopo180" active="false"/>
-<dataset type="EDDGridFromEtopo" datasetID="etopo360" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="ncdcOw6hr_LonPM180" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="ncdcOwDly_LonPM180" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="ncdcOwDlyStrs_LonPM180" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1kd4901day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1kd490mday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1par01day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdMH1par0mday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018chla1day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018chlamday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018k4901day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018k490mday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018par1day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018parmday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018pic1day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018picmday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018poc1day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018pocmday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018r6711day" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="erdVH2018r671mday" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSS3MonthV5" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSSDailyV5" active="false"/>
-<dataset type="EDDGridFromErddap" datasetID="jplAquariusSSSMonthlyV5" active="false"/>
-
 </erddapDatasets>
