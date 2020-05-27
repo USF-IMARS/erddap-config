@@ -120,7 +120,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : A20181822018212_chlor_a_MO_ANOM_GLOB_9km.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})(\d{7})_chlor_a_MO_ANOM_GLOB_9km\.nc,2</sourceName>
         <destinationName>time</destinationName>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <addAttributes>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -203,7 +205,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : chlor_a_l3_pass_A2018251202000.hdf -->
         <sourceName>***fileName,timeFormat=yyyyDDDHHmmss,chlor_a_l3_pass_A(\d{13})\.hdf,1</sourceName>
         <destinationName>time</destinationName>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <addAttributes>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>lat</sourceName>
@@ -591,8 +595,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>sample</sourceName>
@@ -793,8 +797,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>line</sourceName>
@@ -977,7 +981,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <!-- example filename : A2016001_2016007_7D_FGB_IOP.nc-->
         <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_(\d{7})_7D_FGB_IOP\.nc,2</sourceName>
         <destinationName>time</destinationName>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <addAttributes>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
     </axisVariable>
     <axisVariable>
         <sourceName>longitude</sourceName>
@@ -1069,8 +1075,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1272,8 +1278,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1376,8 +1382,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1578,8 +1584,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1690,8 +1696,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1861,8 +1867,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -1965,8 +1971,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2069,8 +2075,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2206,8 +2212,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2310,8 +2316,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2413,8 +2419,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
@@ -2582,8 +2588,8 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
     </axisVariable>
     <axisVariable>
         <sourceName>latitude</sourceName>
