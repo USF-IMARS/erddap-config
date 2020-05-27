@@ -2397,7 +2397,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
         <att name="infoUrl">???</att>
-        <att name="institution">USF</att>
+        <att name="institution">USF IMaRS</att>
         <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
@@ -2405,7 +2405,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
         <att name="summary">University of South Florida (USF) data from a local source.</att>
-        <att name="title">USF data from a local source.</att>
+        <att name="title">MODIS ABI.</att>
     </addAttributes>
     <axisVariable>
         <!-- example filename : MODA_2020141_2020147_7D_FK_OC.nc -->
