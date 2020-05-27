@@ -2015,7 +2015,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 </dataset>
 
 <!-- VIIRS Ocean Color ========================================================== -->
-!-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=6,
+<!-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=6,
   but this dataset will only serve 4 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
     <reloadEveryNMinutes>2880</reloadEveryNMinutes>
