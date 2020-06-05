@@ -2275,7 +2275,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
         <att name="summary">University of South Florida (USF) data from a local source.</att>
-        <att name="title">VIIRS kd490.</att>
+        <att name="title">VIIRS Ocean Color.</att>
     </addAttributes>
     <axisVariable>
         <!-- example filename : VSNPP_2020141_2020147_7D_FK_OC.nc -->
