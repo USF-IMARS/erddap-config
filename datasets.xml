@@ -1331,7 +1331,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 
 <!--FK 7 Day Mean Ocean Color ==============================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_f0d3_1bc2_8172" active="true">
-    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/modis_aqua_fk/MEAN_7D_AQUA/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -1533,7 +1533,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 
 <!--FK 7D Mean Sea Surface Temperature =====================================================================================-->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_b24c_5823_8b7c" active="true">
-    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/modis_aqua_fk/MEAN_7D_AQUA/SST4/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -1646,7 +1646,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     datasetID="OC_c7fe_e1ee_913c"
     active="true"
 >
-    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -1817,7 +1817,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SST_2963_b743_ee2e has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SST_2963_b743_ee2e" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -1921,7 +1921,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SST4_aac4_99a3_6549 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SST4_aac4_99a3_6549" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST4/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2025,7 +2025,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SST_66bb_c258_cd59 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SST_66bb_c258_cd59" active="true">
-    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2129,7 +2129,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for SSTN_2f10_d542_b535 has nGridVariables=4,
   but this dataset will only serve 2 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
-    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -2232,7 +2232,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <!-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=8,
   but this dataset will only serve 6 because the others use different dimensions. -->
 <dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
-    <reloadEveryNMinutes>2880</reloadEveryNMinutes>
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
