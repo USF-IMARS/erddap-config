@@ -2,9 +2,14 @@
 version: '3.3'
 
 services:
-  # docker run -d -p 8080:8080 --name erddap axiom/docker-erddap
+  # docker run -d -p 8080:8080 --name erddap axiom/docker-erddap -e ERDDAP_MEMORY=64G --volumes ...
   erddap:
     container_name: erddap
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    environment:
+      - ERDDAP_MEMORY=64G  # default is 4G
     volumes:
       #- ./erddap/erddap_data:/erddapData
       # erddap content incl. setup.xml & dataset.xml :
@@ -28,8 +33,3 @@ services:
       - '/srv/imars-objects/fk/MEAN_7D_VSNPP/OC:/srv/imars-objects/fk/MEAN_7D_VSNPP/OC'
       - '/srv/imars-objects/fk/MEAN_7D_VSNPP/SST:/srv/imars-objects/fk/MEAN_7D_VSNPP/SST'
       - '/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN:/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN'
-    restart: unless-stopped
-    ports:
-      - 8080:8080
- # sudo docker exec -it erddap bash -c "cd /usr/local/tomcat/webapps/erddap/WEB-INF && bash GenerateDatasetsXml.sh -verbose"
-
