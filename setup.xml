@@ -31,7 +31,7 @@ For ERD releases, we use
 If you want to encourage all users to use https (not http),
   make the baseUrl the same as the baseHttpsUrl (see below).
 -->
-<baseUrl>http://http://131.247.136.200:8080</baseUrl>
+<baseUrl>http://131.247.136.200:8080</baseUrl>
 
 
 <!-- Daily status reports and all error messages are emailed to emailEverythingTo.
