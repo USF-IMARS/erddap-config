@@ -10,6 +10,7 @@ services:
       - 8080:8080
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
+    image: axiom/docker-erddap
     volumes:
       #- ./erddap/erddap_data:/erddapData
       # erddap content incl. setup.xml & dataset.xml :
@@ -21,7 +22,6 @@ services:
       - '/srv/imars-objects/gom/chlor_a_l3_pass:/srv/imars-objects/gom/chlor_a_l3_pass'
       - '/srv/imars-objects/mbon/data_big:/srv/imars-objects/mbon/data_big'
       - '/srv/imars-objects/gom/sst_avhrr_1km:/srv/imars-objects/gom/sst_avhrr_1km'
-      - 'gom:/gom_vol'  # TODO: this not working
       - '/srv/imars-objects/modis_aqua_fgbnms:/srv/imars-objects/modis_aqua_fgbnms'
       - '/srv/imars-objects/fgb:/srv/imars-objects/fgb'
       - '/srv/imars-objects/modis_aqua_fk:/srv/imars-objects/modis_aqua_fk'
