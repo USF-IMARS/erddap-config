@@ -5,6 +5,7 @@ services:
   # docker run -d -p 8080:8080 --name erddap axiom/docker-erddap -e ERDDAP_MEMORY=64G --volumes ...
   erddap:
     container_name: erddap
+    user: 1000:4504  # tomcat:imars-common
     restart: unless-stopped
     ports:
       - 8080:8080
