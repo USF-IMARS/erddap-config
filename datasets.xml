@@ -3,11 +3,6 @@
 <!-- GENERAL INFORMATION
 The information in this file specifies which datasets your ERDDAP will serve.
 You can change this document (e.g., add datasets, change metadata) while ERDDAP is running.
-The changes will be detected the next time this document is read
-(as often as setup.xml loadDatasetsMinMinutes).
-Each dataset has a reloadEveryNMinutes value (default = 10080 (one week)).
-When this document is reread, datasets that haven't been been reloaded in
-their reloadEveryNMinutes will be reloaded.
 If this document has an xml error, processing will stop and an email
 will be sent to emailEverythingTo as specified in setup.xml.
 If you want to remove a dataset while ERDDAP is running, add
