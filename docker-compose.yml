@@ -20,8 +20,8 @@ services:
       - '/root/docker_volumes/erddap-config/web.xml:/usr/local/tomcat/conf/web.xml'
       # === ERDDAP dataset mounts==============================================
       # NOTE: paths must match "fileDir" paths in erddap/content/datsets.xml
-      - '/srv/imars-objects/gom/chlor_a_l3_pass:/srv/imars-objects/gom/chlor_a_l3_pass'
-      - '/srv/imars-objects/mbon/data_big:/srv/imars-objects/mbon/data_big'
+      #- '/srv/imars-objects/gom/chlor_a_l3_pass:/srv/imars-objects/gom/chlor_a_l3_pass'
+      #- '/srv/imars-objects/mbon/data_big:/srv/imars-objects/mbon/data_big'
       - '/srv/imars-objects/gom/sst_avhrr_1km:/srv/imars-objects/gom/sst_avhrr_1km'
       - '/srv/imars-objects/modis_aqua_fgbnms:/srv/imars-objects/modis_aqua_fgbnms'
       - '/srv/imars-objects/fgb:/srv/imars-objects/fgb'
