@@ -2,6 +2,7 @@ This was an experimental product being produced by an airflow cluster.
 It was a duplicate of other products and went defunct when the airflow cluster was decommissioned.
 
 Removed 2022-10-14.
+Files have been deleted.
 
 ## ERDDAP datset.xml chunk
 ```xml
