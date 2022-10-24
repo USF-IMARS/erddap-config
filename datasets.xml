@@ -67,19 +67,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 =====================================================================
 -->
 
-<!-- FGBNMS Mean 7 Day OC ==================================================================================================-->
-<dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_e122_8547_dab0" active="true">
-    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fgb/MEAN_7D_MODA/OC/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+<!-- FGBNMS Mean 7 Day OC ==================================================================================================
+possible additional attributes:
+    <sourceAttributes>
         <att name="Region">NW Gulf of Mexico (FGB)</att>
         <att name="Time_interval">7-Day Composite (median)</att>
         <att name="Sensor">MODIS-Aqua</att>
@@ -94,7 +84,23 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="CreationDate">12/05/2018 00:40:09</att>
         <att name="Composite_start_date">12/03/2018</att>
         <att name="Composite_end_date">12/03/2018</att>
-    </sourceAttributes -->
+    </sourceAttributes>
+
+example `sourceFile` name:
+    MODA_2002225_2002231_7D_FGB_OC.nc
+-->
+<!--
+<dataset type="EDDGridFromNcFilesUnpacked" datasetID="OC_e122_8547_dab0" active="true">
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fgb/MEAN_7D_MODA/OC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -115,7 +121,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="title">Flower Gardens Banks National Marine Sanctuary Mean 7 Day Ocean Color</att>
     </addAttributes>
      <axisVariable>
-         <!-- example name MODA_2002225_2002231_7D_FGB_OC.nc-->
         <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FGB_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -135,10 +140,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">30.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
@@ -154,10 +155,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>chlor_a_anom</sourceName>
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a_anomaly</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -171,10 +168,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>nflh_median</sourceName>
         <destinationName>nflh_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">nflh</att>
-            <att name="Units">W m^-2 um^-1 sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Nflh Median</att>
@@ -186,10 +179,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>nflh_anom</sourceName>
         <destinationName>nflh_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">nflh_anomaly</att>
-            <att name="Units">W m^-2 um^-1 sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -203,10 +192,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>Rrs_667_median</sourceName>
         <destinationName>Rrs_667_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_667</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">-25000.035</att>
             <att name="colorBarMinimum" type="double">-25000.055</att>
@@ -220,10 +205,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>Rrs_667_anom</sourceName>
         <destinationName>Rrs_667_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_667_anomaly</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">0.01</att>
             <att name="colorBarMinimum" type="double">-0.01</att>
@@ -237,10 +218,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>ABI_median</sourceName>
         <destinationName>ABI_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">ABI</att>
-            <att name="Units">W m^-2 um^-1 sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">ABI Median</att>
@@ -252,10 +229,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <sourceName>ABI_anom</sourceName>
         <destinationName>ABI_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">ABI_anomaly</att>
-            <att name="Units">W m^-2 um^-1 sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -266,6 +239,7 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         </addAttributes>
     </dataVariable>
 </dataset>
+-->
 
  <!--FGBNMS 7 Day Sea Surface Temperature ================================================================================== -->
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_9c29_08ac_eccb" active="true">
