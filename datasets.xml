@@ -241,19 +241,9 @@ example `sourceFile` name:
 </dataset>
 -->
 
- <!--FGBNMS 7 Day Sea Surface Temperature ================================================================================== -->
-<dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_9c29_08ac_eccb" active="true">
-    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fgb/MEAN_7D_MODA/SST4/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+<!--FGBNMS 7 Day Sea Surface Temperature ==================================================================================
+additional sourceAttribs:
+    <sourceAttributes>
         <att name="Region">NW Gulf of Mexico (FGB)</att>
         <att name="Time_interval">7-Day Composite (median)</att>
         <att name="Sensor">MODIS-Aqua</att>
@@ -268,7 +258,22 @@ example `sourceFile` name:
         <att name="CreationDate">12/05/2018 02:37:07</att>
         <att name="Composite_start_date">12/03/2018</att>
         <att name="Composite_end_date">12/03/2018</att>
-    </sourceAttributes -->
+    </sourceAttributes>
+example filename:
+ MODA_2002225_2002231_7D_FGB_SST4.nc
+-->
+<!--
+<dataset type="EDDGridFromNcFilesUnpacked" datasetID="SST4_9c29_08ac_eccb" active="true">
+    <reloadEveryNMinutes>1440</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fgb/MEAN_7D_MODA/SST4/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -289,7 +294,6 @@ example `sourceFile` name:
         <att name="title">Flower Garden Banks National Marine Sanctuary 7 Day Sea Surface Temperature</att>
     </addAttributes>
     <axisVariable>
-    <!-- example name MODA_2002225_2002231_7D_FGB_SST4.nc-->
         <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FGB_SST4\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -309,10 +313,6 @@ example `sourceFile` name:
         <sourceName>sst4_median</sourceName>
         <destinationName>sst4_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst4</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
@@ -327,10 +327,6 @@ example `sourceFile` name:
         <sourceName>sst4_anom</sourceName>
         <destinationName>sst4_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst4_anomaly</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">3.0</att>
             <att name="colorBarMinimum" type="double">-3.0</att>
@@ -342,14 +338,34 @@ example `sourceFile` name:
         </addAttributes>
     </dataVariable>
 </dataset>
+-->
 
 <!-- sst anomaly -->
 <dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
     <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
 </dataset>
 
-<!-- Modis Ocean Color ================================================================ -->
-<!-- includes chlor a and ABI -->
+<!-- Modis Ocean Color ================================================================
+includes chlor a and ABI 
+    <sourceAttributes>
+        <att name="Composite_end_date">04/05/2020</att>
+        <att name="Composite_start_date">04/01/2020</att>
+        <att name="Contact">Dan Otis - dotis@usf.edu</att>
+        <att name="CreationDate">04/06/2020 21:31:05</att>
+        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
+        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
+        <att name="Original_Image_Format">Level-2(NetCDF)</att>
+        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
+        <att name="Processing_and_binning">USF IMaRS</att>
+        <att name="Projection">Equidistant Cylindrical</att>
+        <att name="Region">Florida Keys (FK)</att>
+        <att name="Sensor">MODIS-Aqua</att>
+        <att name="Time_interval">7-Day Composite (median)</att>
+    </sourceAttributes>
+
+example filename : MODA_2015316_2015322_7D_FK_OC.nc
+-->
 <dataset
     type="EDDGridFromNcFiles"
     datasetID="OC_c7fe_e1ee_913c"
@@ -365,22 +381,6 @@ example `sourceFile` name:
     <matchAxisNDigits>20</matchAxisNDigits>
     <fileTableInMemory>false</fileTableInMemory>
     <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
-        <att name="Composite_end_date">04/05/2020</att>
-        <att name="Composite_start_date">04/01/2020</att>
-        <att name="Contact">Dan Otis - dotis@usf.edu</att>
-        <att name="CreationDate">04/06/2020 21:31:05</att>
-        <att name="Image_size">484 pixels(N-S) x 660 pixels(E-W)</att>
-        <att name="Lat-Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
-        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
-        <att name="Original_Image_Format">Level-2(NetCDF)</att>
-        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
-        <att name="Processing_and_binning">USF IMaRS</att>
-        <att name="Projection">Equidistant Cylindrical</att>
-        <att name="Region">Florida Keys (FK)</att>
-        <att name="Sensor">MODIS-Aqua</att>
-        <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -401,7 +401,6 @@ example `sourceFile` name:
         <att name="title">IMaRS MODA 7D.</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : MODA_2015316_2015322_7D_FK_OC.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -421,10 +420,6 @@ example `sourceFile` name:
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">30.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
@@ -440,10 +435,6 @@ example `sourceFile` name:
         <sourceName>chlor_a_anom</sourceName>
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a_anomaly</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -457,10 +448,6 @@ example `sourceFile` name:
         <sourceName>ABI_median</sourceName>
         <destinationName>ABI_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">ABI</att>
-            <att name="Units">W m^-2 um^-1 sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">ABI Median</att>
@@ -472,10 +459,6 @@ example `sourceFile` name:
         <sourceName>ABI_anom</sourceName>
         <destinationName>ABI_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">ABI_anomaly</att>
-            <att name="Units">W m^-2 um^-1 sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -489,10 +472,6 @@ example `sourceFile` name:
         <sourceName>Rrs_667_median</sourceName>
         <destinationName>Rrs_667_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_667</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">-25000.035</att>
             <att name="colorBarMinimum" type="double">-25000.055</att>
@@ -506,10 +485,6 @@ example `sourceFile` name:
         <sourceName>Rrs_667_anom</sourceName>
         <destinationName>Rrs_667_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_667_anomaly</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">0.01</att>
             <att name="colorBarMinimum" type="double">-0.01</att>
@@ -521,21 +496,11 @@ example `sourceFile` name:
     </dataVariable>
 </dataset>
 
-<!-- Modis Aqua Sea Surface Temperature ======================================== -->
-<!-- NOTE! The source for SST_2963_b743_ee2e has nGridVariables=4,
-  but this dataset will only serve 2 because the others use different dimensions. -->
-<dataset type="EDDGridFromNcFiles" datasetID="SST_2963_b743_ee2e" active="true">
-    <reloadEveryNMinutes>90</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+<!-- Modis Aqua Sea Surface Temperature ======================================== 
+NOTE! The source for SST_2963_b743_ee2e has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions.
+
+    <sourceAttributes>
         <att name="Composite_end_date">03/31/2020</att>
         <att name="Composite_start_date">03/25/2020</att>
         <att name="Contact">Dan Otis - dotis@usf.edu</att>
@@ -550,7 +515,22 @@ example `sourceFile` name:
         <att name="Region">Florida Keys (FK)</att>
         <att name="Sensor">MODIS-Aqua</att>
         <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
+    </sourceAttributes>        
+
+example filename : MODA_2011155_2011161_7D_FK_SST.nc
+-->
+<!--
+<dataset type="EDDGridFromNcFiles" datasetID="SST_2963_b743_ee2e" active="true">
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -571,7 +551,6 @@ example `sourceFile` name:
         <att name="title">MODIS Aqua Sea Surface Temperature</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : MODA_2011155_2011161_7D_FK_SST.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_SST\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -591,10 +570,6 @@ example `sourceFile` name:
         <sourceName>sst_median</sourceName>
         <destinationName>sst_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
@@ -609,10 +584,6 @@ example `sourceFile` name:
         <sourceName>sst_anom</sourceName>
         <destinationName>sst_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst_anomaly</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">3.0</att>
             <att name="colorBarMinimum" type="double">-3.0</att>
@@ -624,22 +595,12 @@ example `sourceFile` name:
         </addAttributes>
     </dataVariable>
 </dataset>
+-->
+<!-- modis aqua 7d sst4 =========================================================
+NOTE! The source for SST4_aac4_99a3_6549 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions.
 
-<!-- modis aqua 7d sst4 ========================================================= -->
-<!-- NOTE! The source for SST4_aac4_99a3_6549 has nGridVariables=4,
-  but this dataset will only serve 2 because the others use different dimensions. -->
-<dataset type="EDDGridFromNcFiles" datasetID="SST4_aac4_99a3_6549" active="true">
-    <reloadEveryNMinutes>90</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST4/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+    <sourceAttributes>
         <att name="Composite_end_date">04/07/2020</att>
         <att name="Composite_start_date">04/01/2020</att>
         <att name="Contact">Dan Otis - dotis@usf.edu</att>
@@ -654,7 +615,23 @@ example `sourceFile` name:
         <att name="Region">Florida Keys (FK)</att>
         <att name="Sensor">MODIS-Aqua</att>
         <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
+    </sourceAttributes>
+
+example filename : MODA_2020099_2020099_7D_FK_SST4.nc
+
+-->
+<!--
+<dataset type="EDDGridFromNcFiles" datasetID="SST4_aac4_99a3_6549" active="true">
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/SST4/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -675,7 +652,6 @@ example `sourceFile` name:
         <att name="title">MODIS Aqua 7d SST4.</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : MODA_2020099_2020099_7D_FK_SST4.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_SST4\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -695,10 +671,6 @@ example `sourceFile` name:
         <sourceName>sst4_median</sourceName>
         <destinationName>sst4_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst4</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
@@ -713,10 +685,6 @@ example `sourceFile` name:
         <sourceName>sst4_anom</sourceName>
         <destinationName>sst4_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst4_anomaly</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">3.0</att>
             <att name="colorBarMinimum" type="double">-3.0</att>
@@ -728,22 +696,13 @@ example `sourceFile` name:
         </addAttributes>
     </dataVariable>
 </dataset>
+-->
+<!-- VIIRS Sea Surface Temperature 
 
-<!-- VIIRS Sea Surface Temperature -->
-<!-- NOTE! The source for SST_66bb_c258_cd59 has nGridVariables=4,
-  but this dataset will only serve 2 because the others use different dimensions. -->
-<dataset type="EDDGridFromNcFiles" datasetID="SST_66bb_c258_cd59" active="true">
-    <reloadEveryNMinutes>90</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+NOTE! The source for SST_66bb_c258_cd59 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. 
+
+    <sourceAttributes>
         <att name="Composite_end_date">04/01/2020</att>
         <att name="Composite_start_date">04/01/2020</att>
         <att name="Contact">Dan Otis - dotis@usf.edu</att>
@@ -758,7 +717,23 @@ example `sourceFile` name:
         <att name="Region">Florida Keys (FK)</att>
         <att name="Sensor">VIIRS-SNPP</att>
         <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
+    </sourceAttributes>
+
+example filename : VSNPP_2018092_2018098_7D_FK_SST.nc
+
+-->
+<!--
+<dataset type="EDDGridFromNcFiles" datasetID="SST_66bb_c258_cd59" active="true">
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -779,7 +754,6 @@ example `sourceFile` name:
         <att name="title">VIIRS SST</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : VSNPP_2018092_2018098_7D_FK_SST.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_SST\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -799,10 +773,6 @@ example `sourceFile` name:
         <sourceName>sst_median</sourceName>
         <destinationName>sst_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
@@ -817,10 +787,6 @@ example `sourceFile` name:
         <sourceName>sst_anom</sourceName>
         <destinationName>sst_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sst_anomaly</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">3.0</att>
             <att name="colorBarMinimum" type="double">-3.0</att>
@@ -832,22 +798,13 @@ example `sourceFile` name:
         </addAttributes>
     </dataVariable>
 </dataset>
+-->
+    
+<!-- VIIRS Sea Surface Temperature N
+NOTE! The source for SSTN_2f10_d542_b535 has nGridVariables=4,
+  but this dataset will only serve 2 because the others use different dimensions. 
 
-<!-- VIIRS Sea Surface Temperature N -->
-<!-- NOTE! The source for SSTN_2f10_d542_b535 has nGridVariables=4,
-  but this dataset will only serve 2 because the others use different dimensions. -->
-<dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
-    <reloadEveryNMinutes>90</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+    <sourceAttributes>
         <att name="Composite_end_date">04/01/2020</att>
         <att name="Composite_start_date">04/01/2020</att>
         <att name="Contact">Dan Otis - dotis@usf.edu</att>
@@ -862,7 +819,22 @@ example `sourceFile` name:
         <att name="Region">Florida Keys (FK)</att>
         <att name="Sensor">VIIRS-SNPP</att>
         <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
+    </sourceAttributes>
+
+example filename : VSNPP_2018092_2018098_7D_FK_SSTN.nc
+-->
+<!--
+<dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -883,7 +855,6 @@ example `sourceFile` name:
         <att name="title">VIIRS SSTN.</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : VSNPP_2018092_2018098_7D_FK_SSTN.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_SSTN\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -903,10 +874,6 @@ example `sourceFile` name:
         <sourceName>sstn_median</sourceName>
         <destinationName>sstn_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sstn</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
@@ -921,10 +888,6 @@ example `sourceFile` name:
         <sourceName>sstn_anom</sourceName>
         <destinationName>sstn_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">sstn_anomaly</att>
-            <att name="Units">DegC</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">3.0</att>
             <att name="colorBarMinimum" type="double">-3.0</att>
@@ -936,21 +899,14 @@ example `sourceFile` name:
         </addAttributes>
     </dataVariable>
 </dataset>
-<!-- VIIRS kd490, chlor a, Rrs 671 for FWC coral disease dashboard -->
-<!-- NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=8,
-  but this dataset will only serve 6 because the others use different dimensions. -->
-<dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
-    <reloadEveryNMinutes>90</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
-    <!-- sourceAttributes>
+-->
+    
+<!-- VIIRS kd490, chlor a, Rrs 671 for FWC coral disease dashboard 
+
+NOTE! The source for OC_2a67_61be_9fd6 has nGridVariables=8,
+  but this dataset will only serve 6 because the others use different dimensions. 
+
+    <sourceAttributes>
         <att name="Composite_end_date">05/26/2020</att>
         <att name="Composite_start_date">05/20/2020</att>
         <att name="Contact">Dan Otis - dotis@usf.edu</att>
@@ -965,7 +921,22 @@ example `sourceFile` name:
         <att name="Region">Florida Keys (FK)</att>
         <att name="Sensor">VIIRS-SNPP</att>
         <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
+    </sourceAttributes>
+
+example filename : VSNPP_2020141_2020147_7D_FK_OC.nc
+-->
+<!--
+<dataset type="EDDGridFromNcFiles" datasetID="OC_2a67_61be_9fd6" active="true">
+    <reloadEveryNMinutes>90</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -986,7 +957,6 @@ example `sourceFile` name:
         <att name="title">VIIRS Ocean Color.</att>
     </addAttributes>
     <axisVariable>
-        <!-- example filename : VSNPP_2020141_2020147_7D_FK_OC.nc -->
         <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
@@ -1006,10 +976,6 @@ example `sourceFile` name:
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">30.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
@@ -1025,10 +991,6 @@ example `sourceFile` name:
         <sourceName>chlor_a_anom</sourceName>
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a_anomaly</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -1042,10 +1004,6 @@ example `sourceFile` name:
         <sourceName>Rrs_671_median</sourceName>
         <destinationName>Rrs_671_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_671</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Optical Properties</att>
             <att name="long_name">Rrs 671 Median</att>
@@ -1057,10 +1015,6 @@ example `sourceFile` name:
         <sourceName>Rrs_671_anom</sourceName>
         <destinationName>Rrs_671_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_671_anomaly</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -1074,10 +1028,6 @@ example `sourceFile` name:
         <sourceName>Kd_490_median</sourceName>
         <destinationName>Kd_490_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Kd_490</att>
-            <att name="Units">m^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Kd 490 Median</att>
@@ -1089,10 +1039,6 @@ example `sourceFile` name:
         <sourceName>Kd_490_anom</sourceName>
         <destinationName>Kd_490_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Kd_490_anomaly</att>
-            <att name="Units">m^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -1103,4 +1049,5 @@ example `sourceFile` name:
         </addAttributes>
     </dataVariable>
 </dataset>
+-->
 </erddapDatasets>
