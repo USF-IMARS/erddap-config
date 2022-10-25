@@ -25,25 +25,26 @@ https://coastwatch.pfel.noaa.gov/erddap/download/setupDatasetsXml.html
 
 <!-- The tags below are described in setupDatasetsXml.html.
      The defaults listed below are as of ERDDAP v2.00. -->
-<cacheMinutes></cacheMinutes>                                     <!-- default=60 --> 
-<decompressedCacheMaxGB></decompressedCacheMaxGB>                 <!-- default=10 --> 
-<decompressedCacheMaxMinutesOld></decompressedCacheMaxMinutesOld> <!-- default=15 --> 
-<drawLandMask></drawLandMask>                                     <!-- "over", "under" (default), "outline", or "off" -->
-<emailDiagnosticsToErdData></emailDiagnosticsToErdData>           <!-- "true (default) or "false" -->
-<graphBackgroundColor></graphBackgroundColor>                     <!-- 0xAARRGGBB, default is 0xffccccff -->
-<ipAddressMaxRequests></ipAddressMaxRequests>                     <!-- current default=7 -->
-<ipAddressMaxRequestsActive></ipAddressMaxRequestsActive>         <!-- current default=2 -->
+<cacheMinutes>60</cacheMinutes>                                     <!-- default=60 --> 
+<decompressedCacheMaxGB>10</decompressedCacheMaxGB>                 <!-- default=10 --> 
+<decompressedCacheMaxMinutesOld>15</decompressedCacheMaxMinutesOld> <!-- default=15 --> 
+<drawLandMask>under</drawLandMask>                                     <!-- "over", "under" (default), "outline", or "off" -->
+<emailDiagnosticsToErdData>true</emailDiagnosticsToErdData>           <!-- "true (default) or "false" -->
+<graphBackgroundColor>0xffccccff</graphBackgroundColor>                     <!-- 0xAARRGGBB, default is 0xffccccff -->
+<ipAddressMaxRequests>7</ipAddressMaxRequests>                     <!-- current default=7 -->
+<ipAddressMaxRequestsActive>2</ipAddressMaxRequestsActive>         <!-- current default=2 -->
 <ipAddressUnlimited></ipAddressUnlimited>                         <!-- default=(empty) -->
-<loadDatasetsMinMinutes></loadDatasetsMinMinutes>                 <!-- usually=default=15 -->
-<loadDatasetsMaxMinutes></loadDatasetsMaxMinutes>                 <!-- default=60 -->
-<logLevel></logLevel> <!-- "warning" (fewest messages), "info" (default), or "all" (most messages) -->
-<nGridThreads></nGridThreads>                                     <!-- default=1 -->
-<nTableThreads></nTableThreads>                                   <!-- default=1 -->
-<partialRequestMaxBytes></partialRequestMaxBytes>                 <!-- default=490000000 -->
-<partialRequestMaxCells></partialRequestMaxCells>                 <!-- default=10000000 -->
-<slowDownTroubleMillis></slowDownTroubleMillis>                   <!-- default=1000 -->
-<unusualActivity></unusualActivity>                               <!-- default=10000 -->
-<updateMaxEvents></updateMaxEvents>                               <!-- default=10 -->
+<loadDatasetsMinMinutes>15</loadDatasetsMinMinutes>                 <!-- usually=default=15 -->
+<loadDatasetsMaxMinutes>600</loadDatasetsMaxMinutes>                 <!-- default=60 -->
+<logLevel>warning</logLevel> <!-- "warning" (fewest messages), "info" (default), or "all" (most messages) -->
+<nGridThreads>1</nGridThreads>                                     <!-- default=1 -->
+<nTableThreads>1</nTableThreads>                                   <!-- default=1 -->
+<partialRequestMaxBytes>490000000</partialRequestMaxBytes>                 <!-- default=490000000 -->
+<partialRequestMaxCells>10000000</partialRequestMaxCells>                 <!-- default=10000000 -->
+<slowDownTroubleMillis>1000</slowDownTroubleMillis>                   <!-- default=1000 -->
+<unusualActivity>10000</unusualActivity>                               <!-- default=10000 -->
+<!--<updateMaxEvents>10</updateMaxEvents>-->                               <!-- default=10 -->
+
 <!-- The defaults for the following tags are in messages.xml. -->
 <startHeadHtml5></startHeadHtml5>                                
 <endBodyHtml5></endBodyHtml5>
@@ -53,7 +54,6 @@ https://coastwatch.pfel.noaa.gov/erddap/download/setupDatasetsXml.html
 <standardDisclaimerOfEndorsement></standardDisclaimerOfEndorsement>
 <standardDisclaimerOfExternalLinks></standardDisclaimerOfExternalLinks>
 <standardGeneralDisclaimer></standardGeneralDisclaimer>
-
 <standardPrivacyPolicy><![CDATA[
 <br>&nbsp;
 <hr>
@@ -62,7 +62,6 @@ ERDDAP follows
 <a rel="bookmark" href="https://www.noaa.gov/protecting-your-privacy"
   >NOAA's Privacy Policy Guidelines</a>.
 ]]></standardPrivacyPolicy>
-
 <startBodyHtml5><![CDATA[
 <body>
 <table class="compact nowrap" style="width:100%; background-color:#128CB5;">
@@ -92,7 +91,6 @@ ERDDAP follows
   </tr> 
 </table>
 ]]></startBodyHtml5>
-
 <theShortDescriptionHtml><![CDATA[ 
 <h1>ERDDAP</h1>
 &erddapIs;
