@@ -64,9 +64,9 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
 <dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
     <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
 </dataset>
-
+    
 <dataset type="EDDGridFromNcFiles" datasetID="OC_c7fe_e1ee_913c" active="true">
-    <reloadEveryNMinutes>90</reloadEveryNMinutes>
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/OC/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
@@ -75,7 +75,6 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
     <metadataFrom>last</metadataFrom>
     <matchAxisNDigits>20</matchAxisNDigits>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -84,32 +83,32 @@ into a public sourceUrl (http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite
         <att name="creator_email">dotis@usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">http://imars.marine.usf.edu</att>
+        <att name="infoUrl">imars.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -79.0108W</att>
+        <att name="Lat_Lon_Limits">23.0104N to 27.4N -85W to -78.511W</att>
         <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS MODIS FK 7 Day Mean Ocean Color.</att>
-        <att name="title">IMaRS MODA 7D.</att>
+        <att name="title">IMaRS MODA 7D FK..</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
-        <destinationName>time</destinationName>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
         <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
