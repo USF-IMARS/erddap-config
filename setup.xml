@@ -158,7 +158,6 @@ Diagnostic messages are always written to the [bigParentDirectory]/logs/log.txt
 file (see below).
 At ERD, we set this to 'all' for development and 'info' for releases.
 -->
-<logLevel>info</logLevel>
 
 <!-- The default log file maximum size is 20 MB. When that size is reached,
 log.txt will be renamed to log.txt.previous .
@@ -360,7 +359,6 @@ if new data arrives for the dataset.
 And a griddap request which includes [last] for the time dimension will change
 if new data arrives for the dataset.
 -->
-<cacheMinutes>60</cacheMinutes>
 
 <!-- This specifies the fewest minutes between checks if the datasets
 need to be reloaded.
@@ -375,7 +373,6 @@ it will increase the frequency that ERDDAP retries datasets that aren't
 loading. If there are lots of such datasets and they are retested frequently,
 the data source might consider it pestering/aggressive behaviour.
 -->
-<loadDatasetsMinMinutes>15</loadDatasetsMinMinutes>
 
 <!-- This specifies the most minutes that reloading datasets is allowed to take
 (before the loadDatasets thread treated as "stalled" and is interrupted).
@@ -385,7 +382,6 @@ think that reloading all of the datasets (cumulatively) should take
 This should always be much longer than loadDatasetsMinMinutes.
 The default is 60 minutes.  Some people will set this to longer.
 -->
-<loadDatasetsMaxMinutes>600</loadDatasetsMaxMinutes>
 
 <!-- If the number of requests between two runs of LoadDatasets exceeds
 unusualActivity, an email is sent to emailEverythingTo.
@@ -476,7 +472,6 @@ landmask should be drawn "over" or "under" surface data on maps.
 (so that grid data over land is obscured by the landmask).
 "under" is the default and is suitable for all data.
 -->
-<drawLandMask>under</drawLandMask>
 
 <!-- You can customize your ERDDAP's web pages by specifying
 an startBodyHtml5 tag. Copy the default from
