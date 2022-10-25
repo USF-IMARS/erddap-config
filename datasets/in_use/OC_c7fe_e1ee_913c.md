@@ -108,7 +108,7 @@ netcdf MODA_2022288_2022294_7D_FK_OC.nc {
 
 *** generateDatasetsXml finished successfully.
 ```
-
+    <accessibleViaFiles>false</accessibleViaFiles>
 ```xml
 <dataset type="EDDGridFromNcFiles" datasetID="OC_c7fe_e1ee_913c" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
@@ -140,21 +140,37 @@ netcdf MODA_2022288_2022294_7D_FK_OC.nc {
         <att name="title">IMaRS MODA 7D FK..</att>
     </addAttributes>
     <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img Y</att>
         </addAttributes>
-    </axisVariable>
-    <axisVariable>
+    </dataVariable>
+    <dataVariable>
         <sourceName>img_x</sourceName>
         <destinationName>img_x</destinationName>
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Img X</att>
         </addAttributes>
-    </axisVariable>
+    </dataVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
