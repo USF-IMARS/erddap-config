@@ -366,11 +366,7 @@ includes chlor a and ABI
 
 example filename : MODA_2015316_2015322_7D_FK_OC.nc
 -->
-<dataset
-    type="EDDGridFromNcFiles"
-    datasetID="OC_c7fe_e1ee_913c"
-    active="true"
->
+<dataset type="EDDGridFromNcFiles" datasetID="OC_c7fe_e1ee_913c" active="true">
     <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_MODA/OC/</fileDir>
