@@ -163,22 +163,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
