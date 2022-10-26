@@ -24,30 +24,28 @@ https://coastwatch.pfel.noaa.gov/erddap/download/setupDatasetsXml.html
 -->
 
 <!-- The tags below are described in setupDatasetsXml.html.
-     The defaults listed below are as of ERDDAP v2.00. 
-<cacheMinutes>60</cacheMinutes>                                    
-<decompressedCacheMaxGB>10</decompressedCacheMaxGB>             
-<decompressedCacheMaxMinutesOld>15</decompressedCacheMaxMinutesOld> 
-<drawLandMask>under</drawLandMask>                                 
-<emailDiagnosticsToErdData>true</emailDiagnosticsToErdData>          
-<graphBackgroundColor>0xffccccff</graphBackgroundColor>                 
-<ipAddressMaxRequests>7</ipAddressMaxRequests>                    
-<ipAddressMaxRequestsActive>2</ipAddressMaxRequestsActive>  
-<ipAddressUnlimited></ipAddressUnlimited>                    
-<loadDatasetsMinMinutes>15</loadDatasetsMinMinutes>             
-<loadDatasetsMaxMinutes>600</loadDatasetsMaxMinutes>         
-<logLevel>warning</logLevel> 
-<nGridThreads>1</nGridThreads>                                 
-<nTableThreads>1</nTableThreads>                               
-<partialRequestMaxBytes>490000000</partialRequestMaxBytes>            
-<partialRequestMaxCells>10000000</partialRequestMaxCells>             
-<slowDownTroubleMillis>1000</slowDownTroubleMillis>                
-<unusualActivity>10000</unusualActivity>        
--->
-<!--<updateMaxEvents>10</updateMaxEvents>--> 
+     The defaults listed below are as of ERDDAP v2.00. -->
+<cacheMinutes>60</cacheMinutes>                                     <!-- default=60 --> 
+<decompressedCacheMaxGB>10</decompressedCacheMaxGB>                 <!-- default=10 --> 
+<decompressedCacheMaxMinutesOld>15</decompressedCacheMaxMinutesOld> <!-- default=15 --> 
+<drawLandMask>under</drawLandMask>                                     <!-- "over", "under" (default), "outline", or "off" -->
+<emailDiagnosticsToErdData>true</emailDiagnosticsToErdData>           <!-- "true (default) or "false" -->
+<graphBackgroundColor>0xffccccff</graphBackgroundColor>                     <!-- 0xAARRGGBB, default is 0xffccccff -->
+<ipAddressMaxRequests>7</ipAddressMaxRequests>                     <!-- current default=7 -->
+<ipAddressMaxRequestsActive>2</ipAddressMaxRequestsActive>         <!-- current default=2 -->
+<ipAddressUnlimited></ipAddressUnlimited>                         <!-- default=(empty) -->
+<loadDatasetsMinMinutes>15</loadDatasetsMinMinutes>                 <!-- usually=default=15 -->
+<loadDatasetsMaxMinutes>600</loadDatasetsMaxMinutes>                 <!-- default=60 -->
+<logLevel>warning</logLevel> <!-- "warning" (fewest messages), "info" (default), or "all" (most messages) -->
+<nGridThreads>1</nGridThreads>                                     <!-- default=1 -->
+<nTableThreads>1</nTableThreads>                                   <!-- default=1 -->
+<partialRequestMaxBytes>490000000</partialRequestMaxBytes>                 <!-- default=490000000 -->
+<partialRequestMaxCells>10000000</partialRequestMaxCells>                 <!-- default=10000000 -->
+<slowDownTroubleMillis>1000</slowDownTroubleMillis>                   <!-- default=1000 -->
+<unusualActivity>10000</unusualActivity>                               <!-- default=10000 -->
+<!--<updateMaxEvents>10</updateMaxEvents>-->                               <!-- default=10 -->
 
 <!-- The defaults for the following tags are in messages.xml. -->
-<!--
 <startHeadHtml5></startHeadHtml5>                                
 <endBodyHtml5></endBodyHtml5>
 <standardLicense></standardLicense>
@@ -99,8 +97,7 @@ ERDDAP follows
 &thisParticularErddap;
 [standardShortDescriptionHtml]
 ]]></theShortDescriptionHtml>
--->
-    
+
 <!-- If you want to refuse requests from certain clients
   (e.g., to fend off a Denial of Service attack or an overly zealous web robot), 
   add their numeric IP address (e.g., 123.45.67.89) to this comma-separated list. 
