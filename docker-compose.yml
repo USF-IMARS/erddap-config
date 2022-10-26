@@ -13,6 +13,7 @@ services:
       - ERDDAP_MEMORY=64G  # default is 4G
     image: axiom/docker-erddap
     volumes:
+      - '/test_local_data_dir:/test_local_data_dir'
       #- ./erddap/erddap_data:/erddapData
       # erddap content incl. setup.xml & dataset.xml :
       - '/root/docker_volumes/erddap-config:/usr/local/tomcat/content/erddap'
