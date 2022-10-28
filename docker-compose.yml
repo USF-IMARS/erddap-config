@@ -5,7 +5,7 @@ services:
   # docker run -d -p 8080:8080 --name erddap axiom/docker-erddap -e ERDDAP_MEMORY=64G --volumes ...
   erddap:
     container_name: erddap
-    user: 0:4504  # root:imars-common
+    #user: 0:4504  # root:imars-common
     restart: unless-stopped
     ports:
       - 8080:8080
@@ -27,11 +27,24 @@ services:
       - '/srv/imars-objects/modis_aqua_fgbnms:/srv/imars-objects/modis_aqua_fgbnms'
       - '/srv/imars-objects/fgb:/srv/imars-objects/fgb'
       - '/srv/imars-objects/modis_aqua_fk:/srv/imars-objects/modis_aqua_fk'
+      - type: volume
+        source: fk
+        target: /nfs
+        volume:
+            nocopy: true
       # MODIS-Aqua (MODA)
-      - '/srv/imars-objects/fk/MEAN_7D_MODA/OC:/srv/imars-objects/fk/MEAN_7D_MODA/OC'
-      - '/srv/imars-objects/fk/MEAN_7D_MODA/SST:/srv/imars-objects/fk/MEAN_7D_MODA/SST'
-      - '/srv/imars-objects/fk/MEAN_7D_MODA/SST4:/srv/imars-objects/fk/MEAN_7D_MODA/SST4'
+      #- '/srv/imars-objects/fk/MEAN_7D_MODA/OC:/srv/imars-objects/fk/MEAN_7D_MODA/OC'
+      #- '/srv/imars-objects/fk/MEAN_7D_MODA/SST:/srv/imars-objects/fk/MEAN_7D_MODA/SST'
+      #- '/srv/imars-objects/fk/MEAN_7D_MODA/SST4:/srv/imars-objects/fk/MEAN_7D_MODA/SST4'
       # VIIRS-SNPP (VSNPP)
-      - '/srv/imars-objects/fk/MEAN_7D_VSNPP/OC:/srv/imars-objects/fk/MEAN_7D_VSNPP/OC'
-      - '/srv/imars-objects/fk/MEAN_7D_VSNPP/SST:/srv/imars-objects/fk/MEAN_7D_VSNPP/SST'
-      - '/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN:/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN'
+      #- '/srv/imars-objects/fk/MEAN_7D_VSNPP/OC:/srv/imars-objects/fk/MEAN_7D_VSNPP/OC'
+      #- '/srv/imars-objects/fk/MEAN_7D_VSNPP/SST:/srv/imars-objects/fk/MEAN_7D_VSNPP/SST'
+      #- '/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN:/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN'
+
+# rw,nosuid,nodev,noexec,relatime,vers=4.2,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=192.168.1.23,local_lock=none,addr=192.168.1.201,user
+volumes:
+    fk:
+      driver_opts:
+        type: "nfs"
+        o: "addr=thing1master,rw"
+        device: "thing1master:/srv/imars-objects/fk"
