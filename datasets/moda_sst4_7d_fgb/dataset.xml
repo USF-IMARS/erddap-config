@@ -1,7 +1,7 @@
 <dataset type="EDDGridFromNcFilesUnpacked" datasetID="moda_sst4_7d_fgb" active="true">
     <reloadEveryNMinutes>1440</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fgb/MEAN_7D_MODA/SST4/</fileDir>
+    <fileDir>/mnt/sdb/moda_sst4_7d_fgb/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
