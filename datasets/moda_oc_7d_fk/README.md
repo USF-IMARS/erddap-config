@@ -1,9 +1,13 @@
-moda_oc_7d_fk
+# moda_oc_7d_fk
+## provenance
+* modis aqua l2 data is downloaded from NASA obdaac
+* Dan Otis processes L2 into L3 data using MATLAB-orchestrated SeaDAS and GPT scripts
+* data is `rsync`d onto the ERDDAP server
 
-# usages
+## usages
 * FK NMS Early-Alert Dashboard
 
-# aliases
+## aliases
 * previously named OC_c7fe_e1ee_913c
 * `/srv/imars_objects/fk/MEAN_7D_MODA/OC/`
 * `/srv/imars_objects/moda_oc_7d_fk`
