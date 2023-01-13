@@ -1,4 +1,4 @@
-<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_fk" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_fgb" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/mnt/sdb/moda_oc_7d_fgb/</fileDir>
