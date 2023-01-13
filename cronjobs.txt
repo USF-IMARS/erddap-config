@@ -1,2 +1,4 @@
+# === cronjobs to run on the ERDDAP server
 # copy files from NFS location to local location 
 0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_MODA/OC/* /mnt/sdb/moda_oc_7d_fk/.
+# TODO: more here
