@@ -1,4 +1,13 @@
 # === cronjobs to run on the ERDDAP server
 # copy files from NFS location to local location 
+# FK MODA
 0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_MODA/OC/* /mnt/sdb/moda_oc_7d_fk/.
-# TODO: more here
+0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_MODA/SST4/* /mnt/sdb/moda_sst4_7d_fk/.
+0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_MODA/SST/* /mnt/sdb/moda_sst_7d_fk/.
+# FK VSNPP
+0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_VSNPP/OC/* /mnt/sdb/vsnpp_oc_7d_fk/.
+0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/* /mnt/sdb/vsnpp_sstn_7d_fk/.
+0 7 * * 0 rsync -hazv /srv/imars-objects/fk/MEAN_7D_VSNPP/SST/* /mnt/sdb/vsnpp_sst_7d_fk/.
+# FGB MODA
+0 7 * * 0 rsync -hazv /srv/imars-objects/fgb/MEAN_7D_MODA/OC/* /mnt/sdb/moda_oc_7d_fgb/.
+0 7 * * 0 rsync -hazv /srv/imars-objects/fgb/MEAN_7D_MODA/SST4/* /mnt/sdb/moda_sst4_7d_fgb/.
