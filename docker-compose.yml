@@ -13,25 +13,10 @@ services:
       - ERDDAP_MEMORY=64G  # default is 4G
     image: axiom/docker-erddap
     volumes:
-      - '/test_local_data_dir:/test_local_data_dir'
-      #- ./erddap/erddap_data:/erddapData
       # erddap content incl. setup.xml & dataset.xml :
       - '/root/docker_volumes/erddap-config:/usr/local/tomcat/content/erddap'
       # modified tomcat web.xml :
       - '/root/docker_volumes/erddap-config/web.xml:/usr/local/tomcat/conf/web.xml'
-      # === ERDDAP dataset mounts==============================================
-      # NOTE: paths must match "fileDir" paths in erddap/content/datsets.xml
-      #- '/srv/imars-objects/gom/chlor_a_l3_pass:/srv/imars-objects/gom/chlor_a_l3_pass'
-      #- '/srv/imars-objects/mbon/data_big:/srv/imars-objects/mbon/data_big'
-      - '/srv/imars-objects/gom/sst_avhrr_1km:/srv/imars-objects/gom/sst_avhrr_1km'
-      - '/srv/imars-objects/modis_aqua_fgbnms:/srv/imars-objects/modis_aqua_fgbnms'
-      - '/srv/imars-objects/fgb:/srv/imars-objects/fgb'
-      - '/srv/imars-objects/modis_aqua_fk:/srv/imars-objects/modis_aqua_fk'
-      # MODIS-Aqua (MODA)
-      - '/srv/imars-objects/fk/MEAN_7D_MODA/OC:/srv/imars-objects/fk/MEAN_7D_MODA/OC'
-      - '/srv/imars-objects/fk/MEAN_7D_MODA/SST:/srv/imars-objects/fk/MEAN_7D_MODA/SST'
-      - '/srv/imars-objects/fk/MEAN_7D_MODA/SST4:/srv/imars-objects/fk/MEAN_7D_MODA/SST4'
-      # VIIRS-SNPP (VSNPP)
-      - '/srv/imars-objects/fk/MEAN_7D_VSNPP/OC:/srv/imars-objects/fk/MEAN_7D_VSNPP/OC'
-      - '/srv/imars-objects/fk/MEAN_7D_VSNPP/SST:/srv/imars-objects/fk/MEAN_7D_VSNPP/SST'
-      - '/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN:/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN'
+      # === ERDDAP dataset location mounts========================================
+      - '/mnt/sdb:/mnt/sdb'
+      - '/mnt/sdc:/mnt/sdc'
