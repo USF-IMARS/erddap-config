@@ -5,11 +5,11 @@
 # and then NFS is bugged.
 # 
 # This should be added to the root crontab as:
-# 0 7 * * 0 /bin/bash /root/docker_volumes/erddap-config > /root/erddap-rsync-cronjob.log
+# 0 7 * * 0 /bin/bash /root/docker_volumes/erddap-config/rsync-cronjobs.sh > /root/erddap-rsync-cronjob.log
 
 LOCAL_DIR=/mnt/sdb 
 # LOCAL_DIR_02=/mnt/sdc  # NOTE: currently unused
-REMOTE_DIR=/sr/imars-objects
+REMOTE_DIR=/srv/imars-objects
 
 # these vars just to help create pretty logs
 PREFIX="\t ==="
@@ -22,7 +22,7 @@ do_rsync_job() {
     #  $2 : target_location : location to copy to (absolute).
     #
     # example usage: do_rsync_job source_location target_location
-    rysnc -hazv ${REMOTE_DIR}/$1 $2
+    rsync -hazv ${REMOTE_DIR}/$1 $2
     return_code=$(($return_code + $?))  # keep track of exit code
 }
 
