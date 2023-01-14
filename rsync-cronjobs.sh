@@ -23,7 +23,7 @@ do_rsync_job() {
     #
     # example usage: do_rsync_job source_location target_location
     rsync -hazv ${REMOTE_DIR}/$1 $2
-    return_code=$(($return_code + $?))  # keep track of exit code
+    return_code=$(($return_code && $?))  # keep track of exit code
 }
 
 echo "beginning rsync jobs - `date`"
