@@ -28,7 +28,7 @@
         <att name="title">IMaRS MODA 7D FK..</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FK_OC\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_FGB_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
