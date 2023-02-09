@@ -8,12 +8,13 @@ Content dir for [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/) i
 
 ### Adding a new DataSet Checklist:
 NOTE: `${HOSTNAME}` is the name of the dockerhost system.
-Examples: imars-physalis, imars-dockerhost-dune.
-Instead of typing `${HOSTNAME}` use the name of the host you are working with.
+      `${USERNAME}` is your username (must have docker permissions).
+      
 1. create a file in this repo `/datasets/{dataset_name}/README.md` where `{dataset_name}` is the name you have chosen for your dataset; try to follow the patterns of existing dataset names in `/datasets/`.
 1. create a file `/datasets/{dataset_name}/dataset.xml`:
     1. connect to docker host:
-        * `ssh imars-admin@${HOSTNAME}
+        * `ssh ${USERNAME}@${HOSTNAME}
+        * for user `alice` accessing the 2023 IMaRS ERDDAP hypervisor this is : `alice@dune.marine.usf.edu`
     1. use tool to auto-generate dataset xml:
         * `sudo docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"`
     1. copy the xml into your new `/datasets/{dataset_name}/dataset.xml` file
