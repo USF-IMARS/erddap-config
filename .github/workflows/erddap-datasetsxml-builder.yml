@@ -28,7 +28,7 @@ jobs:
       - name: create ERDDAP datasets.xml from erddap-config/datasets/
         # You may pin to the exact commit or the version.
         # uses: 7yl4r/erddap-datasetsxml-builder@6a3400f129b2667f572867cd7d9c691dabc326d2
-        uses: 7yl4r/erddap-datasetsxml-builder@latest
+        uses: 7yl4r/erddap-datasetsxml-builder@1
         with:
           # Path to /datasets/ directory relative to project root.
           datasets_dir: ./datasets/ # optional, default is ./datasets/
