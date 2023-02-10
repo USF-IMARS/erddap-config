@@ -16,7 +16,7 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
         * `ssh ${USERNAME}@${HOSTNAME}
         * for user `alice` accessing the 2023 IMaRS ERDDAP hypervisor this is : `alice@dune.marine.usf.edu`
     1. use tool to auto-generate dataset xml:
-        * `sudo docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"`
+        * `docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"`
     1. copy the xml into your new `/datasets/{dataset_name}/dataset.xml` file
     1. modify the xml
         1. change the name in the xml to match your chosen `dataset_name`  
