@@ -72,32 +72,6 @@
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>ABI_median</sourceName>
-        <destinationName>ABI_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">ABI Median</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_anom</sourceName>
-        <destinationName>ABI_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.2</att>
-            <att name="colorBarMinimum" type="double">-0.2</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">ABI Anom</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
         <sourceName>Rrs_667_median</sourceName>
         <destinationName>Rrs_667_median</destinationName>
         <dataType>double</dataType>
@@ -121,6 +95,32 @@
             <att name="long_name">Rrs 667 Anom</att>
             <att name="Units">null</att>
             <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+      <dataVariable>
+        <sourceName>ABI_median</sourceName>
+        <destinationName>ABI_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ABI Median</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_anom</sourceName>
+        <destinationName>ABI_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.2</att>
+            <att name="colorBarMinimum" type="double">-0.2</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ABI Anom</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
         </addAttributes>
     </dataVariable>
 </dataset>
