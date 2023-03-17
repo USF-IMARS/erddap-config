@@ -3,7 +3,7 @@ Content dir for [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/) i
 
 ## workflow
 1. modify dataset files in `/datasets/` dir
-2. run erddap-datasets-xml-builder to generate `datasets.xml` (TODO: see #33)
+2. run [erddap-datasets-xml-builder](https://github.com/7yl4r/erddap-datasetsxml-builder) to generate `datasets.xml` (TODO: see #33)
 3. pull new datasets.xml onto erddap server (if using docker a `docker-compose restart` is not needed)
 
 ### Adding a new DataSet Checklist:
