@@ -32,7 +32,7 @@ jobs:
         uses: 7yl4r/erddap-datasetsxml-builder@latest
         with:
           # Path to /datasets/ directory relative to project root.
-          datasets_dir: ./datasets/ # optional, default is ./datasets/
+          datasets_dir: ./ # optional, default is ./datasets/
           
       # Runs a single command using the runners shell
       - name: Run a one-line script
