@@ -5,6 +5,8 @@ Content dir for [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/) i
 1. modify dataset files in `/datasets/` dir
 2. run [erddap-datasets-xml-builder](https://github.com/7yl4r/erddap-datasetsxml-builder) to generate `datasets.xml` (TODO: see #33)
 3. pull new datasets.xml onto erddap server (if using docker a `docker-compose restart` is not needed)
+    * NOTE: As of 2023-03 IMaRS's ERDDAP server (a docker container on dune) does this automatically every 30min.[^1]
+    * NOTE: Changes beyond just `datasets.xml` edits *may* require the docker container be restarted or rebuilt.
 
 ### Adding a new DataSet Checklist:
 NOTE: `${HOSTNAME}` is the name of the dockerhost system.
@@ -43,3 +45,12 @@ if using the puppet configuration manager, `datasets.xml` on the docker host can
 * [example content directory](https://github.com/BobSimons/erddapContent)
 * [updates to ERDDAP code](https://coastwatch.pfeg.noaa.gov/erddap/download/changes.html)
 * [IOOS "Gold Standard" Example configs](https://github.com/ioos/erddap-gold-standard)
+
+
+# footnotes
+
+[^1]: crontab entry on dune that does this:
+```crontab
+# pull latest erddap config from github  
+*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git pull
+```
