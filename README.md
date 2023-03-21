@@ -46,11 +46,6 @@ if using the puppet configuration manager, `datasets.xml` on the docker host can
 * [updates to ERDDAP code](https://coastwatch.pfeg.noaa.gov/erddap/download/changes.html)
 * [IOOS "Gold Standard" Example configs](https://github.com/ioos/erddap-gold-standard)
 
+------------------
 
-# footnotes
-
-[^1]: crontab entry on dune that does this:
-```crontab
-# pull latest erddap config from github  
-*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git pull
-```
+[^1]: the crontab entry on dune that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git pull`
