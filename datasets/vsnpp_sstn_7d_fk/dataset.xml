@@ -1,4 +1,4 @@
-<dataset type="EDDGridFromNcFiles" datasetID="SSTN_2f10_d542_b535" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sstn_7d_fk" active="true">
     <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
