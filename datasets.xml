@@ -115,7 +115,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sst_7d_fk" active="true">
     <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mng/sdb/vsnpp_sst_7d_fk/MEAN_7D_VSNPP/SST/</fileDir>
+    <fileDir>/mnt/sdb/vsnpp_sst_7d_fk/MEAN_7D_VSNPP/SST/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
