@@ -45,4 +45,4 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
 
 ------------------
 
-[^1]: the crontab entry on dune that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git checkout dune && /usr/bin/git pull && /usr/bin/git rebase origin master && /usr/bin/git push -f origin dune`
+[^1]: the crontab entry on dune that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git checkout dune && /usr/bin/git pull && /usr/bin/git rebase origin/master && /usr/bin/git push -f origin dune`
