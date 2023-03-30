@@ -492,6 +492,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>ABI_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">ABI Median</att>
             <att name="Units">null</att>
