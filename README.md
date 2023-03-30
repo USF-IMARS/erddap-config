@@ -15,7 +15,7 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
 1. create a file in this repo `/datasets/{dataset_name}/README.md` where `{dataset_name}` is the name you have chosen for your dataset; try to follow the patterns of existing dataset names in `/datasets/`.
 1. create a file `/datasets/{dataset_name}/dataset.xml`:
     1. connect to docker host:
-        * `ssh ${USERNAME}@${HOSTNAME}
+        * `ssh ${USERNAME}@${HOSTNAME}`
         * for user `alice` accessing the 2023 IMaRS ERDDAP hypervisor this is : `alice@dune.marine.usf.edu`
     1. use tool to auto-generate dataset xml:
         * `docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"`
@@ -35,9 +35,6 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
         * `docker-compose down --rmi all --volumes && docker-compose up -d`
 1. watch [${HOSTNAME}/erddap/status.hml](http://${HOSTNAME}.marine.usf.edu:8080/erddap/status.html) for `LoadDatasets` to finish & that all is well.
 
-### puppet
-if using the puppet configuration manager, `datasets.xml` on the docker host can be updated via puppet:
-    * `sudo /opt/puppetlabs/bin/puppet agent -t`
 
 ## additional links
 * [setup.xml spec](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#setup.xml)
@@ -48,4 +45,4 @@ if using the puppet configuration manager, `datasets.xml` on the docker host can
 
 ------------------
 
-[^1]: the crontab entry on dune that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git pull`
+[^1]: the crontab entry on dune that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git checkout dune && /usr/bin/git pull && /usr/bin/git rebase origin master && /usr/bin/git push -f origin dune`
