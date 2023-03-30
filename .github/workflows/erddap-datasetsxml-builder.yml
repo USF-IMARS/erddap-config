@@ -68,7 +68,7 @@ jobs:
           # The message for the commit
           message: 'create datasets.xml from collection of dataset.xml files' # optional
           # The name of the branch to create.
-          #new_branch: # optional
+          new_branch: '{GITHUB_REF##*/}'
           # The way the action should handle pathspec errors from the add and remove commands.
           #pathspec_error_handling: # optional, default is ignore
           # Arguments for the git pull command. By default, the action does not pull.
