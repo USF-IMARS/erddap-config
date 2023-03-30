@@ -115,7 +115,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sst_7d_fk" active="true">
     <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SST/</fileDir>
+    <fileDir>/mng/sdb/vsnpp_sst_7d_fk/MEAN_7D_VSNPP/SST/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -191,7 +191,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_7d_fk" active="true">
     <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/OC/</fileDir>
+    <fileDir>/mnt/sdb/vsnpp_oc_7d_fk</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -315,7 +315,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sstn_7d_fk" active="true">
     <reloadEveryNMinutes>90</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/srv/imars-objects/fk/MEAN_7D_VSNPP/SSTN/</fileDir>
+    <fileDir>/mnt/sdb/vsnpp_sstn_7d_fk/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
