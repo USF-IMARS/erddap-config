@@ -5,7 +5,7 @@
 # and then NFS is bugged.
 # 
 # This should be added to the root crontab as:
-# 0 7 * * 0 /bin/bash /root/docker_volumes/erddap-config/rsync-cronjobs.sh > /root/erddap-rsync-cronjob.log
+# 0 7 * * 0 /bin/bash /root/docker_volumes/erddap-config/rsync-cronjobs.sh 2>&1 /root/erddap-rsync-cronjob.log
 
 LOCAL_DIR=/mnt/sdb 
 # LOCAL_DIR_02=/mnt/sdc  # NOTE: currently unused
