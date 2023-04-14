@@ -12,7 +12,7 @@ LOCAL_DIR=/mnt/sdb
 REMOTE_DIR=/srv/imars-objects
 
 # these vars just to help create pretty logs
-PREFIX="\t ==="
+PREFIX="\n# ==="
 SUFFIX="=== === ==="
 
 return_code=0
@@ -22,11 +22,12 @@ do_rsync_job() {
     #  $2 : target_location : location to copy to (absolute).
     #
     # example usage: do_rsync_job source_location target_location
+    printf "\n$1 -> $2\n"
     rsync -hvr --delete ${REMOTE_DIR}/$1 $2
     return_code=$(($return_code && $?))  # keep track of exit code
 }
 
-echo "beginning rsync jobs - `date`"
+printf "\nbeginning rsync jobs - `date`"
 
 echo "${PREFIX} GoM MODA ${SUFFIX}"
 do_rsync_job gom/MEAN_7D_MODA/OC/   ${LOCAL_DIR}/moda_oc_7d_gom/. 
@@ -42,5 +43,5 @@ echo "${PREFIX} FGB MODA ${SUFFIX}"
 do_rsync_job fgb/MEAN_7D_MODA/OC/   ${LOCAL_DIR}/moda_oc_7d_fgb/.
 do_rsync_job fgb/MEAN_7D_MODA/SST4/ ${LOCAL_DIR}/moda_sst4_7d_fgb/.
 
-echo "done - `date`"
+printf "\ndone - `date`"
 exit $return_code
