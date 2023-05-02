@@ -469,7 +469,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     <metadataFrom>last</metadataFrom>
     <matchAxisNDigits>20</matchAxisNDigits>
     <fileTableInMemory>false</fileTableInMemory>
-    <-- sourceAttributes>
+    <!-- sourceAttributes>
         <att name="Composite_end_date">04/14/2023</att>
         <att name="Composite_start_date">04/09/2023</att>
         <att name="Contact">Dan Otis - dotis@usf.edu</att>
@@ -507,7 +507,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     <axisVariable>
         <sourceName>img_y</sourceName>
         <destinationName>img_y</destinationName>
-        <-- sourceAttributes>
+        <!-- sourceAttributes>
         </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
@@ -517,7 +517,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     <axisVariable>
         <sourceName>img_x</sourceName>
         <destinationName>img_x</destinationName>
-        <-- sourceAttributes>
+        <!-- sourceAttributes>
         </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
@@ -528,7 +528,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <sourceName>sst4_median</sourceName>
         <destinationName>sst4_median</destinationName>
         <dataType>double</dataType>
-        <-- sourceAttributes>
+        <!-- sourceAttributes>
             <att name="Product">sst4</att>
             <att name="Units">DegC</att>
         </sourceAttributes -->
@@ -546,7 +546,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <sourceName>sst4_anom</sourceName>
         <destinationName>sst4_anom</destinationName>
         <dataType>double</dataType>
-        <-- sourceAttributes>
+        <!-- sourceAttributes>
             <att name="Product">sst4_anomaly</att>
             <att name="Units">DegC</att>
         </sourceAttributes -->
