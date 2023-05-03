@@ -8,22 +8,6 @@
     <metadataFrom>last</metadataFrom>
     <matchAxisNDigits>20</matchAxisNDigits>
     <fileTableInMemory>false</fileTableInMemory>
-    <!-- sourceAttributes>
-        <att name="Composite_end_date">04/14/2023</att>
-        <att name="Composite_start_date">04/09/2023</att>
-        <att name="Contact">Dan Otis - dotis@usf.edu</att>
-        <att name="CreationDate">04/16/2023 05:58:17</att>
-        <att name="Image_size">1430 pixels(N-S) x 2145 pixels(E-W)</att>
-        <att name="Lat-Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
-        <att name="Ocean_color_masks_based_on_L2_flags">LAND,CLDICE,HIGLINT</att>
-        <att name="Original_Image_Format">Level-2(NetCDF)</att>
-        <att name="Original_Image_Source">NASA Ocean Biology Processing Group</att>
-        <att name="Processing_and_binning">USF IMaRS</att>
-        <att name="Projection">Equidistant Cylindrical</att>
-        <att name="Region">Gulf of Mexico (GOM)</att>
-        <att name="Sensor">VIIRS-SNPP</att>
-        <att name="Time_interval">7-Day Composite (median)</att>
-    </sourceAttributes -->
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Contact">null</att>
@@ -41,36 +25,28 @@
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">University of South Florida (USF) data from a local source.</att>
-        <att name="title">USF data from a local source.</att>
+        <att name="title">USF IMaRS VIIRS-SNPP Ocean Color 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>img_y</sourceName>
-        <destinationName>img_y</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_GOM_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
         <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img Y</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>img_x</sourceName>
-        <destinationName>img_x</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Location</att>
-            <att name="long_name">Img X</att>
-        </addAttributes>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
         <sourceName>chlor_a_median</sourceName>
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">30.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
@@ -86,10 +62,6 @@
         <sourceName>chlor_a_anom</sourceName>
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">chlor_a_anomaly</att>
-            <att name="Units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -103,10 +75,6 @@
         <sourceName>Rrs_671_median</sourceName>
         <destinationName>Rrs_671_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_671</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Optical Properties</att>
             <att name="long_name">Rrs 671 Median</att>
@@ -118,10 +86,6 @@
         <sourceName>Rrs_671_anom</sourceName>
         <destinationName>Rrs_671_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Rrs_671_anomaly</att>
-            <att name="Units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
@@ -135,10 +99,6 @@
         <sourceName>Kd_490_median</sourceName>
         <destinationName>Kd_490_median</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Kd_490</att>
-            <att name="Units">m^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Kd 490 Median</att>
@@ -150,10 +110,6 @@
         <sourceName>Kd_490_anom</sourceName>
         <destinationName>Kd_490_anom</destinationName>
         <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="Product">Kd_490_anomaly</att>
-            <att name="Units">m^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
