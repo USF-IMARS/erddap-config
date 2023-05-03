@@ -24,7 +24,7 @@
         <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="summary">USF IMaRS MODIS SST4 7-Day GOM means</att>
         <att name="title">MODIS-Aqua nighttime SST (SST4) 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
@@ -65,7 +65,7 @@
             <att name="colorBarMaximum" type="double">3.0</att>
             <att name="colorBarMinimum" type="double">-3.0</att>
             <att name="ioos_category">Temperature</att>
-            <att name="long_name">Surface Temperature Anomaly</att>
+            <att name="long_name">Sea Surface Temperature Anomaly</att>
             <att name="standard_name">surface_temperature_anomaly</att>
             <att name="Units">null</att>
             <att name="units">degree_C</att>
