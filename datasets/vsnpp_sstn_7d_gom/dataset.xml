@@ -24,7 +24,7 @@
         <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">University of South Florida (USF) data from a local source.</att>
+        <att name="summary">USF IMaRS VIIRS SST4 7-Day means for GOM</att>
         <att name="title">VIIRS-SNPP nighttime SST (SSTN) 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
