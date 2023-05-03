@@ -52,7 +52,7 @@
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Concentration Of Chlorophyll In Sea Water</att>
+            <att name="long_name">Chlorophyll-a Median</att>
             <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
             <att name="Units">null</att>
             <att name="units">mg m^-3</att>
@@ -66,7 +66,7 @@
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
             <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlor A Anom</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
             <att name="units">mg m^-3</att>
         </addAttributes>
@@ -77,7 +77,7 @@
         <dataType>double</dataType>
         <addAttributes>
             <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs 671 Median</att>
+            <att name="long_name">Rrs_671 Median</att>
             <att name="Units">null</att>
             <att name="units">sr^-1</att>
         </addAttributes>
@@ -90,7 +90,7 @@
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
             <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs 671 Anom</att>
+            <att name="long_name">Rrs_671 Anomaly</att>
             <att name="Units">null</att>
             <att name="units">sr^-1</att>
         </addAttributes>
@@ -101,7 +101,7 @@
         <dataType>double</dataType>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd 490 Median</att>
+            <att name="long_name">Kd_490 Median</att>
             <att name="Units">null</att>
             <att name="units">m^-1</att>
         </addAttributes>
@@ -114,7 +114,7 @@
             <att name="colorBarMaximum" type="double">10.0</att>
             <att name="colorBarMinimum" type="double">-10.0</att>
             <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd 490 Anom</att>
+            <att name="long_name">Kd_490 Anomaly</att>
             <att name="Units">null</att>
             <att name="units">m^-1</att>
         </addAttributes>
