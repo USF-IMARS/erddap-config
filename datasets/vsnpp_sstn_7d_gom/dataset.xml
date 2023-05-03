@@ -25,7 +25,7 @@
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS SST4 7-Day means for GOM</att>
-        <att name="title">VIIRS-SNPP nighttime SST (SSTN) 7-Day means for GOM</att>
+        <att name="title">VIIRS-SNPP nighttime SST 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
         <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_GOM_SSTN\.nc,2</sourceName>
