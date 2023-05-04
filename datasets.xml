@@ -177,8 +177,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">10.0</att>
-            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
@@ -225,8 +225,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>Kd_490_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">10.0</att>
-            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">-1.0</att>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Kd_490 Anomaly</att>
             <att name="Units">null</att>
