@@ -1,1 +1,61 @@
+<dataset type="EDDGridFromNcFiles" datasetID="chlor_a_ae9d_8633_7784" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/MODA_CLIM_SEAS_GLOB_4KM/chlor_a/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.10, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF</att>
+        <att name="keywords">chemistry, chlor_a_climatology, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">-89.9792N to 89.9792N -179.9792W to 179.9792W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Seasonal chlor_a climatologies from MODIS-Aqua</att>
+        <att name="title">MODA SEAS CLIM GLOB 4KM CHLOR_A</att>
+        <att name="Units">mg m^-3</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>img_y</sourceName>
+        <destinationName>img_y</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img Y</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>img_x</sourceName>
+        <destinationName>img_x</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Img X</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_climatology</sourceName>
+        <destinationName>chlor_a_climatology</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll concentration</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
 
