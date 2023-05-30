@@ -1,4 +1,4 @@
-<dataset type="EDDGridFromNcFiles" datasetID="chlor_a_ae9d_8633_7784" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="chlor_a_clim" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/mnt/sdb/MODA_CLIM_SEAS_GLOB_4KM/chlor_a/</fileDir>
