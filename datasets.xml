@@ -514,7 +514,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 <dataset type="EDDGridFromNcFiles" datasetID="moda_sst4_7d_seus" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/moda_sst4_7d_gom/</fileDir>
+    <fileDir>/mnt/sdb/moda_sst4_7d_seus/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -999,6 +999,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
 </dataset>
+
+sfd
 
 </erddapDatasets>
 
