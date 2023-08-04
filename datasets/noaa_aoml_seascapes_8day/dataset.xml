@@ -1,0 +1,3 @@
+<dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
+    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.html</sourceUrl>
+</dataset>
