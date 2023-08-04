@@ -716,6 +716,10 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
+<dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
+    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.html</sourceUrl>
+</dataset>
+
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sst_7d_gom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
