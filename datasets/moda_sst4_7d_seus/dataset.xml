@@ -28,7 +28,7 @@
         <att name="title">MODIS-Aqua Nighttime SST (SST4) 7-Day means for the southeast US</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_GOM_SST4\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_SEUS_SST4\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
