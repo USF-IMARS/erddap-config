@@ -39,10 +39,6 @@ do_rsync_job tpa_pgs/rois/gom/MEAN_7D_VSNPP/OC/   ${LOCAL_DIR}/vsnpp_oc_7d_gom/.
 do_rsync_job tpa_pgs/rois/gom/MEAN_7D_VSNPP/SSTN/ ${LOCAL_DIR}/vsnpp_sstn_7d_gom/.
 do_rsync_job tpa_pgs/rois/gom/MEAN_7D_VSNPP/SST/  ${LOCAL_DIR}/vsnpp_sst_7d_gom/.
 
-echo "${PREFIX} FGB MODA ${SUFFIX}"
-do_rsync_job fgb/MEAN_7D_MODA/OC/   ${LOCAL_DIR}/moda_oc_7d_fgb/.
-do_rsync_job fgb/MEAN_7D_MODA/SST4/ ${LOCAL_DIR}/moda_sst4_7d_fgb/.
-
 echo "${PREFIX} SE US MODA ${SUFFIX}"
 do_rsync_job tpa_pgs/rois/seus/MEAN_7D_MODA/OC/ ${LOCAL_DIR}/moda_oc_7d_seus/.
 do_rsync_job tpa_pgs/rois/seus/MEAD_7D_MODA/SST4/ ${LOCAL_DIR}/moda_sst4_7d_seus/.
