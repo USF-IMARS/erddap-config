@@ -263,7 +263,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 </dataset>
 
 <dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
-    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.html</sourceUrl>
+    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
 </dataset>
 
 <dataset type="EDDGridFromNcFiles" datasetID="moda_sst_7d_gom" active="true">
