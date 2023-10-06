@@ -21,7 +21,9 @@ services:
       # === ERDDAP dataset location mounts========================================
       - '/mnt/sdb:/mnt/sdb'
       - '/mnt/sdc:/mnt/sdc'
-      # set up script
+      # custom color palette for seascape
       - /root/docker_volumes/erddap-config/datasets/noaa_aoml_seascapes_8day/Seascapes.cpt:/usr/local/tomcat/webapps/erddap/WEB-INF/cptfiles/Seascapes.cpt
+      # custom messages.xml required to have a custom color palette:
+      - /root/docker_volumes/erddap-config/messages.xml:/usr/local/tomcat/webapps/erddap/WEB-INF/classes/gov/noaa/pfel/erddap/util/messages.xml
 volumes:
   erddap-data-volume:
