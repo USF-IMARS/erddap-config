@@ -21,5 +21,7 @@ services:
       # === ERDDAP dataset location mounts========================================
       - '/mnt/sdb:/mnt/sdb'
       - '/mnt/sdc:/mnt/sdc'
+      # set up script
+      - /root/docker_volumes/erddap-config/config.sh:/usr/local/tomcat/bin/config.sh
 volumes:
   erddap-data-volume:
