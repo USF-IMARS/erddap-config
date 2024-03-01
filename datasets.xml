@@ -187,85 +187,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sstn_7d_gom" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/vsnpp_sstn_7d_gom/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS SST4 7-Day means for GOM</att>
-        <att name="title">VIIRS-SNPP Nighttime SST 7-Day means for GOM</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_GOM_SSTN\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>sst_median</sourceName>
-        <destinationName>sst_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">32.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature (nighttime)</att>
-            <att name="standard_name">sea_surface_temperature</att>
-            <att name="Units">null</att>
-            <att name="units">degree_C</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>sst_anom</sourceName>
-        <destinationName>sst_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
-            <att name="standard_name">surface_temperature_anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">degree_C</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
-    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
-</dataset>
-
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sst_7d_gom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -339,10 +260,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="units">degree_C</att>
         </addAttributes>
     </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
 </dataset>
 
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_7d_gom" active="true">
@@ -469,6 +386,107 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 </dataset>
 
 
+<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_1d_gom" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/moda_oc_1d_gom/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">imars.usf.edu</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">ocean color, chlorophyll, turbidity, reflectance, chlor_a, ABI, Kd_490, Rrs_667</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS MODIS GOM 1 Day Ocean Color</att>
+        <att name="title">MODIS-Aqua Ocean Color 1-Day for GOM</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_GOM_OC_1D\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a</sourceName>
+        <destinationName>chlor_a</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667</sourceName>
+        <destinationName>Rrs_667</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Remote sensing reflectance at 667nm</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490</sourceName>
+        <destinationName>Kd_490</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Diffuse Attenuation Coefficient at 490nm</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI</sourceName>
+        <destinationName>ABI</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
 <dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_gom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -592,81 +610,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="long_name">Algal Bloom Index Anomaly</att>
             <att name="Units">null</att>
             <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromNcFiles" datasetID="moda_sst4_7d_gom" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/moda_sst4_7d_gom/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS MODIS SST4 7-Day GOM means</att>
-        <att name="title">MODIS-Aqua Nighttime SST (SST4) 7-Day means for GOM</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_GOM_SST4\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>sst4_median</sourceName>
-        <destinationName>sst4_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">32.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature (nighttime)</att>
-            <att name="standard_name">sea_surface_temperature</att>
-            <att name="Units">null</att>
-            <att name="units">degree_C</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>sst4_anom</sourceName>
-        <destinationName>sst4_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
-            <att name="standard_name">surface_temperature_anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">degree_C</att>
         </addAttributes>
     </dataVariable>
 </dataset>
@@ -798,6 +741,81 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sstn_7d_gom" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/vsnpp_sstn_7d_gom/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS VIIRS SST4 7-Day means for GOM</att>
+        <att name="title">VIIRS-SNPP Nighttime SST 7-Day means for GOM</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_GOM_SSTN\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sst_median</sourceName>
+        <destinationName>sst_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature (nighttime)</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst_anom</sourceName>
+        <destinationName>sst_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
 <dataset type="EDDGridFromNcFiles" datasetID="moda_sst4_7d_seus" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
@@ -873,10 +891,18 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
-<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_1d_gom" active="true">
+<dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
+    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
+</dataset>
+
+<dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
+    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="moda_sst4_7d_gom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/moda_oc_1d_gom/</fileDir>
+    <fileDir>/mnt/sdb/moda_sst4_7d_gom/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -891,19 +917,19 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="creator_email">dotis@usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
+        <att name="infoUrl">???</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">ocean color, chlorophyll, turbidity, reflectance, chlor_a, ABI, Kd_490, Rrs_667</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst4_anom, sst4_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
         <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS MODIS GOM 1 Day Ocean Color</att>
-        <att name="title">MODIS-Aqua Ocean Color 1-Day for GOM</att>
+        <att name="summary">USF IMaRS MODIS SST4 7-Day GOM means</att>
+        <att name="title">MODIS-Aqua Nighttime SST (SST4) 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_GOM_OC_1D\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_GOM_SST4\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -919,57 +945,31 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
-        <sourceName>chlor_a</sourceName>
-        <destinationName>chlor_a</destinationName>
+        <sourceName>sst4_median</sourceName>
+        <destinationName>sst4_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature (nighttime)</att>
+            <att name="standard_name">sea_surface_temperature</att>
             <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
+            <att name="units">degree_C</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>Rrs_667</sourceName>
-        <destinationName>Rrs_667</destinationName>
+        <sourceName>sst4_anom</sourceName>
+        <destinationName>sst4_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Remote sensing reflectance at 667nm</att>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
             <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490</sourceName>
-        <destinationName>Kd_490</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0.01</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Diffuse Attenuation Coefficient at 490nm</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI</sourceName>
-        <destinationName>ABI</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
+            <att name="units">degree_C</att>
         </addAttributes>
     </dataVariable>
 </dataset>
