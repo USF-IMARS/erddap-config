@@ -37,12 +37,26 @@
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>latitude</sourceName>
+        <sourceName>lat</sourceName>
         <destinationName>latitude</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="source_name">lat</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>longitude</sourceName>
+        <sourceName>lon</sourceName>
         <destinationName>longitude</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="source_name">lon</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
     </axisVariable>
     <dataVariable>
         <sourceName>Rrs_667</sourceName>
