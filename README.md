@@ -26,7 +26,7 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
 
 ### checking for errors on the ERDDAP server
 1. look at `{erddap_server_url/status.html` to see a list of datasets that are failing
-1. search the `/erddapdata/logs/log.txt` for errors related to your dataset
+1. search the `/erddapData/logs/log.txt` for errors related to your dataset
 1. run `DasDds` to find errors
     * `docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash DasDds.sh -verbose"`
 1. once DasDds has no errors, you may need to restart the ERDDAP container to update volumes:
