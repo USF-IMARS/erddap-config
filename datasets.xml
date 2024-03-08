@@ -702,7 +702,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="title">MODIS-Aqua Ocean Color 1-Day for GOM</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_GOM_OC_1D\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,A(\d{7})_GOM_OC_1D\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
