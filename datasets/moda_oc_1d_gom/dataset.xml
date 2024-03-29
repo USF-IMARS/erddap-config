@@ -8,6 +8,13 @@
     <metadataFrom>last</metadataFrom>
     <matchAxisNDigits>20</matchAxisNDigits>
     <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="Conventions">CF-1.4</att>
+        <att name="metadata_profile">beam</att>
+        <att name="metadata_version">0.5</att>
+        <att name="product_type">BandMath</att>
+        <att name="TileSize">286:429</att>
+    </sourceAttributes -->
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="contact">Dan Otis - dotis@usf.edu</att>
@@ -36,7 +43,33 @@
             <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         </addAttributes>
     </axisVariable>
+        <axisVariable>
+        <sourceName>y</sourceName>
+        <destinationName>latitude</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="source_name">y</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </axisVariable>
     <axisVariable>
+        <sourceName>x</sourceName>
+        <destinationName>longitude</destinationName>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="source_name">x</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </axisVariable>
+<!--     <axisVariable>
         <sourceName>lat</sourceName>
         <destinationName>latitude</destinationName>
         <addAttributes>
@@ -57,7 +90,7 @@
             <att name="standard_name">longitude</att>
             <att name="units">degrees_east</att>
         </addAttributes>
-    </axisVariable>
+    </axisVariable> -->
     <dataVariable>
         <sourceName>Rrs_667</sourceName>
         <destinationName>Rrs_667</destinationName>
