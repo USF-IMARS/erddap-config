@@ -44,7 +44,7 @@
         </addAttributes>
     </axisVariable>
         <axisVariable>
-        <sourceName>y</sourceName>
+        <sourceName>lat</sourceName>
         <destinationName>latitude</destinationName>
         <!-- sourceAttributes>
         </sourceAttributes -->
@@ -57,7 +57,7 @@
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>x</sourceName>
+        <sourceName>lon</sourceName>
         <destinationName>longitude</destinationName>
         <!-- sourceAttributes>
         </sourceAttributes -->
