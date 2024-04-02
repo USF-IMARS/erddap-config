@@ -28,7 +28,7 @@
         <att name="title">MODIS-Aqua Ocean Color 1-Day composite for Florida</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_1D_FL_OC_ED\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_1D_FL_OC_ED\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
