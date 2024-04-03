@@ -123,9 +123,7 @@
             <att name="units">W m^-2 um^-1 sr^-1</att>
         </addAttributes>
     </dataVariable>
-</dataset>
-    </dataVariable>
-      <dataVariable>
+    <dataVariable>
         <sourceName>Kd_490</sourceName>
         <destinationName>Kd_490</destinationName>
         <dataType>double</dataType>
