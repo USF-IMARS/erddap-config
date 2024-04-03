@@ -1,7 +1,7 @@
 <dataset type="EDDGridFromNcFiles" datasetID="moda_oc_1d_fl" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/moda_oc_1d_fl/</fileDir>
+    <fileDir>/mnt/sdc/moda_oc_1d_fl/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
