@@ -97,7 +97,7 @@
             <att name="units">sr^-1</att>
         </addAttributes>
     </dataVariable>
-      <dataVariable>
+    <dataVariable>
         <sourceName>ABI</sourceName>
         <destinationName>ABI</destinationName>
         <dataType>double</dataType>
