@@ -46,7 +46,7 @@ See the email account settings below.
 Whether or not you set up the email system, all potential email messages
 are logged to an emailLogYEAR-MONTH.txt file in [bigParentDirectory]/logs/.
 -->
-<emailEverythingTo>imarsroot@marine.usf.edu</emailEverythingTo>
+<emailEverythingTo>erddap@tylar.info</emailEverythingTo>
 <!-- optional:
 <emailDailyReportsTo>your.boss@yourInstitution.edu</emailDailyReportsTo>
 -->
