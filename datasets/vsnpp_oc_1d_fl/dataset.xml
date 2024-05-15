@@ -25,7 +25,7 @@
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS SNPP FL 1 Day Composite Ocean Color</att>
-        <att name="title">VIIRS SNPP Ocean Color 1-Day composite for Florida</att>
+        <att name="title">VIIRS-SNPP Ocean Color 1-Day composite for Florida</att>
     </addAttributes>
     <axisVariable>
         <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_1D_FL_OC_ED\.nc,1</sourceName>
