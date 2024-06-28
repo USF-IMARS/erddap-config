@@ -270,7 +270,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="title">Data from a local source.</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>y</sourceName>
+        <sourceName>lat</sourceName>
         <destinationName>latitude</destinationName>
         <!-- sourceAttributes>
         </sourceAttributes -->
@@ -283,7 +283,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </axisVariable>
     <axisVariable>
-        <sourceName>x</sourceName>
+        <sourceName>lon</sourceName>
         <destinationName>longitude</destinationName>
         <!-- sourceAttributes>
         </sourceAttributes -->
@@ -367,40 +367,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="colorBarMinimum" type="double">-10.0</att>
             <att name="coordinates">null</att>
             <att name="ioos_category">Optical Properties</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>lat</sourceName>
-        <destinationName>lat</destinationName>
-        <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">286 429</att>
-            <att name="long_name">latitude coordinate</att>
-            <att name="standard_name">latitude</att>
-            <att name="units">degrees_north</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="colorBarMaximum" type="double">90.0</att>
-            <att name="colorBarMinimum" type="double">-90.0</att>
-            <att name="ioos_category">Location</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>lon</sourceName>
-        <destinationName>lon</destinationName>
-        <dataType>double</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">286 429</att>
-            <att name="long_name">longitude coordinate</att>
-            <att name="standard_name">longitude</att>
-            <att name="units">degrees_east</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="colorBarMaximum" type="double">180.0</att>
-            <att name="colorBarMinimum" type="double">-180.0</att>
-            <att name="ioos_category">Location</att>
         </addAttributes>
     </dataVariable>
 </dataset>
