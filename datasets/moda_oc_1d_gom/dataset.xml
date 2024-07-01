@@ -8,10 +8,6 @@
     <metadataFrom>last</metadataFrom>
     <matchAxisNDigits>20</matchAxisNDigits>
     <fileTableInMemory>false</fileTableInMemory>
-    <!-- sourceAttributes>
-        <att name="Conventions">CF-1.4</att>
-        <att name="TileSize">286:429</att>
-    </sourceAttributes -->
     <addAttributes>
         <att name="cdm_data_type">Grid</att>
         <att name="Conventions">CF-1.10, COARDS, ACDD-1.3</att>
@@ -21,14 +17,12 @@
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">Data from a local source.</att>
-        <att name="title">Data from a local source.</att>
+        <att name="summary">VIIRS Daily Ocean Color composite for the Gulf of Mexico</att>
+        <att name="title">VIIRS Daili 1-Day GOM OC composite</att>
     </addAttributes>
     <axisVariable>
         <sourceName>lat</sourceName>
         <destinationName>latitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Latitude</att>
@@ -40,8 +34,6 @@
     <axisVariable>
         <sourceName>lon</sourceName>
         <destinationName>longitude</destinationName>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
         <addAttributes>
             <att name="ioos_category">Location</att>
             <att name="long_name">Longitude</att>
@@ -54,13 +46,6 @@
         <sourceName>Rrs_671</sourceName>
         <destinationName>Rrs_671</destinationName>
         <dataType>float</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">286 429</att>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="coordinates">lat lon</att>
-            <att name="long_name">Remote sensing reflectance at 671 nm</att>
-            <att name="units">sr^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="_ChunkSizes">null</att>
             <att name="coordinates">null</att>
@@ -71,13 +56,6 @@
         <sourceName>chlor_a</sourceName>
         <destinationName>chlor_a</destinationName>
         <dataType>float</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">286 429</att>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="coordinates">lat lon</att>
-            <att name="long_name">Chlorophyll-a concentration, OCI Algorithm</att>
-            <att name="units">mg m^-3</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="_ChunkSizes">null</att>
             <att name="colorBarMaximum" type="double">30.0</att>
@@ -92,11 +70,6 @@
         <sourceName>STRAYLIGHT_MASK</sourceName>
         <destinationName>STRAYLIGHT_MASK</destinationName>
         <dataType>float</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">286 429</att>
-            <att name="coordinates">lat lon</att>
-            <att name="long_name">Straylight affected pixels</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="_ChunkSizes">null</att>
             <att name="colorBarMaximum" type="double">150.0</att>
@@ -109,13 +82,6 @@
         <sourceName>Kd_490</sourceName>
         <destinationName>Kd_490</destinationName>
         <dataType>float</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">286 429</att>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="coordinates">lat lon</att>
-            <att name="long_name">Diffuse attenuation coefficient at 490nm</att>
-            <att name="units">m^-1</att>
-        </sourceAttributes -->
         <addAttributes>
             <att name="_ChunkSizes">null</att>
             <att name="colorBarMaximum" type="double">10.0</att>
