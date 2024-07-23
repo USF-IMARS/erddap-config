@@ -71,6 +71,19 @@
             <att name="units">mg m^-3</att>
         </addAttributes>
     </dataVariable>
+        <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Weekly Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
     <dataVariable>
         <sourceName>Rrs_671</sourceName>
         <destinationName>Rrs_671</destinationName>
@@ -97,6 +110,19 @@
             <att name="units">sr^-1</att>
         </addAttributes>
     </dataVariable>
+        <dataVariable>
+        <sourceName>Rrs_671_clim</sourceName>
+        <destinationName>Rrs_671_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Weekly Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
     <dataVariable>
         <sourceName>Kd_490</sourceName>
         <destinationName>Kd_490</destinationName>
@@ -119,6 +145,19 @@
             <att name="colorBarMinimum" type="double">-0.25</att>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Diffuse attenuation coefficient Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+        <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient at 490nm Weekly Climatology</att>
             <att name="Units">null</att>
             <att name="units">m^-1</att>
         </addAttributes>
