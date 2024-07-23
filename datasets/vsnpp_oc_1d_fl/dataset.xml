@@ -71,7 +71,7 @@
             <att name="units">mg m^-3</att>
         </addAttributes>
     </dataVariable>
-        <dataVariable>
+    <dataVariable>
         <sourceName>chlor_a_clim</sourceName>
         <destinationName>chlor_a_clim</destinationName>
         <dataType>double</dataType>
@@ -110,7 +110,7 @@
             <att name="units">sr^-1</att>
         </addAttributes>
     </dataVariable>
-        <dataVariable>
+    <dataVariable>
         <sourceName>Rrs_671_clim</sourceName>
         <destinationName>Rrs_671_clim</destinationName>
         <dataType>double</dataType>
@@ -149,7 +149,7 @@
             <att name="units">m^-1</att>
         </addAttributes>
     </dataVariable>
-        <dataVariable>
+    <dataVariable>
         <sourceName>Kd_490_clim</sourceName>
         <destinationName>Kd_490_clim</destinationName>
         <dataType>double</dataType>
