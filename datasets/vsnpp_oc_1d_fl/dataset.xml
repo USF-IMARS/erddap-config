@@ -162,5 +162,18 @@
             <att name="units">m^-1</att>
         </addAttributes>
     </dataVariable>
+    <dataVariable>
+        <sourceName>STRAYLIGHT_MASK/sourceName>
+        <destinationName>STRAYLIGHT_MASK</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Straylight mask based on Level-2 straylight flag</att>
+            <att name="Units">null</att>
+            <att name="units">none</att>
+        </addAttributes>
+    </dataVariable>
 </dataset>
 
