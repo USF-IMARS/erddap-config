@@ -163,7 +163,7 @@
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>STRAYLIGHT_MASK/sourceName>
+        <sourceName>STRAYLIGHT_MASK</sourceName>
         <destinationName>STRAYLIGHT_MASK</destinationName>
         <dataType>double</dataType>
         <addAttributes>
