@@ -467,7 +467,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-    <dataVariable>
         <sourceName>Kd_490_median</sourceName>
         <destinationName>Kd_490_median</destinationName>
         <dataType>double</dataType>
