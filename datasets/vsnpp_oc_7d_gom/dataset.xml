@@ -48,7 +48,7 @@
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMaximum" type="double">20.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
@@ -76,7 +76,7 @@
         <destinationName>chlor_a_clim</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMaximum" type="double">20.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Climatology (2013-2019)</att>
@@ -124,6 +124,8 @@
         <destinationName>Kd_490_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
             <att name="ioos_category">Unknown</att>
             <att name="long_name">Kd_490 Median</att>
             <att name="Units">null</att>
