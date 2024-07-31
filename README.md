@@ -25,15 +25,15 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
 1. see the `workflow` section above to finish applying the changes
 
 ### checking for errors on the ERDDAP server
-1. look at `{erddap_server_url/status.html` to see a list of datasets that are failing
-1. search the `/erddapData/logs/log.txt` for errors related to your dataset
+1. search the `/erddapData/logs/log.txt` within the docker container for errors related to your dataset
+    * to open a bash connection in the container from the hypervisor `docker exec -it erddap /bin/bash`
 1. run `DasDds` to find errors
     * `docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash DasDds.sh -verbose"`
 1. once DasDds has no errors, you may need to restart the ERDDAP container to update volumes:
     * `docker-compose restart`
     * in some cases resetting the volumes is needed too:
         * `docker-compose down --rmi all --volumes && docker-compose up -d`
-1. watch [${HOSTNAME}/erddap/status.hml](http://${HOSTNAME}.marine.usf.edu:8080/erddap/status.html) for `LoadDatasets` to finish & that all is well.
+1. look at [${HOSTNAME}/erddap/status.hml](http://${HOSTNAME}.marine.usf.edu:8080/erddap/status.html) for `LoadDatasets` to finish & that all is well.
 
 
 ## additional links
