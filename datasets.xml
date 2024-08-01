@@ -238,6 +238,45 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
     <dataVariable>
+        <sourceName>ABI</sourceName>
+        <destinationName>ABI</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_anom</sourceName>
+        <destinationName>ABI_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.25</att>
+            <att name="colorBarMinimum" type="double">-0.25</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_clim</sourceName>
+        <destinationName>ABI_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
         <sourceName>Kd_490</sourceName>
         <destinationName>Kd_490</destinationName>
         <dataType>double</dataType>
