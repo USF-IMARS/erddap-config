@@ -28,7 +28,7 @@
         <att name="title">VIIRS-SNPP Nighttime SST 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,VSNPP_(\d{7})_(\d{7})_7D_GOM_SSTN\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_GOM_SSTN\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -67,6 +67,20 @@
             <att name="ioos_category">Temperature</att>
             <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
             <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst_clim</sourceName>
+        <destinationName>sst_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature Climatology (nighttime 2013-2019)</att>
+            <att name="standard_name">surface_temperature_climatology</att>
             <att name="Units">null</att>
             <att name="units">degree_C</att>
         </addAttributes>
