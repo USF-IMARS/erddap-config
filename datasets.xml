@@ -1100,14 +1100,14 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">29.0124N to 40.5N -82W to -73.0117W</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS MODIS SEUS 7 Day Mean Ocean Color</att>
-        <att name="title">MODIS-Aqua Ocean Color 7-Day means for the southeast US</att>
+        <att name="title">MODIS-Aqua Ocean Color 7-Day means for the Southeast US</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyDDD,MODA_(\d{7})_(\d{7})_7D_SEUS_OC\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_7D_GOM_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -1127,7 +1127,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>chlor_a_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMaximum" type="double">20.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
@@ -1151,11 +1151,24 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
     <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
         <sourceName>Rrs_667_median</sourceName>
         <destinationName>Rrs_667_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMaximum" type="double">0.02</att>
             <att name="colorBarMinimum" type="double">0.0001</att>
             <att name="ioos_category">Optical Properties</att>
             <att name="long_name">Rrs_667 Median</att>
@@ -1176,7 +1189,20 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="units">sr^-1</att>
         </addAttributes>
     </dataVariable>
-      <dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_clim</sourceName>
+        <destinationName>Rrs_667_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
         <sourceName>ABI_median</sourceName>
         <destinationName>ABI_median</destinationName>
         <dataType>double</dataType>
@@ -1200,6 +1226,58 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="long_name">Algal Bloom Index Anomaly</att>
             <att name="Units">null</att>
             <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_clim</sourceName>
+        <destinationName>ABI_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_median</sourceName>
+        <destinationName>Kd_490_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Median</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">-1.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
         </addAttributes>
     </dataVariable>
 </dataset>
