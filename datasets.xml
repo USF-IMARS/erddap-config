@@ -316,8 +316,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
-        <sourceName>sst_median</sourceName>
-        <destinationName>sst_median</destinationName>
+        <sourceName>sstn_median</sourceName>
+        <destinationName>sstn_median</destinationName>
         <dataType>double</dataType>
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
@@ -330,8 +330,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>sst_anom</sourceName>
-        <destinationName>sst_anom</destinationName>
+        <sourceName>sstn_anom</sourceName>
+        <destinationName>sstn_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
             <att name="colorBarMaximum" type="double">3.0</att>
@@ -344,8 +344,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>sst_clim</sourceName>
-        <destinationName>sst_clim</destinationName>
+        <sourceName>sstn_clim</sourceName>
+        <destinationName>sstn_clim</destinationName>
         <dataType>double</dataType>
         <addAttributes>
             <att name="colorBarMaximum" type="double">32.0</att>
