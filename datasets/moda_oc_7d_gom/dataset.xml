@@ -157,7 +157,7 @@
             <att name="colorBarMaximum" type="double">0.5</att>
             <att name="colorBarMinimum" type="double">0.001</att>
             <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Anomaly</att>
+            <att name="long_name">Algal Bloom Index Climatology (2003-2019)</att>
             <att name="Units">null</att>
             <att name="units">W m^-2 um^-1 sr^-1</att>
         </addAttributes>
