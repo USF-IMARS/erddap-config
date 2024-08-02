@@ -48,7 +48,7 @@
         <destinationName>chlor_a</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMaximum" type="double">20.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
@@ -63,8 +63,8 @@
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="colorBarMaximum" type="double">2.5</att>
+            <att name="colorBarMinimum" type="double">-2.5</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
@@ -76,7 +76,7 @@
         <destinationName>chlor_a_clim</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMaximum" type="double">20.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Weekly Climatology (2003-2019)</att>
