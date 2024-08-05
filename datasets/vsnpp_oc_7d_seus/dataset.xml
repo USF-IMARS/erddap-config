@@ -24,8 +24,8 @@
         <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS SEUS 7 Day Mean Ocean Color</att>
-        <att name="title">VIIRS-SNPP Ocean Color 7-Day means for the Southeast US</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP SEUS MEAN_7D Ocean Color</att>
+        <att name="title">VIIRS-SNPP Ocean Color 7-Day mean for the Southeast US</att>
     </addAttributes>
     <axisVariable>
         <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_SEUS_OC\.nc,2</sourceName>
