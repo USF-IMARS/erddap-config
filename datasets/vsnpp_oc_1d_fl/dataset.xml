@@ -24,7 +24,7 @@
         <att name="Lat_Lon_Limits">24.0N to 31N -85W to -78.5W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS SNPP FL 1 Day Composite Ocean Color</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP FL 1-Day Composite Ocean Color</att>
         <att name="title">VIIRS-SNPP Ocean Color 1-Day composite for Florida</att>
     </addAttributes>
     <axisVariable>
