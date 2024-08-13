@@ -1587,8 +1587,8 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>sstn_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="colorBarMaximum" type="double">4.0</att>
+            <att name="colorBarMinimum" type="double">-4.0</att>
             <att name="ioos_category">Temperature</att>
             <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
             <att name="standard_name">surface_temperature_anomaly</att>
