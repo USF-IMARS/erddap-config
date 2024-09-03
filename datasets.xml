@@ -971,7 +971,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<att name="Lat_Lon_Limits">24.0N to 31.0N -85.0E to -78.5E</att>
 		<att name="license">[standard]</att>
 		<att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-		<att name="summary">USF IMaRS PACE-OCI SFL 1-Day Composite Ocean Color BGC</att>
+		<att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC</att>
 		<att name="title">PACE-OCI Ocean Color AOP 1-Day composite for South Florida</att>
 	</addAttributes>
 	<axisVariable>
@@ -997,7 +997,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_339nm</att>
@@ -1012,7 +1012,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_341nm</att>
@@ -1027,7 +1027,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_344nm</att>
@@ -1042,7 +1042,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_346nm</att>
@@ -1057,7 +1057,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_348nm</att>
@@ -1072,7 +1072,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_351nm</att>
@@ -1087,7 +1087,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_353nm</att>
@@ -1102,7 +1102,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_356nm</att>
@@ -1117,7 +1117,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_358nm</att>
@@ -1132,7 +1132,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_361nm</att>
@@ -1147,7 +1147,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_363nm</att>
@@ -1162,7 +1162,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_366nm</att>
@@ -1177,7 +1177,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_368nm</att>
@@ -1192,7 +1192,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_371nm</att>
@@ -1207,7 +1207,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_373nm</att>
@@ -1222,7 +1222,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_375nm</att>
@@ -1237,7 +1237,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_378nm</att>
@@ -1252,7 +1252,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_380nm</att>
@@ -1267,7 +1267,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_383nm</att>
@@ -1282,7 +1282,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_385nm</att>
@@ -1297,7 +1297,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_388nm</att>
@@ -1312,7 +1312,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_390nm</att>
@@ -1327,7 +1327,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_393nm</att>
@@ -1342,7 +1342,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_395nm</att>
@@ -1357,7 +1357,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_398nm</att>
@@ -1372,7 +1372,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_400nm</att>
@@ -1387,7 +1387,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_403nm</att>
@@ -1402,7 +1402,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_405nm</att>
@@ -1417,7 +1417,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_408nm</att>
@@ -1432,7 +1432,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_410nm</att>
@@ -1447,7 +1447,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_413nm</att>
@@ -1462,7 +1462,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_415nm</att>
@@ -1477,7 +1477,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_418nm</att>
@@ -1492,7 +1492,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_420nm</att>
@@ -1507,7 +1507,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_422nm</att>
@@ -1522,7 +1522,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_425nm</att>
@@ -1537,7 +1537,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_427nm</att>
@@ -1552,7 +1552,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_430nm</att>
@@ -1567,7 +1567,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_432nm</att>
@@ -1582,7 +1582,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_435nm</att>
@@ -1597,7 +1597,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_437nm</att>
@@ -1612,7 +1612,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_440nm</att>
@@ -1627,7 +1627,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_442nm</att>
@@ -1642,7 +1642,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_445nm</att>
@@ -1657,7 +1657,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_447nm</att>
@@ -1672,7 +1672,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_450nm</att>
@@ -1687,7 +1687,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_452nm</att>
@@ -1702,7 +1702,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_455nm</att>
@@ -1717,7 +1717,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_457nm</att>
@@ -1732,7 +1732,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_460nm</att>
@@ -1747,7 +1747,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_462nm</att>
@@ -1762,7 +1762,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_465nm</att>
@@ -1777,7 +1777,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_467nm</att>
@@ -1792,7 +1792,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_470nm</att>
@@ -1807,7 +1807,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_472nm</att>
@@ -1822,7 +1822,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_475nm</att>
@@ -1837,7 +1837,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_477nm</att>
@@ -1852,7 +1852,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_480nm</att>
@@ -1867,7 +1867,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_482nm</att>
@@ -1882,7 +1882,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_485nm</att>
@@ -1897,7 +1897,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_487nm</att>
@@ -1912,7 +1912,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_490nm</att>
@@ -1927,7 +1927,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_492nm</att>
@@ -1942,7 +1942,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_495nm</att>
@@ -1957,7 +1957,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_497nm</att>
@@ -1972,7 +1972,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_500nm</att>
@@ -1987,7 +1987,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_502nm</att>
@@ -2002,7 +2002,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_505nm</att>
@@ -2017,7 +2017,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_507nm</att>
@@ -2032,7 +2032,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_510nm</att>
@@ -2047,7 +2047,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_512nm</att>
@@ -2062,7 +2062,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_515nm</att>
@@ -2077,7 +2077,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_517nm</att>
@@ -2092,7 +2092,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_520nm</att>
@@ -2107,7 +2107,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_522nm</att>
@@ -2122,7 +2122,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_525nm</att>
@@ -2137,7 +2137,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_527nm</att>
@@ -2152,7 +2152,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_530nm</att>
@@ -2167,7 +2167,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_532nm</att>
@@ -2182,7 +2182,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_535nm</att>
@@ -2197,7 +2197,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_537nm</att>
@@ -2212,7 +2212,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_540nm</att>
@@ -2227,7 +2227,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_542nm</att>
@@ -2242,7 +2242,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_545nm</att>
@@ -2257,7 +2257,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_547nm</att>
@@ -2272,7 +2272,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_550nm</att>
@@ -2287,7 +2287,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_553nm</att>
@@ -2302,7 +2302,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_555nm</att>
@@ -2317,7 +2317,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_558nm</att>
@@ -2332,7 +2332,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_560nm</att>
@@ -2347,7 +2347,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_563nm</att>
@@ -2362,7 +2362,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_565nm</att>
@@ -2377,7 +2377,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_568nm</att>
@@ -2392,7 +2392,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_570nm</att>
@@ -2407,7 +2407,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_573nm</att>
@@ -2422,7 +2422,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_575nm</att>
@@ -2437,7 +2437,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_578nm</att>
@@ -2452,7 +2452,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_580nm</att>
@@ -2467,7 +2467,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_583nm</att>
@@ -2482,7 +2482,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_586nm</att>
@@ -2497,7 +2497,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_588nm</att>
@@ -2512,7 +2512,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_591nm</att>
@@ -2527,7 +2527,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_593nm</att>
@@ -2542,7 +2542,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_596nm</att>
@@ -2557,7 +2557,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_598nm</att>
@@ -2572,7 +2572,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_601nm</att>
@@ -2587,7 +2587,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_603nm</att>
@@ -2602,7 +2602,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_605nm</att>
@@ -2617,7 +2617,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_608nm</att>
@@ -2632,7 +2632,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_610nm</att>
@@ -2647,7 +2647,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_613nm</att>
@@ -2662,7 +2662,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_615nm</att>
@@ -2677,7 +2677,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_618nm</att>
@@ -2692,7 +2692,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_620nm</att>
@@ -2707,7 +2707,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_623nm</att>
@@ -2722,7 +2722,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_625nm</att>
@@ -2737,7 +2737,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_627nm</att>
@@ -2752,7 +2752,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_630nm</att>
@@ -2767,7 +2767,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_632nm</att>
@@ -2782,7 +2782,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_635nm</att>
@@ -2797,7 +2797,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_637nm</att>
@@ -2812,7 +2812,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_640nm</att>
@@ -2827,7 +2827,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_641nm</att>
@@ -2842,7 +2842,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_642nm</att>
@@ -2857,7 +2857,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_643nm</att>
@@ -2872,7 +2872,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_645nm</att>
@@ -2887,7 +2887,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_646nm</att>
@@ -2902,7 +2902,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_647nm</att>
@@ -2917,7 +2917,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_648nm</att>
@@ -2932,7 +2932,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_650nm</att>
@@ -2947,7 +2947,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_651nm</att>
@@ -2962,7 +2962,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_652nm</att>
@@ -2977,7 +2977,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_653nm</att>
@@ -2992,7 +2992,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_655nm</att>
@@ -3007,7 +3007,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_656nm</att>
@@ -3022,7 +3022,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_657nm</att>
@@ -3037,7 +3037,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_658nm</att>
@@ -3052,7 +3052,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_660nm</att>
@@ -3067,7 +3067,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_661nm</att>
@@ -3082,7 +3082,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_662nm</att>
@@ -3097,7 +3097,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_663nm</att>
@@ -3112,7 +3112,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_665nm</att>
@@ -3127,7 +3127,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_666nm</att>
@@ -3142,7 +3142,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_667nm</att>
@@ -3157,7 +3157,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_668nm</att>
@@ -3172,7 +3172,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_670nm</att>
@@ -3187,7 +3187,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_671nm</att>
@@ -3202,7 +3202,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_672nm</att>
@@ -3217,7 +3217,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_673nm</att>
@@ -3232,7 +3232,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_675nm</att>
@@ -3247,7 +3247,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_676nm</att>
@@ -3262,7 +3262,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_677nm</att>
@@ -3277,7 +3277,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_678nm</att>
@@ -3292,7 +3292,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_679nm</att>
@@ -3307,7 +3307,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_681nm</att>
@@ -3322,7 +3322,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_682nm</att>
@@ -3337,7 +3337,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_683nm</att>
@@ -3352,7 +3352,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_684nm</att>
@@ -3367,7 +3367,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_686nm</att>
@@ -3382,7 +3382,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_687nm</att>
@@ -3397,7 +3397,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_688nm</att>
@@ -3412,7 +3412,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_689nm</att>
@@ -3427,7 +3427,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_691nm</att>
@@ -3442,7 +3442,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_693nm</att>
@@ -3457,7 +3457,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_694nm</att>
@@ -3472,7 +3472,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_696nm</att>
@@ -3487,7 +3487,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_697nm</att>
@@ -3502,7 +3502,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_698nm</att>
@@ -3517,7 +3517,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_699nm</att>
@@ -3532,7 +3532,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_701nm</att>
@@ -3547,7 +3547,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_702nm</att>
@@ -3562,7 +3562,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_703nm</att>
