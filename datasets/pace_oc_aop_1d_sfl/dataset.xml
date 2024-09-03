@@ -24,7 +24,7 @@
 		<att name="Lat_Lon_Limits">24.0N to 31.0N -85.0E to -78.5E</att>
 		<att name="license">[standard]</att>
 		<att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-		<att name="summary">USF IMaRS PACE-OCI SFL 1-Day Composite Ocean Color BGC</att>
+		<att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC</att>
 		<att name="title">PACE-OCI Ocean Color AOP 1-Day composite for South Florida</att>
 	</addAttributes>
 	<axisVariable>
@@ -50,7 +50,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_339nm</att>
@@ -65,7 +65,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_341nm</att>
@@ -80,7 +80,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_344nm</att>
@@ -95,7 +95,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_346nm</att>
@@ -110,7 +110,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_348nm</att>
@@ -125,7 +125,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_351nm</att>
@@ -140,7 +140,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_353nm</att>
@@ -155,7 +155,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_356nm</att>
@@ -170,7 +170,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_358nm</att>
@@ -185,7 +185,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_361nm</att>
@@ -200,7 +200,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_363nm</att>
@@ -215,7 +215,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_366nm</att>
@@ -230,7 +230,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_368nm</att>
@@ -245,7 +245,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_371nm</att>
@@ -260,7 +260,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_373nm</att>
@@ -275,7 +275,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_375nm</att>
@@ -290,7 +290,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_378nm</att>
@@ -305,7 +305,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_380nm</att>
@@ -320,7 +320,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_383nm</att>
@@ -335,7 +335,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_385nm</att>
@@ -350,7 +350,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_388nm</att>
@@ -365,7 +365,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_390nm</att>
@@ -380,7 +380,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_393nm</att>
@@ -395,7 +395,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_395nm</att>
@@ -410,7 +410,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_398nm</att>
@@ -425,7 +425,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_400nm</att>
@@ -440,7 +440,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_403nm</att>
@@ -455,7 +455,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_405nm</att>
@@ -470,7 +470,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_408nm</att>
@@ -485,7 +485,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_410nm</att>
@@ -500,7 +500,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_413nm</att>
@@ -515,7 +515,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_415nm</att>
@@ -530,7 +530,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_418nm</att>
@@ -545,7 +545,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_420nm</att>
@@ -560,7 +560,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_422nm</att>
@@ -575,7 +575,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_425nm</att>
@@ -590,7 +590,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_427nm</att>
@@ -605,7 +605,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_430nm</att>
@@ -620,7 +620,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_432nm</att>
@@ -635,7 +635,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_435nm</att>
@@ -650,7 +650,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_437nm</att>
@@ -665,7 +665,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_440nm</att>
@@ -680,7 +680,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_442nm</att>
@@ -695,7 +695,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_445nm</att>
@@ -710,7 +710,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_447nm</att>
@@ -725,7 +725,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_450nm</att>
@@ -740,7 +740,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_452nm</att>
@@ -755,7 +755,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_455nm</att>
@@ -770,7 +770,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_457nm</att>
@@ -785,7 +785,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_460nm</att>
@@ -800,7 +800,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_462nm</att>
@@ -815,7 +815,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_465nm</att>
@@ -830,7 +830,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_467nm</att>
@@ -845,7 +845,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_470nm</att>
@@ -860,7 +860,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_472nm</att>
@@ -875,7 +875,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_475nm</att>
@@ -890,7 +890,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_477nm</att>
@@ -905,7 +905,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_480nm</att>
@@ -920,7 +920,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_482nm</att>
@@ -935,7 +935,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_485nm</att>
@@ -950,7 +950,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_487nm</att>
@@ -965,7 +965,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_490nm</att>
@@ -980,7 +980,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_492nm</att>
@@ -995,7 +995,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_495nm</att>
@@ -1010,7 +1010,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_497nm</att>
@@ -1025,7 +1025,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_500nm</att>
@@ -1040,7 +1040,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_502nm</att>
@@ -1055,7 +1055,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_505nm</att>
@@ -1070,7 +1070,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_507nm</att>
@@ -1085,7 +1085,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_510nm</att>
@@ -1100,7 +1100,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_512nm</att>
@@ -1115,7 +1115,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_515nm</att>
@@ -1130,7 +1130,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_517nm</att>
@@ -1145,7 +1145,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_520nm</att>
@@ -1160,7 +1160,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_522nm</att>
@@ -1175,7 +1175,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_525nm</att>
@@ -1190,7 +1190,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_527nm</att>
@@ -1205,7 +1205,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_530nm</att>
@@ -1220,7 +1220,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_532nm</att>
@@ -1235,7 +1235,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_535nm</att>
@@ -1250,7 +1250,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_537nm</att>
@@ -1265,7 +1265,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_540nm</att>
@@ -1280,7 +1280,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_542nm</att>
@@ -1295,7 +1295,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_545nm</att>
@@ -1310,7 +1310,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_547nm</att>
@@ -1325,7 +1325,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_550nm</att>
@@ -1340,7 +1340,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_553nm</att>
@@ -1355,7 +1355,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_555nm</att>
@@ -1370,7 +1370,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_558nm</att>
@@ -1385,7 +1385,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_560nm</att>
@@ -1400,7 +1400,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_563nm</att>
@@ -1415,7 +1415,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_565nm</att>
@@ -1430,7 +1430,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_568nm</att>
@@ -1445,7 +1445,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_570nm</att>
@@ -1460,7 +1460,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_573nm</att>
@@ -1475,7 +1475,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_575nm</att>
@@ -1490,7 +1490,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_578nm</att>
@@ -1505,7 +1505,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_580nm</att>
@@ -1520,7 +1520,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_583nm</att>
@@ -1535,7 +1535,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_586nm</att>
@@ -1550,7 +1550,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_588nm</att>
@@ -1565,7 +1565,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_591nm</att>
@@ -1580,7 +1580,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_593nm</att>
@@ -1595,7 +1595,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_596nm</att>
@@ -1610,7 +1610,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_598nm</att>
@@ -1625,7 +1625,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_601nm</att>
@@ -1640,7 +1640,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_603nm</att>
@@ -1655,7 +1655,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_605nm</att>
@@ -1670,7 +1670,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_608nm</att>
@@ -1685,7 +1685,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_610nm</att>
@@ -1700,7 +1700,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_613nm</att>
@@ -1715,7 +1715,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_615nm</att>
@@ -1730,7 +1730,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_618nm</att>
@@ -1745,7 +1745,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_620nm</att>
@@ -1760,7 +1760,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_623nm</att>
@@ -1775,7 +1775,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_625nm</att>
@@ -1790,7 +1790,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_627nm</att>
@@ -1805,7 +1805,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_630nm</att>
@@ -1820,7 +1820,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_632nm</att>
@@ -1835,7 +1835,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_635nm</att>
@@ -1850,7 +1850,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_637nm</att>
@@ -1865,7 +1865,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_640nm</att>
@@ -1880,7 +1880,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_641nm</att>
@@ -1895,7 +1895,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_642nm</att>
@@ -1910,7 +1910,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_643nm</att>
@@ -1925,7 +1925,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_645nm</att>
@@ -1940,7 +1940,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_646nm</att>
@@ -1955,7 +1955,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_647nm</att>
@@ -1970,7 +1970,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_648nm</att>
@@ -1985,7 +1985,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_650nm</att>
@@ -2000,7 +2000,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_651nm</att>
@@ -2015,7 +2015,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_652nm</att>
@@ -2030,7 +2030,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_653nm</att>
@@ -2045,7 +2045,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_655nm</att>
@@ -2060,7 +2060,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_656nm</att>
@@ -2075,7 +2075,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_657nm</att>
@@ -2090,7 +2090,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_658nm</att>
@@ -2105,7 +2105,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_660nm</att>
@@ -2120,7 +2120,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_661nm</att>
@@ -2135,7 +2135,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_662nm</att>
@@ -2150,7 +2150,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_663nm</att>
@@ -2165,7 +2165,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_665nm</att>
@@ -2180,7 +2180,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_666nm</att>
@@ -2195,7 +2195,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_667nm</att>
@@ -2210,7 +2210,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_668nm</att>
@@ -2225,7 +2225,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_670nm</att>
@@ -2240,7 +2240,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_671nm</att>
@@ -2255,7 +2255,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_672nm</att>
@@ -2270,7 +2270,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_673nm</att>
@@ -2285,7 +2285,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_675nm</att>
@@ -2300,7 +2300,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_676nm</att>
@@ -2315,7 +2315,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_677nm</att>
@@ -2330,7 +2330,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_678nm</att>
@@ -2345,7 +2345,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_679nm</att>
@@ -2360,7 +2360,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_681nm</att>
@@ -2375,7 +2375,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_682nm</att>
@@ -2390,7 +2390,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_683nm</att>
@@ -2405,7 +2405,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_684nm</att>
@@ -2420,7 +2420,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_686nm</att>
@@ -2435,7 +2435,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_687nm</att>
@@ -2450,7 +2450,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_688nm</att>
@@ -2465,7 +2465,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_689nm</att>
@@ -2480,7 +2480,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_691nm</att>
@@ -2495,7 +2495,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_693nm</att>
@@ -2510,7 +2510,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_694nm</att>
@@ -2525,7 +2525,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_696nm</att>
@@ -2540,7 +2540,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_697nm</att>
@@ -2555,7 +2555,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_698nm</att>
@@ -2570,7 +2570,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_699nm</att>
@@ -2585,7 +2585,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_701nm</att>
@@ -2600,7 +2600,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_702nm</att>
@@ -2615,7 +2615,7 @@
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.01</att>
 			<att name="colorBarMinimum" type="double">0.0</att>
-			<att name="colorBarScale">Log</att>
+			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
 			<att name="long_name">Remote_Sensing_Reflectance(Rrs)</att>
 			<att name="standard_name">Remote_Sensing_Reflectance_at_703nm</att>
