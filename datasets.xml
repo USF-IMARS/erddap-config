@@ -945,7 +945,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
-<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_aop_1d_sfl.xml" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_aop_1d_sfl" active="true">
 	<reloadEveryNMinutes>10080</reloadEveryNMinutes>
 	<updateEveryNMillis>10000</updateEveryNMillis>
 	<fileDir>/mnt/sdb/pace_oc_aop_1d_sfl</fileDir>
