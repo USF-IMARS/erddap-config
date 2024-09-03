@@ -1,7 +1,7 @@
-<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_1d_fl" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_1d_sfl" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/pace_oc_bgc_1d_fl/</fileDir>
+    <fileDir>/mnt/sdb/pace_oc_bgc_1d_sfl/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -21,14 +21,14 @@
         <att name="keywords">chlor_a, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">24.0N to 31N -85W to -78.5W</att>
+        <att name="Lat_Lon_Limits">24.0N to 28N -85W to -78.5W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC</att>
         <att name="title">PACE-OCI Ocean Color BGC 1-Day composite for Florida</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,POCI_(\d{8})_1D_FL_OC_BGC_ED\.nc,1</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,POCI_(\d{8})_1D_SFL_OC_BGC_ED\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
