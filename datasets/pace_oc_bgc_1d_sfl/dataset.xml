@@ -24,8 +24,8 @@
         <att name="Lat_Lon_Limits">24.0N to 28N -85W to -78.5W</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC</att>
-        <att name="title">PACE-OCI Ocean Color BGC 1-Day composite for Florida</att>
+        <att name="summary">USF IMaRS PACE-OCI SFL 1-Day Composite Ocean Color BGC</att>
+        <att name="title">PACE-OCI Ocean Color BGC 1-Day composite for South Florida</att>
     </addAttributes>
     <axisVariable>
         <sourceName>***fileName,timeFormat=yyyyMMdd,POCI_(\d{8})_1D_SFL_OC_BGC_ED\.nc,1</sourceName>
