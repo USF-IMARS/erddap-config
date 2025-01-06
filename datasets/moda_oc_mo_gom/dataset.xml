@@ -1,4 +1,4 @@
-<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7mo_gom" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_mo_gom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/mnt/sdc/moda_oc_mo_gom/</fileDir>
@@ -28,7 +28,7 @@
         <att name="title">MODIS-Aqua Ocean Color Monthly means for GOM</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_MO_GOM_OC\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_MO_GOM_OC\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
