@@ -716,7 +716,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, Kd_490_anom, Kd_490_median, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS GOM 7 Day Mean Ocean Color</att>
@@ -879,7 +879,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="keywords">chlor_a, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">24.0N to 31N -85W to -78.5W</att>
+        <att name="Lat_Lon_Limits">24.0N to 31N -85E to -78.5E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS-SNPP FL 1-Day Composite Ocean Color</att>
@@ -1153,7 +1153,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS-SNPP SSTN MEAN_7D for GOM</att>
@@ -4345,7 +4345,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS-SNPP SSTN MEAN_7D for Southeast US</att>
