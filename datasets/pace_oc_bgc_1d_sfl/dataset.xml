@@ -21,7 +21,7 @@
         <att name="keywords">chlor_a_anomaly, chlor_a_median, chlorophyll, concentration_of_chlorophyll_in_sea_water, ocean_color</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">24.0N to 28N -85W to -78.5W</att>
+        <att name="Lat_Lon_Limits">24.0N to 28N -85E to -78.5E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS PACE-OCI SFL 1-Day Composite Ocean Color BGC</att>
