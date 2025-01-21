@@ -21,7 +21,7 @@
         <att name="Imagesource">Oregon State University Productivity Lab</att>
         <att name="source_type">institution</att>
         <att name="sourceUrl">orca.science.oregonstate.edu</att>
-        <att name="sourceContact">westbert@oregonstate.edu</att>
+        <att name="source_email">westbert@oregonstate.edu</att>
         <att name="keywords">primary_productivity, vgpm, ocean_color, oceans, optical_properties, vertically_generalized_productivity_model</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
