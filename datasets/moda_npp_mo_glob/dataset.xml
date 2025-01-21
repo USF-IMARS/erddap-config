@@ -52,7 +52,7 @@
         <destinationName>npp</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">1000</att>
+            <att name="colorBarMaximum" type="double">3000</att>
             <att name="colorBarMinimum" type="double">0</att>
             <att name="colorBarScale">Linear</att>
             <att name="ioos_category">Ocean Color</att>
