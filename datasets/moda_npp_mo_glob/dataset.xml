@@ -28,7 +28,7 @@
         <att name="Lat_Lon_Limits">-90N to 90N -180E to 180E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">MODIS-Aqua Global Monthly Primary Productivity (OSU)</att>
+        <att name="summary">MODIS-Aqua Global 9km Monthly Primary Productivity (OSU)</att>
         <att name="title">MODIS-Aqua Primary Productivity (VGPM) global 9km monthly composites (from Oregon State Univ. Productivity Lab)</att>
     </addAttributes>
     <axisVariable>
