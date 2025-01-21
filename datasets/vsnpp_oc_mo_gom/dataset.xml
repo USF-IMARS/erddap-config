@@ -21,7 +21,7 @@
         <att name="keywords">concentration_of_chlorophyll_in_sea_water, ocean_color, oceans, optical_properties, properties, Rrs</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98W to -78.5148W</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS VIIRS-SNPP GOM Monthly Mean Ocean Color</att>
