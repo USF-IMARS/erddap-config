@@ -63,6 +63,14 @@ ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_1d_nwgom.graph
 9. VIIRS-SNPP Ocean Color 7-Day means for the Southeast US (29N to 40.5N; -82E to -73E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_7d_seus.graph
 
+10. PACE-OCI OC AOP (incl. hyperspectral Rrs and nflh) 1-Day composite for South Florida (24N to 31N; -85E to -78.5E)
+ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/pace_oc_aop_1d_sfl.graph
+ - These files contain remote sensing reflectance at all visible PACE-OCI bands and normalized fluorescence line height
+
+11. PACE-OCI Ocean Color BGC 1-Day composite for South Florida (24N to 31N; -85E to -78.5E)
+ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/pace_oc_bgc_1d_sfl.graph
+ - These files contain chlorophyll-a concentration and phytoplankton carbon from PACE-OCI
+
 ### SEA SURFACE TEMPERAURE
 Sea surface temperature products come from two main sources:
 1. Multi-scale Ultra-high Resolution (MUR) SST Analysis fv04.1 (https://podaac.jpl.nasa.gov/dataset/MUR-JPL-L4-GLOB-v4.1)
@@ -98,3 +106,4 @@ ERDDAP Link: https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8da
 Net primary productivity products are calculated using the Vertically Generalized Productivity Model (VGPM) based on MODIS-Aqua data at 9-km spatial resolution (-90N to 90N; -180E to 180E)  
 These products are from the Oregon State Ocean Productivity Lab (http://orca.science.oregonstate.edu/index.php)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/moda_npp_mo_glob.graph
+
