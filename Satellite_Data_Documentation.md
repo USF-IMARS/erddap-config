@@ -1,5 +1,7 @@
 ## Satellite Data on IMaRS ERDDAP server
 
+Updated 2/18/2025  
+
 Satellite-based datasets served via ERDDAP by IMaRS:
 USF has compiled several satellite-based datasets, including ocean color, sea surface temperature and biogeographic seascapes for waters around South Florida. A Github repository was created to share code among the project team. Details on data products along with links to data and the Github repository are given below.
 
