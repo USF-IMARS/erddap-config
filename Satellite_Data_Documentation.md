@@ -1,6 +1,6 @@
-## Satellite Data for FRESCA Project
+## Satellite Data on IMaRS ERDDAP server
 
-Satellite-based datasets for the FRESCA project:
+Satellite-based datasets served via ERDDAP by IMaRS:
 USF has compiled several satellite-based datasets, including ocean color, sea surface temperature and biogeographic seascapes for waters around South Florida. A Github repository was created to share code among the project team. Details on data products along with links to data and the Github repository are given below.
 
 #### Data Types (details on each are given below):
