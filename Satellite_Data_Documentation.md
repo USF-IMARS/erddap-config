@@ -45,27 +45,27 @@ ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/moda_oc_7d_gom.graph
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/moda_oc_mo_gom.graph
 
 3. MODIS-Aqua Ocean Color 1-Day composite for Florida (24N to 31N; -85E to -78.5E)  
-ERDDAP Link: MODIS-AQUA Ocean Color 1-Day composite for Florida
+ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/moda_oc_1d_fl.graph  
 
-4. MODIS-Aqua Ocean Color 7-Day means for the Southeast US (29N to 40.5N; -82E to -73E)  
+5. MODIS-Aqua Ocean Color 7-Day means for the Southeast US (29N to 40.5N; -82E to -73E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/moda_oc_7d_seus.graph
 
-5. VIIRS-SNPP Ocean Color 7-Day means for GOM (18N to 31N; -98E to -78.5E)  
+6. VIIRS-SNPP Ocean Color 7-Day means for GOM (18N to 31N; -98E to -78.5E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_7d_gom.graph
 
-6. VIIRS-SNPP Ocean Color Monthly means for GOM  (18N to 31N; -98E to -78.5E)  
+7. VIIRS-SNPP Ocean Color Monthly means for GOM  (18N to 31N; -98E to -78.5E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_mo_gom.graph
 
-7. VIIRS-SNPP Ocean Color 1-Day composite for Florida (24N to 31N; -85E to -78.5E)  
+8. VIIRS-SNPP Ocean Color 1-Day composite for Florida (24N to 31N; -85E to -78.5E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_1d_fl.graph
 
-8. VIIRS-SNPP Ocean Color 1-Day composite for NW Gulf of Mexico (24N to 31N; -85E to -78.5E)  
+9. VIIRS-SNPP Ocean Color 1-Day composite for NW Gulf of Mexico (24N to 31N; -85E to -78.5E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_1d_nwgom.graph
 
-9. VIIRS-SNPP Ocean Color 7-Day means for the Southeast US (29N to 40.5N; -82E to -73E)  
+10. VIIRS-SNPP Ocean Color 7-Day means for the Southeast US (29N to 40.5N; -82E to -73E)  
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/vsnpp_oc_7d_seus.graph
 
-10. PACE-OCI OC AOP (incl. hyperspectral Rrs and nflh) 1-Day composite for South Florida (24N to 31N; -85E to -78.5E)
+11. PACE-OCI OC AOP (incl. hyperspectral Rrs and nflh) 1-Day composite for South Florida (24N to 31N; -85E to -78.5E)
 ERDDAP Link: http://131.247.136.200:8080/erddap/griddap/pace_oc_aop_1d_sfl.graph
  - These files contain remote sensing reflectance at all visible PACE-OCI bands and normalized fluorescence line height
 
