@@ -10,7 +10,7 @@ services:
     # no direct port exposure since nginx will handle this
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
-    image: axiom/docker-erddap
+    image: axiom/docker-erddap:latest-jdk17-openjdk
     volumes:
       - erddap-data-volume:/erddapData
       # erddap content incl. setup.xml & dataset.xml :
