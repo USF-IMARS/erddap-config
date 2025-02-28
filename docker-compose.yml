@@ -7,8 +7,7 @@ services:
     container_name: erddap
     user: 0:4504  # root:imars-common
     restart: unless-stopped
-    ports:
-      - 8080:8080
+    # no direct port exposure since nginx will handle this
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
     image: axiom/docker-erddap
@@ -25,5 +24,18 @@ services:
       - /root/docker_volumes/erddap-config/datasets/noaa_aoml_seascapes_8day/Seascapes.cpt:/usr/local/tomcat/webapps/erddap/WEB-INF/cptfiles/Seascapes.cpt
       # custom messages.xml required to have a custom color palette:
       - /root/docker_volumes/erddap-config/messages.xml:/usr/local/tomcat/webapps/erddap/WEB-INF/classes/gov/noaa/pfel/erddap/util/messages.xml
+
+  nginx:
+    image: nginx:stable
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - erddap
+
 volumes:
   erddap-data-volume:
