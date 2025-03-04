@@ -1,7 +1,7 @@
-<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_1d_sfl" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_V3_0_1d_fl" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/pace_oc_bgc_1d_sfl/</fileDir>
+    <fileDir>/mnt/sdd/pace_oc_bgc_1d_fl/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -24,11 +24,11 @@
         <att name="Lat_Lon_Limits">24.0N to 28N -85E to -78.5E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS PACE-OCI SFL 1-Day Composite Ocean Color BGC</att>
-        <att name="title">PACE-OCI Ocean Color BGC 1-Day composite for South Florida</att>
+        <att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC</att>
+        <att name="title">PACE-OCI Ocean Color BGC V3 1-Day composite for Florida</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,POCI_(\d{8})_1D_SFL_OC_BGC_ED\.nc,1</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,PACE_OCI_(\d{8})_1D_florida_BGC_V3_0_ED\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
