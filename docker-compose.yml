@@ -11,7 +11,7 @@ services:
       - 8080:8080
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
-    image: axiom/docker-erddap:latest-jdk17-openjdk
+    image: axiom/docker-erddap:latest-jdk21-openjdk
     volumes:
       - erddap-data-volume:/erddapData
       # erddap content incl. setup.xml & dataset.xml :
