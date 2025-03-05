@@ -2443,16 +2443,16 @@
 		</addAttributes>
 	</dataVariable>
 	<dataVariable>
-		<sourceName>nflh</sourceName>
-		<destinationName>nflh</destinationName>
+		<sourceName>ABI</sourceName>
+		<destinationName>ABI</destinationName>
 		<dataType>double</dataType>
 		<addAttributes>
 			<att name="colorBarMaximum" type="double">0.4</att>
 			<att name="colorBarMinimum" type="double">0</att>
 			<att name="colorBarScale">Linear</att>
 			<att name="ioos_category">Ocean Color</att>
-			<att name="long_name">Normailized Fluorescence Line Height</att>
-			<att name="standard_name">Normailized Fluorescence Line Height</att>
+			<att name="long_name">Algal Bloom Index (ABI)</att>
+			<att name="standard_name">Algal Bloom Index (ABI)</att>
 			<att name="Units">null</att>
 			<att name="units">mW cm^-2 um^-1 sr^-1</att>
 		</addAttributes>
