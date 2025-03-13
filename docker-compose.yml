@@ -7,8 +7,6 @@ services:
     container_name: erddap
     user: 0:4504  # root:imars-common
     restart: unless-stopped
-    ports:
-      - 8080:8080
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
     image: axiom/docker-erddap:2.23-jdk17-openjdk
@@ -33,6 +31,7 @@ services:
     ports:
       - 80:80
       - 443:443
+      - 8080:8080
     volumes:
       - ./certs:/etc/nginx/certs
       
