@@ -7,8 +7,32 @@ services:
     container_name: erddap
     user: 0:4504  # root:imars-common
     restart: unless-stopped
+
+    # NOTE: these values override setup.xml
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
+      - ERDDAP_adminAddress='830 1st St S, St. Petersburg, FL 33701'
+      - ERDDAP_adminCity='St. Petersburg'
+      - ERDDAP_adminCountry=USA
+      - ERDDAP_adminEmail='tylarmurray@usf.edu'
+      - ERDDAP_adminIndividualName='Tylar Murray'
+      - ERDDAP_adminInstitution='University of South Florida CMS IMaRS'
+      - ERDDAP_adminInstitutionUrl=https://imars.usf.edu
+      - ERDDAP_adminPhone=555-555-5555
+      - ERDDAP_adminPosition=Software Engineer
+      - ERDDAP_adminPostalCode=33701
+      - ERDDAP_adminStateOrProvince=FL
+      - ERDDAP_baseHttpsUrl=https://erddap.marine.usf.edu:8443
+      - ERDDAP_bigParentDirectory=/erddapData
+      - ERDDAP_emailDailyReportsTo=murray.tylar@gmail.com
+      - ERDDAP_emailEverythingTo=murray.tylar@gmail.com
+      - ERDDAP_emailFromAddress=erddap@marine.usf.edu
+      - ERDDAP_emailPassword=
+      - ERDDAP_emailProperties=
+      - ERDDAP_emailSmtpHost=
+      - ERDDAP_emailSmtpPort=
+      - ERDDAP_emailUserName=
+
     image: axiom/docker-erddap:2.25.1-jdk21-openjdk
     volumes:
       - erddap-data-volume:/erddapData
