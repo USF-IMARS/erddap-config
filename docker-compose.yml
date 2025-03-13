@@ -9,21 +9,27 @@ services:
     restart: unless-stopped
     environment:
       - ERDDAP_MEMORY=64G  # default is 4G
-    image: axiom/docker-erddap:2.23-jdk17-openjdk
+    image: axiom/docker-erddap:2.25.1-jdk21-openjdk
     volumes:
       - erddap-data-volume:/erddapData
-      # erddap content incl. setup.xml & dataset.xml :
-      - '/root/docker_volumes/erddap-config:/usr/local/tomcat/content/erddap'
+
+      # erddap content incl. setup.xml & datasets.xml :
+      - '/root/docker_volumes/erddap-config/setup.xml:/usr/local/tomcat/content/erddap/setup.xml'
+      - '/root/docker_volumes/erddap-config/datasets.xml:/usr/local/tomcat/content/erddap/datsets.xml'
+
       # modified tomcat web.xml :
       - '/root/docker_volumes/erddap-config/web.xml:/usr/local/tomcat/conf/web.xml'
+
       # === ERDDAP dataset location mounts========================================
       - '/mnt/sdb:/mnt/sdb'
       - '/mnt/sdc:/mnt/sdc'
       - '/mnt/sdd:/mnt/sdd'
+
       # custom color palette for seascape
       - /root/docker_volumes/erddap-config/datasets/noaa_aoml_seascapes_8day/Seascapes.cpt:/usr/local/tomcat/webapps/erddap/WEB-INF/cptfiles/Seascapes.cpt
       # custom messages.xml required to have a custom color palette:
       - /root/docker_volumes/erddap-config/messages.xml:/usr/local/tomcat/webapps/erddap/WEB-INF/classes/gov/noaa/pfel/erddap/util/messages.xml
+
   nginx:
     container_name: nginx
     build: ./nginx
