@@ -40,7 +40,7 @@ services:
 
       # erddap content incl. setup.xml & datasets.xml :
       - '/root/docker_volumes/erddap-config/setup.xml:/usr/local/tomcat/content/erddap/setup.xml'
-      - '/root/docker_volumes/erddap-config/datasets.xml:/usr/local/tomcat/content/erddap/datsets.xml'
+      - '/root/docker_volumes/erddap-config/datasets.xml:/usr/local/tomcat/content/erddap/datasets.xml'
 
       # modified tomcat web.xml :
       - '/root/docker_volumes/erddap-config/web.xml:/usr/local/tomcat/conf/web.xml'
