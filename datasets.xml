@@ -3445,6 +3445,149 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
+<dataset type="EDDGridFromNcFiles" datasetID="CMEMS_PHY_MONTHLY" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdd/copernicus/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="_NCProperties">version=1|netcdflibversion=4.6.1|hdf5libversion=1.10.6</att>
+        <att name="area">GLOBAL</att>
+        <att name="contact">servicedesk.cmems@mercator-ocean.eu</att>
+        <att name="Conventions">CF-1.6</att>
+        <att name="credit">E.U. Copernicus Marine Service Information (CMEMS)</att>
+        <att name="institution">Mercator Ocean</att>
+        <att name="licence">http://marine.copernicus.eu/services-portfolio/service-commitments-and-licence/</att>
+        <att name="producer">CMEMS - Global Monitoring and Forecasting Centre</att>
+        <att name="product">GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
+        <att name="product_user_manual">http://marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-024.pdf</att>
+        <att name="quality_information_document">http://marine.copernicus.eu/documents/QUID/CMEMS-GLO-QUID-001-024.pdf</att>
+        <att name="references">http://marine.copernicus.eu</att>
+        <att name="source">MERCATOR GLO12</att>
+        <att name="title">Monthly mean fields for product GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="_NCProperties">null</att>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Conventions">CF-1.10, COARDS, ACDD-1.3</att>
+        <att name="creator_email">servicedesk.cmems@mercator-ocean.eu</att>
+        <att name="creator_name">Mercator Ocean</att>
+        <att name="creator_type">person</att>
+        <att name="creator_url">http://marine.copernicus.eu</att>
+        <att name="history">MERCATOR GLO12</att>
+        <att name="infoUrl">http://marine.copernicus.eu</att>
+        <att name="keywords">analysisforecast, data, density, depth, earth, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, fields, global, latitude, longitude, mean, mercator, month, monthly, ocean, oceans, phy, practical, product, salinity, science, sea, sea_water_practical_salinity, seawater, time, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Monthly mean fields for product GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
+        <att name="testOutOfDate">now-94days</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">1024</att>
+            <att name="axis">T</att>
+            <att name="calendar">gregorian</att>
+            <att name="long_name">Time (hours since 1950-01-01)</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 1950-01-01</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 1950-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">50</att>
+            <att name="axis">Z</att>
+            <att name="long_name">Depth</att>
+            <att name="positive">down</att>
+            <att name="standard_name">depth</att>
+            <att name="unit_long">Meters</att>
+            <att name="units">m</att>
+            <att name="valid_max" type="float">5727.917</att>
+            <att name="valid_min" type="float">0.494025</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">2041</att>
+            <att name="axis">Y</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="step" type="float">0.08333588</att>
+            <att name="unit_long">Degrees North</att>
+            <att name="units">degrees_north</att>
+            <att name="valid_max" type="float">90.0</att>
+            <att name="valid_min" type="float">-80.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">4320</att>
+            <att name="axis">X</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="step" type="float">0.08332825</att>
+            <att name="unit_long">Degrees East</att>
+            <att name="units">degrees_east</att>
+            <att name="valid_max" type="float">179.91669</att>
+            <att name="valid_min" type="float">-180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>so</sourceName>
+        <destinationName>so</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uintList">1 6 256 540</att>
+            <att name="_FillValue" type="float">9.96921E36</att>
+            <att name="cell_methods">area: mean</att>
+            <att name="long_name">Salinity</att>
+            <att name="standard_name">sea_water_salinity</att>
+            <att name="unit_long">Practical Salinity Unit</att>
+            <att name="units">1e-3</att>
+            <att name="valid_max" type="float">50.0</att>
+            <att name="valid_min" type="float">0.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="standard_name">sea_water_practical_salinity</att>
+            <att name="units">PSU</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
 <dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_1d_nwgom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
