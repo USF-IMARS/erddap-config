@@ -43,5 +43,8 @@ echo "${PREFIX} SE US MODA ${SUFFIX}"
 do_rsync_job tpa_pgs/rois/seus/MEAN_7D_MODA/OC/ ${LOCAL_DIR}/moda_oc_7d_seus/.
 do_rsync_job tpa_pgs/rois/seus/MEAN_7D_MODA/SST4/ ${LOCAL_DIR}/moda_sst4_7d_seus/.
 
+echo "${PREFIX} Copernicus Mirrors ${SUFFIX}"
+do_rsync_job tpa_pgs/copernicus /mnt/sdd/copernicus
+
 printf "\ndone - `date`"
 exit $return_code
