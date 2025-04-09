@@ -1,0 +1,141 @@
+
+<dataset type="EDDGridFromNcFiles" datasetID="cmems_ocean_carbon_NRT" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdd/copernicus/copernicus/ocean_carbon_NRT/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="_NCProperties">version=2,netcdf=4.7.4,hdf5=1.10.6</att>
+        <att name="CDI">Climate Data Interface version 1.9.9 (https://mpimet.mpg.de/cdi)</att>
+        <att name="CDO">Climate Data Operators version 1.9.9 (https://mpimet.mpg.de/cdo)</att>
+        <att name="Conventions">CF-1.6</att>
+        <att name="description">file created by T. CHAU (trang.chau@lsce.ipsl.fr)</att>
+        <att name="history">Thu Mar 20 01:51:19 2025: cdo chvar,pCO2_std,spco2_uncertainty /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_4.nc /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_5.nc
+Thu Mar 20 01:51:19 2025: cdo chvar,pCO2_mean,spco2 /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_3.nc /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_4.nc
+Thu Mar 20 01:51:19 2025: cdo chvar,fCO2_std,fgco2_uncertainty /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_2.nc /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_3.nc
+Thu Mar 20 01:51:19 2025: cdo chvar,fCO2_mean,fgco2 /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502.nc /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502_2.nc
+Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_FFN_1step/fluxCO2_model_v2024_r025_202502.nc /data/eclaudel/CMEMS_LSCEv2023/Data/pCO2_FFN_1step/pCO2_model_v2024_r025_202502.nc /scratchu/eclaudel/Data/MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202411/cmems_obs-mob_glo_bgc-car_nrt_irr-i_202502.nc</att>
+    </sourceAttributes -->
+    <addAttributes>
+        <att name="_NCProperties">null</att>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Conventions">CF-1.10, COARDS, ACDD-1.3</att>
+        <att name="creator_email">trang.chau@lsce.ipsl.fr</att>
+        <att name="creator_name">Trang Chau</att>
+        <att name="creator_type">person</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">LSCE.IPSL</att>
+        <att name="keywords">carbon, carbon dioxide, chau, co2, created, data, dioxide, fgco2, fgco2_uncertainty, file, lsce.ipsl, lsce.ipsl.fr, quality, spco2, spco2_uncertainty, time, trang.chau, uncertainty</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">file created by T. CHAU (trang.chau@lsce.ipsl.fr)</att>
+        <att name="testOutOfDate">now-108days</att>
+        <att name="title">file created by T. CHAU (trang.chau@lsce.ipsl.fr)</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">512</att>
+            <att name="axis">T</att>
+            <att name="calendar">gregorian</att>
+            <att name="long_name">time</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 1950-01-01 00:00:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 1950-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>lat</sourceName>
+        <destinationName>latitude</destinationName>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="long_name">latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>lon</sourceName>
+        <destinationName>longitude</destinationName>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="long_name">longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>spco2_uncertainty</sourceName>
+        <destinationName>spco2_uncertainty</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uintList">1 720 1440</att>
+            <att name="units">uatm</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Quality</att>
+            <att name="long_name">Spco2 Uncertainty</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>fgco2_uncertainty</sourceName>
+        <destinationName>fgco2_uncertainty</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uintList">1 720 1440</att>
+            <att name="units">molC m-2 yr-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Quality</att>
+            <att name="long_name">Fgco2 Uncertainty</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>spco2</sourceName>
+        <destinationName>spco2</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uintList">1 720 1440</att>
+            <att name="units">uatm</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">CO2</att>
+            <att name="long_name">Spco2</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>fgco2</sourceName>
+        <destinationName>fgco2</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uintList">1 720 1440</att>
+            <att name="units">molC m-2 yr-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">CO2</att>
+            <att name="long_name">Fgco2</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
