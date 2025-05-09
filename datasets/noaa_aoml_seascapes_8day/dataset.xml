@@ -4,8 +4,4 @@
         <att name="colorBarContinuous">false</att>
     </addAttributes>
     <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
-    <addAttributes>
-        <att name="colorBarPalette">seascapes</att>
-        <att name="colorBarContinuous">false</att>
-    </addAttributes>
 </dataset>
