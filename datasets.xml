@@ -2060,10 +2060,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 
 <dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
     <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
-    <addAttributes>
-        <att name="colorBarPalette">seascapes</att>
-        <att name="colorBarContinuous">false</att>
-    </addAttributes>
 </dataset>
 
 <dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_1d_fl" active="true">
