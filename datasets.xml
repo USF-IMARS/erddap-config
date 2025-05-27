@@ -112,10 +112,166 @@ ERDDAP follows
 <subscriptionEmailBlacklist>your.email@yourinstitution.edu, some.name@company.com, 
 another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_7d_seus" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="moda_npp_mo_glob" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/vsnpp_oc_7d_seus/</fileDir>
+    <fileDir>/mnt/sdc/moda_npp_mo_glob/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="institution">Oregon State Univ. Ocean Productivity Lab</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">imars.usf.edu</att>
+        <att name="Imagesource">Oregon State University Ocean Productivity Lab</att>
+        <att name="source_type">institution</att>
+        <att name="sourceUrl">orca.science.oregonstate.edu</att>
+        <att name="source_contact">Toby Westberry - westbert@oregonstate.edu</att>
+        <att name="keywords">primary_productivity, vgpm, ocean_color, oceans, optical_properties, vertically_generalized_productivity_model</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">-90N to 90N -180E to 180E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">MODIS-Aqua Global 9km Monthly Primary Productivity (OSU)</att>
+        <att name="title">MODIS-Aqua Primary Productivity (VGPM) global 9km monthly composites</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_MO_npp_VGPM_global_9km\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>npp</sourceName>
+        <destinationName>npp</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1500</att>
+            <att name="colorBarMinimum" type="double">0</att>
+            <att name="colorBarScale">Linear</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Net Primary Productivity</att>
+            <att name="standard_name">Primary Productivity</att>
+            <att name="Units">null</att>
+            <att name="units">mgC m^-2 day^-1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_1d_fl" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdd/pace_oc_bgc_1d_fl/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">imars.usf.edu</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">chlor_a_anomaly, chlor_a_median, chlorophyll, concentration_of_chlorophyll_in_sea_water, ocean_color</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">24N to 31N -86E to -79E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC (preliminary)</att>
+        <att name="title">PACE-OCI Ocean Color BGC V3 1-Day composite for Florida (preliminary)</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,PACE_OCI_(\d{8})_1D_florida_BGC_V3_0_ED\.nc,1</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a</sourceName>
+        <destinationName>chlor_a</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>carbon_phyto</sourceName>
+        <destinationName>carbon_phyto</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="colorBarScale">Linear</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Phytoplankton_carbon</att>
+            <att name="standard_name">Phytoplankton_carbon</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>STRAYLIGHT_MASK</sourceName>
+        <destinationName>STRAYLIGHT_MASK</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Straylight mask based on Level-2 straylight flag</att>
+            <att name="Units">null</att>
+            <att name="units">none</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_7d_gom" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/vsnpp_oc_7d_gom/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -138,11 +294,11 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS-SNPP SEUS MEAN_7D Ocean Color</att>
-        <att name="title">VIIRS-SNPP Ocean Color 7-Day mean for the Southeast US</att>
+        <att name="summary">USF IMaRS VIIRS GOM 7 Day Mean Ocean Color</att>
+        <att name="title">VIIRS-SNPP Ocean Color 7-Day means for GOM</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_SEUS_OC\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_GOM_OC\.nc,2</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -274,10 +430,11 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sstn_7d_gom" active="true">
+
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_1d_fl" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/vsnpp_sstn_7d_gom/</fileDir>
+    <fileDir>/mnt/sdc/vsnpp_oc_1d_fl/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -292,19 +449,19 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="creator_email">dotis@usf.edu</att>
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
+        <att name="infoUrl">imars.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords">chlor_a, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
+        <att name="Lat_Lon_Limits">24.0N to 31N -85E to -78.5E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS-SNPP SSTN MEAN_7D for GOM</att>
-        <att name="title">VIIRS-SNPP Nighttime SST 7-Day mean for GOM</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP FL 1-Day Composite Ocean Color</att>
+        <att name="title">VIIRS-SNPP Ocean Color 1-Day composite for Florida</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_GOM_SSTN\.nc,2</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_1D_FL_OC_ED\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -320,55 +477,652 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>longitude</destinationName>
     </axisVariable>
     <dataVariable>
-        <sourceName>sstn_median</sourceName>
-        <destinationName>sstn_median</destinationName>
+        <sourceName>chlor_a</sourceName>
+        <destinationName>chlor_a</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">32.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature (nighttime)</att>
-            <att name="standard_name">sea_surface_temperature</att>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
             <att name="Units">null</att>
-            <att name="units">degree_C</att>
+            <att name="units">mg m^-3</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>sstn_anom</sourceName>
-        <destinationName>sstn_anom</destinationName>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">4.0</att>
-            <att name="colorBarMinimum" type="double">-4.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
-            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
-            <att name="units">degree_C</att>
+            <att name="units">mg m^-3</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>sstn_clim</sourceName>
-        <destinationName>sstn_clim</destinationName>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">32.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature Climatology (nighttime 2013-2019)</att>
-            <att name="standard_name">surface_temperature_climatology</att>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Weekly Climatology (2013-2019)</att>
             <att name="Units">null</att>
-            <att name="units">degree_C</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671</sourceName>
+        <destinationName>Rrs_671</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_anom</sourceName>
+        <destinationName>Rrs_671_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_clim</sourceName>
+        <destinationName>Rrs_671_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Weekly Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490</sourceName>
+        <destinationName>Kd_490</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient at 490nm</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.25</att>
+            <att name="colorBarMinimum" type="double">-0.25</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient at 490nm Weekly Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>STRAYLIGHT_MASK</sourceName>
+        <destinationName>STRAYLIGHT_MASK</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Straylight mask based on Level-2 straylight flag</att>
+            <att name="Units">null</att>
+            <att name="units">none</att>
         </addAttributes>
     </dataVariable>
 </dataset>
 
-<dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
+
+<dataset type="EDDGridFromNcFiles" datasetID="CMEMS_PHY_MONTHLY" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdd/copernicus/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="_NCProperties">version=1|netcdflibversion=4.6.1|hdf5libversion=1.10.6</att>
+        <att name="area">GLOBAL</att>
+        <att name="contact">servicedesk.cmems@mercator-ocean.eu</att>
+        <att name="Conventions">CF-1.6</att>
+        <att name="credit">E.U. Copernicus Marine Service Information (CMEMS)</att>
+        <att name="institution">Mercator Ocean</att>
+        <att name="licence">http://marine.copernicus.eu/services-portfolio/service-commitments-and-licence/</att>
+        <att name="producer">CMEMS - Global Monitoring and Forecasting Centre</att>
+        <att name="product">GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
+        <att name="product_user_manual">http://marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-024.pdf</att>
+        <att name="quality_information_document">http://marine.copernicus.eu/documents/QUID/CMEMS-GLO-QUID-001-024.pdf</att>
+        <att name="references">http://marine.copernicus.eu</att>
+        <att name="source">MERCATOR GLO12</att>
+        <att name="title">Monthly mean fields for product GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
+    </sourceAttributes -->
     <addAttributes>
-        <att name="colorBarPalette">seascapes</att>
-        <att name="colorBarContinuous">false</att>
+        <att name="_NCProperties">null</att>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Conventions">CF-1.10, COARDS, ACDD-1.3</att>
+        <att name="creator_email">servicedesk.cmems@mercator-ocean.eu</att>
+        <att name="creator_name">Mercator Ocean</att>
+        <att name="creator_type">person</att>
+        <att name="creator_url">http://marine.copernicus.eu</att>
+        <att name="history">MERCATOR GLO12</att>
+        <att name="infoUrl">http://marine.copernicus.eu</att>
+        <att name="keywords">analysisforecast, data, density, depth, earth, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, fields, global, latitude, longitude, mean, mercator, month, monthly, ocean, oceans, phy, practical, product, salinity, science, sea, sea_water_practical_salinity, seawater, time, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Monthly mean fields for product GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
+        <att name="testOutOfDate">now-94days</att>
     </addAttributes>
-    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
+    <axisVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">1024</att>
+            <att name="axis">T</att>
+            <att name="calendar">gregorian</att>
+            <att name="long_name">Time (hours since 1950-01-01)</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 1950-01-01</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 1950-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">50</att>
+            <att name="axis">Z</att>
+            <att name="long_name">Depth</att>
+            <att name="positive">down</att>
+            <att name="standard_name">depth</att>
+            <att name="unit_long">Meters</att>
+            <att name="units">m</att>
+            <att name="valid_max" type="float">5727.917</att>
+            <att name="valid_min" type="float">0.494025</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">2041</att>
+            <att name="axis">Y</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="step" type="float">0.08333588</att>
+            <att name="unit_long">Degrees North</att>
+            <att name="units">degrees_north</att>
+            <att name="valid_max" type="float">90.0</att>
+            <att name="valid_min" type="float">-80.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uint">4320</att>
+            <att name="axis">X</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="step" type="float">0.08332825</att>
+            <att name="unit_long">Degrees East</att>
+            <att name="units">degrees_east</att>
+            <att name="valid_max" type="float">179.91669</att>
+            <att name="valid_min" type="float">-180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>so</sourceName>
+        <destinationName>so</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="uintList">1 6 256 540</att>
+            <att name="_FillValue" type="float">9.96921E36</att>
+            <att name="cell_methods">area: mean</att>
+            <att name="long_name">Salinity</att>
+            <att name="standard_name">sea_water_salinity</att>
+            <att name="unit_long">Practical Salinity Unit</att>
+            <att name="units">1e-3</att>
+            <att name="valid_max" type="float">50.0</att>
+            <att name="valid_min" type="float">0.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="standard_name">sea_water_practical_salinity</att>
+            <att name="units">PSU</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_mo_gom" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdc/vsnpp_oc_mo_gom/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">imars.usf.edu</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">concentration_of_chlorophyll_in_sea_water, ocean_color, oceans, optical_properties, properties, Rrs</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP GOM Monthly Mean Ocean Color</att>
+        <att name="title">VIIRS-SNPP Ocean Color Monthly means for GOM</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_MO_GOM_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Median</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_median</sourceName>
+        <destinationName>Rrs_671_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_anom</sourceName>
+        <destinationName>Rrs_671_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_clim</sourceName>
+        <destinationName>Rrs_671_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_median</sourceName>
+        <destinationName>Kd_490_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Median</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">-1.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_seus" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/moda_oc_7d_seus/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">imars.usf.edu</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS MODIS SEUS 7 Day Mean Ocean Color</att>
+        <att name="title">MODIS-Aqua Ocean Color 7-Day means for the Southeast US</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_7D_SEUS_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Median</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_median</sourceName>
+        <destinationName>Rrs_667_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_anom</sourceName>
+        <destinationName>Rrs_667_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_clim</sourceName>
+        <destinationName>Rrs_667_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_median</sourceName>
+        <destinationName>ABI_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Median</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_anom</sourceName>
+        <destinationName>ABI_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.25</att>
+            <att name="colorBarMinimum" type="double">-0.25</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_clim</sourceName>
+        <destinationName>ABI_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_median</sourceName>
+        <destinationName>Kd_490_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Median</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">-1.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
 </dataset>
 
 <dataset type="EDDGridFromNcFiles" datasetID="pace_oc_aop_1d_fl" active="true">
@@ -2845,10 +3599,99 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
 	</dataVariable>
 </dataset>
 
-<dataset type="EDDGridFromNcFiles" datasetID="pace_oc_bgc_1d_fl" active="true">
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_sstn_7d_gom" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdd/pace_oc_bgc_1d_fl/</fileDir>
+    <fileDir>/mnt/sdb/vsnpp_sstn_7d_gom/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, data, earth, Earth Science &gt; Land Surface &gt; Land Temperature &gt; Land Surface Temperature, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature, florida, img, img_x, img_y, land, local, ocean, oceans, science, sea, sea_surface_temperature, source, south, sst_anom, sst_median, surface, surface_temperature_anomaly, temperature, university, usf</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP SSTN MEAN_7D for GOM</att>
+        <att name="title">VIIRS-SNPP Nighttime SST 7-Day mean for GOM</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_GOM_SSTN\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>sstn_median</sourceName>
+        <destinationName>sstn_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature (nighttime)</att>
+            <att name="standard_name">sea_surface_temperature</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sstn_anom</sourceName>
+        <destinationName>sstn_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">4.0</att>
+            <att name="colorBarMinimum" type="double">-4.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature Anomaly (nighttime)</att>
+            <att name="standard_name">surface_temperature_anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sstn_clim</sourceName>
+        <destinationName>sstn_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature Climatology (nighttime 2013-2019)</att>
+            <att name="standard_name">surface_temperature_climatology</att>
+            <att name="Units">null</att>
+            <att name="units">degree_C</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_1d_nwgom" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdc/vsnpp_oc_1d_nwgom/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -2865,17 +3708,17 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <att name="creator_type">institution</att>
         <att name="infoUrl">imars.usf.edu</att>
         <att name="institution">USF IMaRS</att>
-        <att name="keywords">chlor_a_anomaly, chlor_a_median, chlorophyll, concentration_of_chlorophyll_in_sea_water, ocean_color</att>
+        <att name="keywords">chlor_a, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">24N to 31N -86E to -79E</att>
+        <att name="Lat_Lon_Limits">24.0N to 31N -85E to -78.5E</att>
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS PACE-OCI FL 1-Day Composite Ocean Color BGC (preliminary)</att>
-        <att name="title">PACE-OCI Ocean Color BGC V3 1-Day composite for Florida (preliminary)</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP NWGOM 1-Day Ocean Color Composite</att>
+        <att name="title">VIIRS-SNPP Ocean Color 1-Day composite for Northwest Gulf of Mexico</att>
     </addAttributes>
     <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,PACE_OCI_(\d{8})_1D_florida_BGC_V3_0_ED\.nc,1</sourceName>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_1D_NWGOM_OC_ED\.nc,1</sourceName>
         <destinationName>time</destinationName>
         <addAttributes>
             <att name="ioos_category">Unknown</att>
@@ -2895,7 +3738,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <destinationName>chlor_a</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMaximum" type="double">30.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
             <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
@@ -2906,18 +3749,107 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>carbon_phyto</sourceName>
-        <destinationName>carbon_phyto</destinationName>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">100.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="colorBarScale">Linear</att>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
             <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Phytoplankton_carbon</att>
-            <att name="standard_name">Phytoplankton_carbon</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
             <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">30.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Weekly Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671</sourceName>
+        <destinationName>Rrs_671</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_anom</sourceName>
+        <destinationName>Rrs_671_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_clim</sourceName>
+        <destinationName>Rrs_671_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Weekly Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490</sourceName>
+        <destinationName>Kd_490</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient at 490nm</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.25</att>
+            <att name="colorBarMinimum" type="double">-0.25</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Diffuse attenuation coefficient at 490nm Weekly Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -2931,6 +3863,384 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="long_name">Straylight mask based on Level-2 straylight flag</att>
             <att name="Units">null</att>
             <att name="units">none</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
+    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
+</dataset>
+
+dfsd
+
+<dataset type="EDDGridFromErddap" datasetID="jplMURSST41" active="true">
+    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41</sourceUrl>
+</dataset>
+
+
+<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_7d_seus" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/vsnpp_oc_7d_seus/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, Kd_490_anom, Kd_490_median, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS VIIRS-SNPP SEUS MEAN_7D Ocean Color</att>
+        <att name="title">VIIRS-SNPP Ocean Color 7-Day mean for the Southeast US</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_SEUS_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Median</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_median</sourceName>
+        <destinationName>Rrs_671_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_anom</sourceName>
+        <destinationName>Rrs_671_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_671_clim</sourceName>
+        <destinationName>Rrs_671_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_671 Climatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_median</sourceName>
+        <destinationName>Kd_490_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Median</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">-1.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 CLimatology (2013-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_gom" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/mnt/sdb/moda_oc_7d_gom/</fileDir>
+    <fileNameRegex>.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <matchAxisNDigits>20</matchAxisNDigits>
+    <fileTableInMemory>false</fileTableInMemory>
+    <addAttributes>
+        <att name="cdm_data_type">Grid</att>
+        <att name="Contact">null</att>
+        <att name="contact">Dan Otis - dotis@usf.edu</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">dotis@usf.edu</att>
+        <att name="creator_name">DOTIS</att>
+        <att name="creator_type">institution</att>
+        <att name="infoUrl">imars.usf.edu</att>
+        <att name="institution">USF IMaRS</att>
+        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="Lat-Lon_Limits">null</att>
+        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
+        <att name="license">[standard]</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">USF IMaRS MODIS GOM 7 Day Mean Ocean Color</att>
+        <att name="title">MODIS-Aqua Ocean Color 7-Day means for GOM</att>
+    </addAttributes>
+    <axisVariable>
+        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_7D_GOM_OC\.nc,2</sourceName>
+        <destinationName>time</destinationName>
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+    </axisVariable>
+    <axisVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+    </axisVariable>
+    <dataVariable>
+        <sourceName>chlor_a_median</sourceName>
+        <destinationName>chlor_a_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Median</att>
+            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_anom</sourceName>
+        <destinationName>chlor_a_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">3.0</att>
+            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>chlor_a_clim</sourceName>
+        <destinationName>chlor_a_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="ioos_category">Ocean Color</att>
+            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">mg m^-3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_median</sourceName>
+        <destinationName>Rrs_667_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Median</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_anom</sourceName>
+        <destinationName>Rrs_667_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.01</att>
+            <att name="colorBarMinimum" type="double">-0.01</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rrs_667_clim</sourceName>
+        <destinationName>Rrs_667_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.02</att>
+            <att name="colorBarMinimum" type="double">0.0001</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="long_name">Rrs_667 Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_median</sourceName>
+        <destinationName>ABI_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Median</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_anom</sourceName>
+        <destinationName>ABI_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.25</att>
+            <att name="colorBarMinimum" type="double">-0.25</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ABI_clim</sourceName>
+        <destinationName>ABI_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">0.001</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Algal Bloom Index Climatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">W m^-2 um^-1 sr^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_median</sourceName>
+        <destinationName>Kd_490_median</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Median</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_anom</sourceName>
+        <destinationName>Kd_490_anom</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">-1.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 Anomaly</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Kd_490_clim</sourceName>
+        <destinationName>Kd_490_clim</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
+            <att name="Units">null</att>
+            <att name="units">m^-1</att>
         </addAttributes>
     </dataVariable>
 </dataset>
@@ -3022,6 +4332,14 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
             <att name="units">degree_C</att>
         </addAttributes>
     </dataVariable>
+</dataset>
+
+<dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
+    <addAttributes>
+        <att name="colorBarPalette">seascapes</att>
+        <att name="colorBarContinuous">false</att>
+    </addAttributes>
+    <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
 </dataset>
 
 <dataset type="EDDGridFromNcFiles" datasetID="moda_oc_1d_fl" active="true">
@@ -3242,1322 +4560,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
     </dataVariable>
 </dataset>
 
-
-
-<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_gom" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/moda_oc_7d_gom/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS MODIS GOM 7 Day Mean Ocean Color</att>
-        <att name="title">MODIS-Aqua Ocean Color 7-Day means for GOM</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_7D_GOM_OC\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a_median</sourceName>
-        <destinationName>chlor_a_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Median</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_clim</sourceName>
-        <destinationName>chlor_a_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_667_median</sourceName>
-        <destinationName>Rrs_667_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.02</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_667 Median</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_667_anom</sourceName>
-        <destinationName>Rrs_667_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">-0.01</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_667 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_667_clim</sourceName>
-        <destinationName>Rrs_667_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.02</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_667 Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_median</sourceName>
-        <destinationName>ABI_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Median</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_anom</sourceName>
-        <destinationName>ABI_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.25</att>
-            <att name="colorBarMinimum" type="double">-0.25</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_clim</sourceName>
-        <destinationName>ABI_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_median</sourceName>
-        <destinationName>Kd_490_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Median</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_anom</sourceName>
-        <destinationName>Kd_490_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">-1.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_clim</sourceName>
-        <destinationName>Kd_490_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromNcFiles" datasetID="CMEMS_PHY_MONTHLY" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdd/copernicus/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <!-- sourceAttributes>
-        <att name="_NCProperties">version=1|netcdflibversion=4.6.1|hdf5libversion=1.10.6</att>
-        <att name="area">GLOBAL</att>
-        <att name="contact">servicedesk.cmems@mercator-ocean.eu</att>
-        <att name="Conventions">CF-1.6</att>
-        <att name="credit">E.U. Copernicus Marine Service Information (CMEMS)</att>
-        <att name="institution">Mercator Ocean</att>
-        <att name="licence">http://marine.copernicus.eu/services-portfolio/service-commitments-and-licence/</att>
-        <att name="producer">CMEMS - Global Monitoring and Forecasting Centre</att>
-        <att name="product">GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
-        <att name="product_user_manual">http://marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-024.pdf</att>
-        <att name="quality_information_document">http://marine.copernicus.eu/documents/QUID/CMEMS-GLO-QUID-001-024.pdf</att>
-        <att name="references">http://marine.copernicus.eu</att>
-        <att name="source">MERCATOR GLO12</att>
-        <att name="title">Monthly mean fields for product GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
-    </sourceAttributes -->
-    <addAttributes>
-        <att name="_NCProperties">null</att>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Conventions">CF-1.10, COARDS, ACDD-1.3</att>
-        <att name="creator_email">servicedesk.cmems@mercator-ocean.eu</att>
-        <att name="creator_name">Mercator Ocean</att>
-        <att name="creator_type">person</att>
-        <att name="creator_url">http://marine.copernicus.eu</att>
-        <att name="history">MERCATOR GLO12</att>
-        <att name="infoUrl">http://marine.copernicus.eu</att>
-        <att name="keywords">analysisforecast, data, density, depth, earth, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, fields, global, latitude, longitude, mean, mercator, month, monthly, ocean, oceans, phy, practical, product, salinity, science, sea, sea_water_practical_salinity, seawater, time, water</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">Monthly mean fields for product GLOBAL_ANALYSISFORECAST_PHY_001_024</att>
-        <att name="testOutOfDate">now-94days</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>time</sourceName>
-        <destinationName>time</destinationName>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uint">1024</att>
-            <att name="axis">T</att>
-            <att name="calendar">gregorian</att>
-            <att name="long_name">Time (hours since 1950-01-01)</att>
-            <att name="standard_name">time</att>
-            <att name="units">hours since 1950-01-01</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="ioos_category">Time</att>
-            <att name="units">hours since 1950-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>depth</sourceName>
-        <destinationName>depth</destinationName>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uint">50</att>
-            <att name="axis">Z</att>
-            <att name="long_name">Depth</att>
-            <att name="positive">down</att>
-            <att name="standard_name">depth</att>
-            <att name="unit_long">Meters</att>
-            <att name="units">m</att>
-            <att name="valid_max" type="float">5727.917</att>
-            <att name="valid_min" type="float">0.494025</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="ioos_category">Location</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uint">2041</att>
-            <att name="axis">Y</att>
-            <att name="long_name">Latitude</att>
-            <att name="standard_name">latitude</att>
-            <att name="step" type="float">0.08333588</att>
-            <att name="unit_long">Degrees North</att>
-            <att name="units">degrees_north</att>
-            <att name="valid_max" type="float">90.0</att>
-            <att name="valid_min" type="float">-80.0</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="ioos_category">Location</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uint">4320</att>
-            <att name="axis">X</att>
-            <att name="long_name">Longitude</att>
-            <att name="standard_name">longitude</att>
-            <att name="step" type="float">0.08332825</att>
-            <att name="unit_long">Degrees East</att>
-            <att name="units">degrees_east</att>
-            <att name="valid_max" type="float">179.91669</att>
-            <att name="valid_min" type="float">-180.0</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="ioos_category">Location</att>
-        </addAttributes>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>so</sourceName>
-        <destinationName>so</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-            <att name="_ChunkSizes" type="uintList">1 6 256 540</att>
-            <att name="_FillValue" type="float">9.96921E36</att>
-            <att name="cell_methods">area: mean</att>
-            <att name="long_name">Salinity</att>
-            <att name="standard_name">sea_water_salinity</att>
-            <att name="unit_long">Practical Salinity Unit</att>
-            <att name="units">1e-3</att>
-            <att name="valid_max" type="float">50.0</att>
-            <att name="valid_min" type="float">0.0</att>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_ChunkSizes">null</att>
-            <att name="colorBarMaximum" type="double">37.0</att>
-            <att name="colorBarMinimum" type="double">32.0</att>
-            <att name="ioos_category">Salinity</att>
-            <att name="standard_name">sea_water_practical_salinity</att>
-            <att name="units">PSU</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_1d_nwgom" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdc/vsnpp_oc_1d_nwgom/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">chlor_a, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">24.0N to 31N -85E to -78.5E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS-SNPP NWGOM 1-Day Ocean Color Composite</att>
-        <att name="title">VIIRS-SNPP Ocean Color 1-Day composite for Northwest Gulf of Mexico</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_1D_NWGOM_OC_ED\.nc,1</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a</sourceName>
-        <destinationName>chlor_a</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_clim</sourceName>
-        <destinationName>chlor_a_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Weekly Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671</sourceName>
-        <destinationName>Rrs_671</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_anom</sourceName>
-        <destinationName>Rrs_671_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">-0.01</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_clim</sourceName>
-        <destinationName>Rrs_671_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Weekly Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490</sourceName>
-        <destinationName>Kd_490</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Diffuse attenuation coefficient at 490nm</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_anom</sourceName>
-        <destinationName>Kd_490_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.25</att>
-            <att name="colorBarMinimum" type="double">-0.25</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Diffuse attenuation coefficient Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_clim</sourceName>
-        <destinationName>Kd_490_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Diffuse attenuation coefficient at 490nm Weekly Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>STRAYLIGHT_MASK</sourceName>
-        <destinationName>STRAYLIGHT_MASK</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1</att>
-            <att name="colorBarMinimum" type="double">0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Straylight mask based on Level-2 straylight flag</att>
-            <att name="Units">null</att>
-            <att name="units">none</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromNcFiles" datasetID="moda_npp_mo_glob" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdc/moda_npp_mo_glob/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="institution">Oregon State Univ. Ocean Productivity Lab</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
-        <att name="Imagesource">Oregon State University Ocean Productivity Lab</att>
-        <att name="source_type">institution</att>
-        <att name="sourceUrl">orca.science.oregonstate.edu</att>
-        <att name="source_contact">Toby Westberry - westbert@oregonstate.edu</att>
-        <att name="keywords">primary_productivity, vgpm, ocean_color, oceans, optical_properties, vertically_generalized_productivity_model</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">-90N to 90N -180E to 180E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">MODIS-Aqua Global 9km Monthly Primary Productivity (OSU)</att>
-        <att name="title">MODIS-Aqua Primary Productivity (VGPM) global 9km monthly composites</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_MO_npp_VGPM_global_9km\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>npp</sourceName>
-        <destinationName>npp</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1500</att>
-            <att name="colorBarMinimum" type="double">0</att>
-            <att name="colorBarScale">Linear</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Net Primary Productivity</att>
-            <att name="standard_name">Primary Productivity</att>
-            <att name="Units">null</att>
-            <att name="units">mgC m^-2 day^-1</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromErddap" datasetID="jplMURSST41anom1day" active="true">
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day</sourceUrl>
-</dataset>
-
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_mo_gom" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdc/vsnpp_oc_mo_gom/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">concentration_of_chlorophyll_in_sea_water, ocean_color, oceans, optical_properties, properties, Rrs</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS-SNPP GOM Monthly Mean Ocean Color</att>
-        <att name="title">VIIRS-SNPP Ocean Color Monthly means for GOM</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_MO_GOM_OC\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a_median</sourceName>
-        <destinationName>chlor_a_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Median</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_clim</sourceName>
-        <destinationName>chlor_a_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_median</sourceName>
-        <destinationName>Rrs_671_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.02</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Median</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_anom</sourceName>
-        <destinationName>Rrs_671_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">-0.01</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_clim</sourceName>
-        <destinationName>Rrs_671_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.02</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_median</sourceName>
-        <destinationName>Kd_490_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Median</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_anom</sourceName>
-        <destinationName>Kd_490_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">-1.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_clim</sourceName>
-        <destinationName>Kd_490_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_1d_fl" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdc/vsnpp_oc_1d_fl/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">chlor_a, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">24.0N to 31N -85E to -78.5E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS-SNPP FL 1-Day Composite Ocean Color</att>
-        <att name="title">VIIRS-SNPP Ocean Color 1-Day composite for Florida</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_1D_FL_OC_ED\.nc,1</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a</sourceName>
-        <destinationName>chlor_a</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_clim</sourceName>
-        <destinationName>chlor_a_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">30.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Weekly Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671</sourceName>
-        <destinationName>Rrs_671</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_anom</sourceName>
-        <destinationName>Rrs_671_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">-0.01</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_clim</sourceName>
-        <destinationName>Rrs_671_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Weekly Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490</sourceName>
-        <destinationName>Kd_490</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Diffuse attenuation coefficient at 490nm</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_anom</sourceName>
-        <destinationName>Kd_490_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.25</att>
-            <att name="colorBarMinimum" type="double">-0.25</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Diffuse attenuation coefficient Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_clim</sourceName>
-        <destinationName>Kd_490_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Diffuse attenuation coefficient at 490nm Weekly Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>STRAYLIGHT_MASK</sourceName>
-        <destinationName>STRAYLIGHT_MASK</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1</att>
-            <att name="colorBarMinimum" type="double">0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Straylight mask based on Level-2 straylight flag</att>
-            <att name="Units">null</att>
-            <att name="units">none</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-
-<dataset type="EDDGridFromNcFiles" datasetID="moda_oc_7d_seus" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/moda_oc_7d_seus/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">abi, ABI_anom, ABI_median, anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_667_anom, Rrs_667_median, science, sea, seawater, source, south, university, usf, water</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS MODIS SEUS 7 Day Mean Ocean Color</att>
-        <att name="title">MODIS-Aqua Ocean Color 7-Day means for the Southeast US</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,MODA_(\d{8})_(\d{8})_7D_SEUS_OC\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a_median</sourceName>
-        <destinationName>chlor_a_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Median</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_clim</sourceName>
-        <destinationName>chlor_a_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_667_median</sourceName>
-        <destinationName>Rrs_667_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.02</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_667 Median</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_667_anom</sourceName>
-        <destinationName>Rrs_667_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.01</att>
-            <att name="colorBarMinimum" type="double">-0.01</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_667 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_667_clim</sourceName>
-        <destinationName>Rrs_667_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.02</att>
-            <att name="colorBarMinimum" type="double">0.0001</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_667 Climatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_median</sourceName>
-        <destinationName>ABI_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Median</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_anom</sourceName>
-        <destinationName>ABI_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.25</att>
-            <att name="colorBarMinimum" type="double">-0.25</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>ABI_clim</sourceName>
-        <destinationName>ABI_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">0.5</att>
-            <att name="colorBarMinimum" type="double">0.001</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Algal Bloom Index Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">W m^-2 um^-1 sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_median</sourceName>
-        <destinationName>Kd_490_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">2.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Median</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_anom</sourceName>
-        <destinationName>Kd_490_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">-1.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_clim</sourceName>
-        <destinationName>Kd_490_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">2.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 CLimatology (2003-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDGridFromErddap" datasetID="jplMURSST41" active="true">
-    <sourceUrl>https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41</sourceUrl>
-</dataset>
-
-
-<dataset type="EDDGridFromNcFiles" datasetID="vsnpp_oc_7d_gom" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/sdb/vsnpp_oc_7d_gom/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <matchAxisNDigits>20</matchAxisNDigits>
-    <fileTableInMemory>false</fileTableInMemory>
-    <addAttributes>
-        <att name="cdm_data_type">Grid</att>
-        <att name="Contact">null</att>
-        <att name="contact">Dan Otis - dotis@usf.edu</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">dotis@usf.edu</att>
-        <att name="creator_name">DOTIS</att>
-        <att name="creator_type">institution</att>
-        <att name="infoUrl">???</att>
-        <att name="institution">USF IMaRS</att>
-        <att name="keywords">anomaly, chemistry, chlor, chlor_a_anom, chlor_a_median, chlorophyll, color, concentration, concentration_of_chlorophyll_in_sea_water, data, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Chlorophyll, florida, img, img_x, img_y, Kd_490_anom, Kd_490_median, local, median, ocean, ocean color, oceans, optical, optical properties, properties, rrs, Rrs_671_anom, Rrs_671_median, science, sea, seawater, source, south, university, usf, water</att>
-        <att name="keywords_vocabulary">GCMD Science Keywords</att>
-        <att name="Lat-Lon_Limits">null</att>
-        <att name="Lat_Lon_Limits">18.0129N to 31N -98E to -78.5148E</att>
-        <att name="license">[standard]</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">USF IMaRS VIIRS GOM 7 Day Mean Ocean Color</att>
-        <att name="title">VIIRS-SNPP Ocean Color 7-Day means for GOM</att>
-    </addAttributes>
-    <axisVariable>
-        <sourceName>***fileName,timeFormat=yyyyMMdd,VSNPP_(\d{8})_(\d{8})_7D_GOM_OC\.nc,2</sourceName>
-        <destinationName>time</destinationName>
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-        </addAttributes>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>latitude</sourceName>
-        <destinationName>latitude</destinationName>
-    </axisVariable>
-    <axisVariable>
-        <sourceName>longitude</sourceName>
-        <destinationName>longitude</destinationName>
-    </axisVariable>
-    <dataVariable>
-        <sourceName>chlor_a_median</sourceName>
-        <destinationName>chlor_a_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="colorBarScale">Log</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Median</att>
-            <att name="standard_name">concentration_of_chlorophyll_in_sea_water</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_anom</sourceName>
-        <destinationName>chlor_a_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>chlor_a_clim</sourceName>
-        <destinationName>chlor_a_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">20.0</att>
-            <att name="colorBarMinimum" type="double">0.03</att>
-            <att name="ioos_category">Ocean Color</att>
-            <att name="long_name">Chlorophyll-a Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">mg m^-3</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_median</sourceName>
-        <destinationName>Rrs_671_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Median</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_anom</sourceName>
-        <destinationName>Rrs_671_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">10.0</att>
-            <att name="colorBarMinimum" type="double">-10.0</att>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Rrs_671_clim</sourceName>
-        <destinationName>Rrs_671_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="ioos_category">Optical Properties</att>
-            <att name="long_name">Rrs_671 Climatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">sr^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_median</sourceName>
-        <destinationName>Kd_490_median</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Median</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_anom</sourceName>
-        <destinationName>Kd_490_anom</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">-1.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 Anomaly</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Kd_490_clim</sourceName>
-        <destinationName>Kd_490_clim</destinationName>
-        <dataType>double</dataType>
-        <addAttributes>
-            <att name="colorBarMaximum" type="double">1.0</att>
-            <att name="colorBarMinimum" type="double">0.0</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Kd_490 CLimatology (2013-2019)</att>
-            <att name="Units">null</att>
-            <att name="units">m^-1</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
 
 
 <dataset type="EDDGridFromNcFiles" datasetID="moda_oc_mo_gom" active="true">
