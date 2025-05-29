@@ -6790,7 +6790,7 @@ Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_
 
 <dataset type="EDDGridFromErddap" datasetID="noaa_aoml_seascapes_8day" active="true">
     <addAttributes>
-        <att name="colorBarPalette">seascapes</att>
+        <att name="colorBarPalette">Seascapes</att>
         <att name="colorBarContinuous">false</att>
     </addAttributes>
     <sourceUrl>https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day</sourceUrl>
