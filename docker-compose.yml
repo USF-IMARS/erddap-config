@@ -49,6 +49,7 @@ services:
       - '/mnt/sdb:/mnt/sdb'
       - '/mnt/sdc:/mnt/sdc'
       - '/mnt/sdd:/mnt/sdd'
+      - '/mnt/nvme0n1:/mnt/nvme0n1'
 
       # custom color palette for seascape
       - /root/docker_volumes/erddap-config/datasets/noaa_aoml_seascapes_8day/Seascapes.cpt:/usr/local/tomcat/webapps/erddap/WEB-INF/cptfiles/Seascapes.cpt
