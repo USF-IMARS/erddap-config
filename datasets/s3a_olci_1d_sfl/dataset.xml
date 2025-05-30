@@ -25,7 +25,7 @@
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">USF IMaRS Sentinel-3A OLCI SFL 1 Day Composite Ocean Color</att>
-        <att name="title">S3A OLCI Ocean Color 1-Day composite (300m) for South Florida</att>
+        <att name="title">Sentinel-3A OLCI Ocean Color 1-Day composite (300m) for South Florida</att>
     </addAttributes>
     <axisVariable>
         <sourceName>***fileName,timeFormat=yyyyMMdd,S3A_(\d{8})_1D_florida_OC_ED\.nc,1</sourceName>
