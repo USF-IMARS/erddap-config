@@ -1,7 +1,7 @@
 <dataset type="EDDGridFromNcFiles" datasetID="s3b_olci_1d_sfl" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/mnt/nvme0n1/s3b_olci_1d_florida/</fileDir>
+    <fileDir>/mnt/sdc/s3b_olci_1d_florida/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
