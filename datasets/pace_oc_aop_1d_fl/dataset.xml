@@ -28,7 +28,7 @@
 		<att name="title">PACE-OCI Ocean Color AOP (includes hyperspectral Rrs) 1-Day composite for Florida (preliminary)</att>
 	</addAttributes>
 	<axisVariable>
-		<sourceName>***fileName,timeFormat=yyyyMMdd,PACE_OCI_(\d{8})_1D_florida_AOP_V3_0_ED\.nc,1</sourceName>
+		<sourceName>***fileName,timeFormat=yyyyMMdd,PACE_OCI_(\d{8})_1D_florida_AOP_V3_1_ED\.nc,1</sourceName>
 		<destinationName>time</destinationName>
 		<addAttributes>
 			<att name="ioos_category">Unknown</att>
