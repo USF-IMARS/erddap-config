@@ -4425,7 +4425,7 @@ Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
         <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">USF IMaRS</att>
+        <att name="institution">NASA Global Precipitation Measurement Mission</att>
         <att name="keywords">precipitation, NASA, IMERG, GPM</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
