@@ -17,7 +17,7 @@
         <att name="creator_name">DOTIS</att>
         <att name="creator_type">institution</att>
         <att name="infoUrl">imars.usf.edu</att>
-        <att name="institution">NASA Global Precipitation Measurement</att>
+        <att name="institution">NASA Global Precipitation Measurement Mission</att>
         <att name="keywords">precipitation, NASA, IMERG, GPM</att>
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="Lat-Lon_Limits">null</att>
