@@ -4433,7 +4433,7 @@ Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_
         <att name="license">[standard]</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
         <att name="summary">NASA GPM IMERG Global Monthly Precipitation</att>
-        <att name="title">NASA GPM IMERG GLobal Monthly Precipitation</att>
+        <att name="title">Global Monthly Precipitation (NASA GPM IMERG)</att>
     </addAttributes>
     <axisVariable>
         <sourceName>***fileName,timeFormat=yyyyMMdd,IMERG_(\d{8})_MO_GLOB_precip_ED\.nc,1</sourceName>
@@ -4459,6 +4459,7 @@ Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_
             <att name="colorBarMaximum" type="double">500.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
             <att name="colorBarScale">Linear</att>
+            <att name="colorBar">BlueWhiteRed</att>
             <att name="ioos_category">Meteorology</att>
             <att name="long_name">precipitation</att>
             <att name="standard_name">Monthly Accumulated Precipitation</att>
@@ -4474,6 +4475,7 @@ Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_
             <att name="colorBarMaximum" type="double">200.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
             <att name="colorBarScale">Linear</att>
+            <att name="colorBar">BlueWhiteRed</att>
             <att name="ioos_category">Meteorology</att>
             <att name="long_name">Precipitation Quality Index</att>
             <att name="Units">null</att>
@@ -4488,6 +4490,7 @@ Thu Mar 20 01:50:52 2025: cdo merge /data/eclaudel/CMEMS_LSCEv2023/Data/fluxCO2_
             <att name="colorBarMaximum" type="double">100.0</att>
             <att name="colorBarMinimum" type="double">0.0</att>
             <att name="colorBarScale">Linear</att>
+            <att name="colorBar">BlueWhiteRed</att>
             <att name="ioos_category">Meteorology</att>
             <att name="long_name">Monthly Accumulated Precipitation Random Error</att>
             <att name="Units">null</att>
