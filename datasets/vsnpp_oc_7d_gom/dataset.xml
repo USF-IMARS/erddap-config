@@ -63,8 +63,8 @@
         <destinationName>chlor_a_anom</destinationName>
         <dataType>double</dataType>
         <addAttributes>
-            <att name="colorBarMaximum" type="double">3.0</att>
-            <att name="colorBarMinimum" type="double">-3.0</att>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">-2.0</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
