@@ -65,6 +65,7 @@
         <addAttributes>
             <att name="colorBarMaximum" type="double">2.5</att>
             <att name="colorBarMinimum" type="double">-2.5</att>
+            <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
