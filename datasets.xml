@@ -340,7 +340,6 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <addAttributes>
             <att name="colorBarMaximum" type="double">2.5</att>
             <att name="colorBarMinimum" type="double">-2.5</att>
-            <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Anomaly</att>
             <att name="Units">null</att>
@@ -354,6 +353,7 @@ another.name@company.com, *@example.com</subscriptionEmailBlacklist>
         <addAttributes>
             <att name="colorBarMaximum" type="double">20.0</att>
             <att name="colorBarMinimum" type="double">0.03</att>
+            <att name="colorBarScale">Log</att>
             <att name="ioos_category">Ocean Color</att>
             <att name="long_name">Chlorophyll-a Weekly Climatology (2003-2019)</att>
             <att name="Units">null</att>
