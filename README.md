@@ -36,6 +36,14 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
 1. look at [${HOSTNAME}/erddap/status.hml](http://${HOSTNAME}.marine.usf.edu:8080/erddap/status.html) for `LoadDatasets` to finish & that all is well.
 
 
+## SSL Cert Update
+SSL certifications for https need to be updated annually.
+The certs are provided by Doug.
+Certs should be updated in the ./certs directory.
+The fullchain cert needs to be generated : `cat erddap_marine_usf_edu_cert.cer erddap_marine_usf_edu_interm.cer > erddap_marine_usf_edu_fullchain.cer`.
+The docker containers need to be restarted : `make rebuild`.
+
+
 ## additional links
 * [setup.xml spec](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#setup.xml)
 * [datasets.xml spec](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html)
