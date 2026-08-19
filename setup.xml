@@ -422,7 +422,7 @@ a similar number of pixels wide and high.
 <highResLogoImageFile>noaa_simple.gif</highResLogoImageFile>
 <lowResLogoImageFile>noaa20.gif</lowResLogoImageFile>
 <googleEarthLogoFile>nlogo.gif</googleEarthLogoFile>
-<questionMarkImageFile>QuestionMark.jpg</questionMarkImageFile>
+<questionMarkImageFile>QuestionMark.png</questionMarkImageFile>
 
 <!-- Change and uncomment this to change the default background color on graphs.
 This affects almost all graphs. There are a few situations not affected.
