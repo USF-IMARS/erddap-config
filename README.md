@@ -5,7 +5,7 @@ Content dir for [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/) i
 1. modify dataset files in `/datasets/` dir
 2. run [erddap-datasets-xml-builder](https://github.com/7yl4r/erddap-datasetsxml-builder) to generate `datasets.xml` (TODO: see #33)
 3. pull new datasets.xml onto erddap server (if using docker a `docker-compose restart` is not needed)
-    * NOTE: As of 2023-03 IMaRS's ERDDAP server (a docker container on dune) does this automatically every 30min.[^1]
+    * NOTE: IMaRS's ERDDAP server (a docker container on seashell) does this automatically every 30min.[^1]
     * NOTE: Changes beyond just `datasets.xml` edits *may* require the docker container be restarted or rebuilt.
 
 ### Adding a new DataSet Checklist:
@@ -16,7 +16,7 @@ NOTE: `${HOSTNAME}` is the name of the dockerhost system.
 1. create a file `/datasets/{dataset_name}/dataset.xml`:
     1. connect to docker host:
         * `ssh ${USERNAME}@${HOSTNAME}`
-        * for user `alice` accessing the 2023 IMaRS ERDDAP hypervisor this is : `alice@dune.marine.usf.edu`
+        * for user `alice` accessing the IMaRS ERDDAP hypervisor this is : `alice@seashell.marine.usf.edu`
     1. use tool to auto-generate dataset xml:
         * `docker exec -it erddap  bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"`
     1. copy the xml into your new `/datasets/{dataset_name}/dataset.xml` file
@@ -53,4 +53,4 @@ The docker containers need to be restarted : `make rebuild`.
 
 ------------------
 
-[^1]: the crontab entry on dune that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git checkout dune && /usr/bin/git pull && /usr/bin/git rebase origin/master && /usr/bin/git push -f origin dune`
+[^1]: the crontab entry on seashell that does this: `*/30 * * * * cd /root/docker_volumes/erddap-config ; /usr/bin/git checkout main && /usr/bin/git pull`
